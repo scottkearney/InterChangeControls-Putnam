@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Akumina.WebParts.LibraryListing\" Type="ElementManifest" />
+    <ProjectItemFile Source="js\vendor\LibraryListings.js" Target="Akumina.WebParts.LibraryListing\js\vendor\" Type="ElementFile" />
+    <ProjectItemFile Source="js\vendor\modernizr.js" Target="Akumina.WebParts.LibraryListing\js\vendor\" Type="ElementFile" />
+    <ProjectItemFile Source="css\ia-interaction-controls.css" Target="Akumina.WebParts.LibraryListing\css\" Type="ElementFile" />
+    <ProjectItemFile Source="js\controls\ia-library-search.js" Target="Akumina.WebParts.LibraryListing\js\controls\" Type="ElementFile" />
+    <ProjectItemFile Source="js\vendor\jquery-2.1.3.min.js" Target="Akumina.WebParts.LibraryListing\js\vendor\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

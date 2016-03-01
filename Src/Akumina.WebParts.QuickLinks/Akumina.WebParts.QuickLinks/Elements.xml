@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Akumina.WebParts.QuickLinks">
+    <File Path="Akumina.WebParts.QuickLinks\js\vendor\jquery-2.1.3.min.js" Url="Akumina.WebParts.QuickLinks/js/vendor/jquery-2.1.3.min.js" />
+    <File Path="Akumina.WebParts.QuickLinks\js\vendor\mustache.min.js" Url="Akumina.WebParts.QuickLinks/js/vendor/mustache.min.js" />
+    <File Path="Akumina.WebParts.QuickLinks\css\ia-interaction-controls.css" Url="Akumina.WebParts.QuickLinks/css/ia-interaction-controls.css" />
+    <File Path="Akumina.WebParts.QuickLinks\icons\ia-quicklinks.png" Url="Akumina.WebParts.QuickLinks/icons/ia-quicklinks.png" />
+    <File Path="Akumina.WebParts.QuickLinks\css\fonts\font-awesome\FontAwesome.otf" Url="Akumina.WebParts.QuickLinks/css/fonts/font-awesome/FontAwesome.otf" />
+    <File Path="Akumina.WebParts.QuickLinks\css\fonts\font-awesome\fontawesome-webfont.eot" Url="Akumina.WebParts.QuickLinks/css/fonts/font-awesome/fontawesome-webfont.eot" />
+    <File Path="Akumina.WebParts.QuickLinks\css\fonts\font-awesome\fontawesome-webfont.svg" Url="Akumina.WebParts.QuickLinks/css/fonts/font-awesome/fontawesome-webfont.svg" />
+    <File Path="Akumina.WebParts.QuickLinks\css\fonts\font-awesome\fontawesome-webfont.ttf" Url="Akumina.WebParts.QuickLinks/css/fonts/font-awesome/fontawesome-webfont.ttf" />
+    <File Path="Akumina.WebParts.QuickLinks\css\fonts\font-awesome\fontawesome-webfont.woff" Url="Akumina.WebParts.QuickLinks/css/fonts/font-awesome/fontawesome-webfont.woff" />
+    <File Path="Akumina.WebParts.QuickLinks\js\controls\ia-quicklinks.js" Url="Akumina.WebParts.QuickLinks/js/controls/ia-quicklinks.js" />
+    <File Path="Akumina.WebParts.QuickLinks\js\controls\ia-top-nav.js" Url="Akumina.WebParts.QuickLinks/js/controls/ia-top-nav.js" />
+    <File Path="Akumina.WebParts.QuickLinks\css\ia-interaction-controls.css.map" Url="Akumina.WebParts.QuickLinks/css/ia-interaction-controls.css.map" />
+  </Module>
+</Elements>

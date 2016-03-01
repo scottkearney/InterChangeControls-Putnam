@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AkuminaQuickLinks" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AkuminaQuickLinks" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+
+
+
+
+      <ContentType ID="0x0100b2556e554b12477ebd1a6083d2661a68" Name="ListFieldsContentType">
+        <FieldRefs>
+
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{0ef3b3bd-f45c-409f-b2eb-76c34853c6e6}" Name="NodeType" />
+          <FieldRef ID="{97961729-e962-48fb-addb-137d439af502}" Name="DisplayOrder" />
+          <FieldRef ID="{f97e46f3-5574-400c-8af4-be68ac8596f9}" Name="Link" />
+          <FieldRef ID="{22a538a0-5224-44ca-89f8-b429501b4482}" Name="ParentItem" />
+          <FieldRef ID="{60CB2AC5-6688-4C70-A942-97736467821F}" Name="Active" />
+          <FieldRef ID="{37f42f09-b1c1-453f-a915-06f2163ac13f}" Name="Open_x0020_With" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="NodeType" ID="{0ef3b3bd-f45c-409f-b2eb-76c34853c6e6}" DisplayName="NodeType" Type="Choice">
+        <CHOICES>
+
+          <CHOICE>Root</CHOICE>
+          <CHOICE>Category</CHOICE>
+          <CHOICE>Item</CHOICE>
+        </CHOICES>
+        <Default>Root</Default>
+      </Field>
+
+      <Field Name="DisplayOrder" ID="{97961729-e962-48fb-addb-137d439af502}" DisplayName="DisplayOrder" Type="Number" Decimals="0" />
+      <Field Name="Link" ID="{f97e46f3-5574-400c-8af4-be68ac8596f9}" DisplayName="Link" Type="URL" />
+
+      <!--<Field Name="ParentItem" ID="{22a538a0-5224-44ca-89f8-b429501b4482}"  DisplayName="ParentItem" Type="Lookup" ShowField="Title" List="Self"/>-->
+      <!--<Field FieldRef="{22a538a0-5224-44ca-89f8-b429501b4482}" Name="ParentItem_ID" DisplayName="ParentItem:ID" Type="Lookup" Required="FALSE" ShowField="ID" List="Self"></Field>
+      <Field FieldRef="{22a538a0-5224-44ca-89f8-b429501b4482}" Name="ParentItem_Title" DisplayName="ParentItem:Title" Type="Lookup" Required="FALSE" ShowField="Title" List="Self"></Field>-->
+
+      <!--<Field Name="ParentItem" ID="{22a538a0-5224-44ca-89f8-b429501b4482}" Group="&lt;GROUP&gt;" DisplayName="ParentItem" Type="Lookup" List="Self"/>
+      <Field FieldRef="{22a538a0-5224-44ca-89f8-b429501b4482}" Name="ID" DisplayName="ParentItem:ID" Type="Lookup" Required="FALSE" ShowField="ID" List="Self"></Field>
+      <Field FieldRef="{22a538a0-5224-44ca-89f8-b429501b4482}" Name="Title" DisplayName="ParentItem:Title" Type="Lookup" Required="FALSE" ShowField="Title" List="Self"></Field>-->
+
+      <Field Name="Active" Id="{60CB2AC5-6688-4C70-A942-97736467821F}" DisplayName="Active" Type="Boolean">
+        <Default>1</Default>
+      </Field>
+      <Field Name="Open_x0020_With" ID="{37f42f09-b1c1-453f-a915-06f2163ac13f}" DisplayName="Open With" Type="Choice" >
+        <CHOICES>
+          <CHOICE>Same Window</CHOICE>
+          <CHOICE>New Window</CHOICE>
+        </CHOICES>
+        <Default>Same Window</Default>
+      </Field>
+    </Fields>
+    <Views>
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="NodeType" />
+          <FieldRef Name="DisplayOrder" />
+          <FieldRef Name="Link" />
+          <FieldRef Name="ParentItem" />
+          <FieldRef Name="Active" />
+          <FieldRef Name="Open_x0020_With" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

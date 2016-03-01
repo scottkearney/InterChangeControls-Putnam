@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Akumina.WebParts.ContentBlock">
+    <File Path="Akumina.WebParts.ContentBlock\js\vendor\jquery-2.1.3.min.js" Url="Akumina.WebParts.ContentBlock/js/vendor/jquery-2.1.3.min.js" />
+    <File Path="Akumina.WebParts.ContentBlock\js\vendor\mustache.min.js" Url="Akumina.WebParts.ContentBlock/js/vendor/mustache.min.js" />
+    <File Path="Akumina.WebParts.ContentBlock\css\ia-interaction-controls.css" Url="Akumina.WebParts.ContentBlock/css/ia-interaction-controls.css" />
+    <File Path="Akumina.WebParts.ContentBlock\icon\ia-content-block.png" Url="Akumina.WebParts.ContentBlock/icon/ia-content-block.png" />
+    <File Path="Akumina.WebParts.ContentBlock\css\ia-interaction-controls.css.map" Url="Akumina.WebParts.ContentBlock/css/ia-interaction-controls.css.map" />
+  </Module>
+</Elements>

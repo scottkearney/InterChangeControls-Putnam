@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaDocumentsIDS" OnQuickLaunch="TRUE" TemplateType="10021" Url="Lists/AkuminaDocumentsIDS" Description="Akumina Documents Ids List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Document Title1</Field>
+          <Field Name="ListName">Documents</Field>
+          <Field Name="Tab_x002e_NumberOfPopularFiles">5</Field>
+          <Field Name="Tab_x002e_NumberOfRecentFiles">5</Field>
+          <Field Name="Grid_x002e_HeaderName">Name,Modified,Modified By</Field>
+          <Field Name="RootResourcePath">/_layouts/15/Akumina.InterAction.DocumentWebPart</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Document Title2</Field>
+          <Field Name="ListName">Documents</Field>
+          <Field Name="Tab_x002e_NumberOfPopularFiles">5</Field>
+          <Field Name="Tab_x002e_NumberOfRecentFiles">5</Field>
+          <Field Name="Grid_x002e_HeaderName">Name,Modified,Modified By</Field>
+          <Field Name="RootResourcePath">/_layouts/15/Akumina.InterAction.DocumentWebPart</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

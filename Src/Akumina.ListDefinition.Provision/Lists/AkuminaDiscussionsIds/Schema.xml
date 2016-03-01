@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AkuminaDiscussionsIDS" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AkuminaDiscussionsIDS" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+      
+    <ContentType ID="0x01005fb5c429647e45f8844d71d191d8cb55" Name="ListFieldsContentType">
+        <FieldRefs>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{61fb19da-2c69-4300-b68a-ec0d026d7ade}" Name="DiscussionListName" /><FieldRef ID="{c67f6830-61cc-4756-8149-c353766dd7e5}" Name="DocumentLibraryName" /><FieldRef ID="{9e536813-c79e-4964-8d06-f6940ff849a6}" Name="Listing_x002e_DisplayAvatarPicture" /><FieldRef ID="{ad7c5655-c316-42be-b414-12ba51c8ad85}" Name="Listing_x002e_NumberOfPosts" /><FieldRef ID="{6e284a66-9a58-4ec0-994c-84ddfa63a0a2}" Name="Listing_x002e_ListingPostType" /><FieldRef ID="{189dfc2e-a470-480b-ae11-a6158183cf37}" Name="Summary_x002e_DisplayAvatarPicture" /><FieldRef ID="{6496fa95-b3af-46cc-a8da-559cf592ffaf}" Name="Summary_x002e_NumberOfPosts" /><FieldRef ID="{f3ff0c23-8b4f-4fe1-92bc-1efdcf4a7006}" Name="Summary_x002e_ListingPostType" /><FieldRef ID="{ce04b5d9-7258-48d0-a947-bb4d10ab3518}" Name="DiscussionThread_x002e_DisplayAvatarPicture" /><FieldRef ID="{d7ad3e1d-739d-4cc4-b5f2-11659d42dac5}" Name="DiscussionTitle1" /></FieldRefs>
+      </ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="DiscussionListName" ID="{61fb19da-2c69-4300-b68a-ec0d026d7ade}" DisplayName="DiscussionListName" Type="Text" /><Field Name="DocumentLibraryName" ID="{c67f6830-61cc-4756-8149-c353766dd7e5}" DisplayName="DocumentLibraryName" Type="Text" /><Field Name="Listing_x002e_DisplayAvatarPicture" ID="{9e536813-c79e-4964-8d06-f6940ff849a6}" DisplayName="Listing.DisplayAvatarPicture" Type="Boolean">
+        <Default>1</Default>
+      </Field><Field Name="Listing_x002e_NumberOfPosts" ID="{ad7c5655-c316-42be-b414-12ba51c8ad85}" DisplayName="Listing.NumberOfPosts" Type="Text" /><Field Name="Listing_x002e_ListingPostType" ID="{6e284a66-9a58-4ec0-994c-84ddfa63a0a2}" DisplayName="Listing.ListingPostType" Type="Choice">
+        <CHOICES>
+          
+          
+        <CHOICE>OriginalPost</CHOICE><CHOICE>LastPost</CHOICE></CHOICES>
+        <Default>OriginalPost</Default>
+      </Field><Field Name="Summary_x002e_DisplayAvatarPicture" ID="{189dfc2e-a470-480b-ae11-a6158183cf37}" DisplayName="Summary.DisplayAvatarPicture" Type="Boolean">
+        <Default>1</Default>
+      </Field><Field Name="Summary_x002e_NumberOfPosts" ID="{6496fa95-b3af-46cc-a8da-559cf592ffaf}" DisplayName="Summary.NumberOfPosts" Type="Text" /><Field Name="Summary_x002e_ListingPostType" ID="{f3ff0c23-8b4f-4fe1-92bc-1efdcf4a7006}" DisplayName="Summary.ListingPostType" Type="Choice">
+        <CHOICES>
+          
+          
+        <CHOICE>OriginalPost</CHOICE><CHOICE>LastPost</CHOICE></CHOICES>
+        <Default>OriginalPost</Default>
+      </Field><Field Name="DiscussionThread_x002e_DisplayAvatarPicture" ID="{ce04b5d9-7258-48d0-a947-bb4d10ab3518}" DisplayName="DiscussionThread.DisplayAvatarPicture" Type="Boolean">
+        <Default>1</Default>
+      </Field><Field Name="DiscussionTitle1" ID="{d7ad3e1d-739d-4cc4-b5f2-11659d42dac5}" DisplayName="DiscussionTitle" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="DiscussionTitle1" /><FieldRef Name="DiscussionListName" /><FieldRef Name="DocumentLibraryName" /><FieldRef Name="Listing_x002e_DisplayAvatarPicture" /><FieldRef Name="Listing_x002e_NumberOfPosts" /><FieldRef Name="Listing_x002e_ListingPostType" /><FieldRef Name="Summary_x002e_DisplayAvatarPicture" /><FieldRef Name="Summary_x002e_NumberOfPosts" /><FieldRef Name="Summary_x002e_ListingPostType" /><FieldRef Name="DiscussionThread_x002e_DisplayAvatarPicture" /></ViewFields>
+        <Query>
+          <OrderBy>
+
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

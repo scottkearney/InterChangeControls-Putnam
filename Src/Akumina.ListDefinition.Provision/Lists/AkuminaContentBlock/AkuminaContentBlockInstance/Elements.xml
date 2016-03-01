@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaContentBlock" OnQuickLaunch="TRUE" TemplateType="10016" Url="Lists/AkuminaContentBlock" Description="AkuminaContentBlock List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Welcome!</Field>
+          <Field Name="Html">
+            <![CDATA[<p>Welcome to the new Spark!​ This site gives you access to all employee related information and documents</p>]]>
+          </Field>
+        </Row>
+        <!--<Row>
+          <Field Name="Title">Alert Message</Field>
+          <Field Name="Html">Office shutdown at 2pm. For moew info...</Field>
+          <Field Name="IsAlert">No</Field>
+        </Row>-->
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

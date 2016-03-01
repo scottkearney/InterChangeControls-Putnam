@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPageModule" Url="_catalogs/masterpage">
+    <File Path="MasterPageModule\akuminaspark.master" Url="AkuminaSpark/akuminaspark.master" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE">
+      <Property Name="ContentType"
+                Value="ASP NET Master Page" />
+      <Property Name="Title"
+                Value="Spark master page" />
+      <Property Name="MasterPageDescription"
+                Value="Spark master page." />
+      <Property Name="UIVersion" Value="15" />
+    </File>
+    <File Path="MasterPageModule\akuminaspark.html" Url="AkuminaSpark/akuminaspark.html"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"/>
+  </Module>
+</Elements>

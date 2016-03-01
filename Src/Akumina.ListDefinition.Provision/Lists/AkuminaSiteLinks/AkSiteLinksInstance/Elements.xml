@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaSiteLinks" OnQuickLaunch="TRUE" TemplateType="10027" Url="Lists/AkuminaSiteLinks" Description="Akumina SiteLinks List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Quick Links</Field>
+          <Field Name="Links"><![CDATA[<p><a href="http://www.akumina.com/" target="_blank">Akumina​</a>​</p>]]>​</Field>
+          <!--<Field Name="Morelink">Add more links</Field>
+          <Field Name="MoreText">Add more text</Field>-->
+        </Row>
+        <!--<Row>
+          <Field Name ="Title">Add Links</Field>
+          <Field Name ="Links">Please spcify the links</Field>
+          <Field Name ="Morelink">Add more links</Field>
+          <Field Name ="MoreText">Add more text</Field>
+        </Row>-->
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

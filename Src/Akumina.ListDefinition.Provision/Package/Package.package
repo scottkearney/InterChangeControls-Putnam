@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3f897744-fb49-4996-b6b0-68c88af47df0" solutionId="3f897744-fb49-4996-b6b0-68c88af47df0" resetWebServer="false" sharePointProductVersion="15.0" name="Akumina.ListDefinition.Provision" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Akumina.ListDefinition.Provision.dll" deploymentTarget="GlobalAssemblyCache">
+      <safeControls>
+        <safeControl assemblyName="Akumina.ListDefinition.Provision" namespaceName="Akumina.ListDefinition.Provision" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </projectOutputAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="61ecaa4d-c73e-4d03-9d1d-5757e2d390c1" />
+  </features>
+</package>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Title="IgniteSiteDefinition" Revision="2" ListDir="" xmlns:ows="Microsoft SharePoint" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <NavBars>
+  </NavBars>
+  <ListTemplates>
+  </ListTemplates>
+  <DocumentTemplates>
+
+    <DocumentTemplate Path="STS" Name="" DisplayName="$Resources:core,doctemp_None;" Type="100" Default="FALSE" Description="$Resources:core,doctemp_None_Desc;" />
+
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word97;" Type="101" Description="$Resources:core,doctemp_Word97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.doc" TargetName="Forms/template.doc" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel97;" Type="103" Description="$Resources:core,doctemp_Excel97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xls" TargetName="Forms/template.xls" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint97;" Type="104" Description="$Resources:core,doctemp_Powerpoint97_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pot" TargetName="Forms/template.pot" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Word;" Type="121" Default="TRUE" Description="$Resources:core,doctemp_Word_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\word\wdtmpl.dotx" TargetName="Forms/template.dotx" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Excel;" Type="122" Description="$Resources:core,doctemp_Excel_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xl\xltmpl.xlsx" TargetName="Forms/template.xlsx" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_Powerpoint;" Type="123" Description="$Resources:core,doctemp_Powerpoint_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\ppt\pptmpl.pptx" TargetName="Forms/template.pptx" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_OneNote;" Type="111" Description="$Resources:core,doctemp_OneNote_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\onenote\template.onepkg" TargetName="Forms/template.onepkg" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_FP;" Type="102" Description="$Resources:core,doctemp_FP_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\fp\fptmpl.htm" TargetName="Forms/template.htm" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_BasicPage;" Type="105" Description="$Resources:core,doctemp_BasicPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\blankpgs\_basicpage.htm" TargetName="Forms/_basicpage.htm" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+
+    <DocumentTemplate Path="STS" DisplayName="$Resources:core,doctemp_WebPartPage;" Type="106" Description="$Resources:core,doctemp_WebPartPage_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\smartpgs\_webpartpage.htm" TargetName="Forms/_webpartpage.htm" Default="TRUE"/>
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+
+    <DocumentTemplate XMLForm="TRUE" Path="STS" DisplayName="$Resources:core,doctemp_BlankForm;" Type="1000" Default="TRUE" Description="$Resources:core,doctemp_BlankForm_Desc;">
+      <DocumentTemplateFiles>
+        <DocumentTemplateFile Name="doctemp\xmlforms\blank\template.xml" TargetName="Forms/template.xml" Default="TRUE" />
+      </DocumentTemplateFiles>
+    </DocumentTemplate>
+
+  </DocumentTemplates>
+  <Configurations>
+    <Configuration ID="0" Name="IgniteSiteDefinition" CustomMasterUrl="_catalogs/masterpage/Ignite/ignitemaster.master">
+      <Lists/>
+      <SiteFeatures>
+        <!--<Feature ID="f6924d36-2fa8-4f0b-b16d-06b7250180fa" />-->
+        <Feature ID="A392DA98-270B-4e85-9769-04C0FDE267AA">
+          <!-- PublishingPrerequisites -->
+        </Feature>
+        <Feature ID="AEBC918D-B20F-4a11-A1DB-9ED84D79C87E">
+          <!-- PublishingResources -->
+          <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+            <Property Key="AllowRss" Value="false"/>
+            <Property Key="SimplePublishing" Value="false" />
+          </Properties>
+        </Feature>
+        <Feature ID="F6924D36-2FA8-4f0b-B16D-06B7250180FA">
+          <!-- Office SharePoint Server Publishing -->
+        </Feature>
+
+        <!-- SearchCenter Url feature -->
+        <Feature ID="7AC8CC56-D28E-41f5-AD04-D95109EB987A" >
+          <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+            <Property Key="SearchCenterUrl" Value="~SiteCollection/Search/" />
+          </Properties>
+        </Feature>
+
+        <Feature ID="8cbaf2cd-26f9-48bd-b90c-65103f89db61">
+          <!-- Akumina Documents Web Part -->
+        </Feature>
+        <Feature ID="ef52b877-8ac7-4727-a95d-615e6eb64620">
+          <!-- akumina.webparts.banner.wsp -->
+        </Feature>
+        <Feature ID="aa03ba19-08de-4472-b09f-0cd6f41c84d4">
+          <!-- akumina.webparts.contentblock.wsp -->
+        </Feature>
+        <Feature ID="8470b49b-a8f6-4fd0-8066-b1ad096ed31d">
+          <!-- akumina.webparts.discussionboard.wsp	 -->
+        </Feature>
+        <Feature ID="7d535e10-3b18-4ab8-ba0a-15b6b45b7f44">
+          <!-- akumina.webparts.documentsummarylist.wsp -->
+        </Feature>
+        <Feature ID="1ed9ca27-9012-4e8f-97f1-2e69a1e9c37c">
+          <!-- akumina.webparts.miscellaneous.wsp	 -->
+        </Feature>
+        <!--<Feature ID="6e812311-d318-4869-b863-a76c4e013fbd">
+          --><!-- akumina.webparts.sitelinks.wsp --><!--
+        </Feature>-->
+
+        <!--<Feature ID="e7a82a9b-5b9e-4699-8a48-0d881c7ff8b9">
+          --><!-- akumina.webparts.sitesummarylist.wsp --><!--
+        </Feature>
+        <Feature ID="2b2f35d1-63ba-4d52-8e03-96dbc8b65103">
+          --><!-- akumina.webparts.sitesummarylist.wsp	 --><!--
+        </Feature>
+        <Feature ID="e775f338-4015-461d-ba7a-d46eddfd9680">
+          --><!-- akumina.webparts.sitesummarylist.wsp --><!--
+        </Feature>-->
+        <Feature ID="efb862d2-f0c0-4af6-8507-4288c493c6b6">
+          <!-- akumina.webparts.announcement.wsp -->
+        </Feature>
+        <!--<Feature ID="2892b02e-2704-4e89-ad10-23130b89e208">
+          --><!-- akumina.webparts.librarylisting.wsp --><!--
+        </Feature>-->
+        <Feature ID="49696225-72d2-4481-ae2e-7f7437599db0">
+          <!-- akumina.webparts.quicklinks.wsp-->
+        </Feature>
+        <Feature ID="7bbbf5e6-5cfa-4f1a-8366-4922ae2c4e34">
+           <!--akumina.webparts.importantdate.wsp-->
+        </Feature>
+        
+      </SiteFeatures>
+      <WebFeatures>
+        <!-- Include the common WSSListTemplateFeatures used by CMS -->
+        <Feature ID="00BFEA71-DE22-43B2-A848-C05709900100" > </Feature>
+        <Feature ID="00BFEA71-E717-4E80-AA17-D0C71B360101" > </Feature>
+        <Feature ID="00BFEA71-52D4-45B3-B544-B1C71B620109" > </Feature>
+        <Feature ID="00BFEA71-A83E-497E-9BA0-7A5C597D0107" > </Feature>
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-305CF7030140" > </Feature>
+        <Feature ID="00BFEA71-F600-43F6-A895-40C0DE7B0117" > </Feature>
+
+        <Feature ID="00BFEA71-4EA5-48D4-A4AD-7EA5C011ABE5">
+        </Feature>
+
+        <Feature ID="22A9EF51-737B-4ff2-9346-694633FE4416">
+          <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+            <Property Key="ChromeMasterUrl" Value=""/>
+            <Property Key="DefaultPageLayout" Value="~SiteCollection/_catalogs/masterpage/PageFromDocLayout.aspx"/>
+            <Property Key="WelcomePageUrl" Value="$Resources:osrvcore,List_Pages_UrlName;/Home.aspx"/>
+            <Property Key="PagesListUrl" Value=""/>
+            <Property Key="AvailableWebTemplates" Value=""/>
+            <Property Key="AvailablePageLayouts" Value=""/>
+            <Property Key="SimplePublishing" Value="true" />
+          </Properties>
+        </Feature>
+        <Feature ID="541F5F57-C847-4e16-B59A-B31E90E6F9EA">
+          <Properties xmlns="http://schemas.microsoft.com/sharepoint/">
+            <Property Key="InheritGlobalNavigation" Value="true"/>
+            <Property Key="ShowSiblings" Value="true"/>
+            <Property Key="IncludeSubSites" Value="true"/>
+          </Properties>
+        </Feature>
+        <Feature ID="94C94CA6-B32F-4da9-A9E3-1F3D343D7ECB">
+          <!-- Office SharePoint Server Publishing -->
+        </Feature>
+        
+        <!-- Workflow Service Store -->
+        <Feature ID="2c63df2b-ceab-42c6-aeff-b3968162d4b1" />
+        <!-- Workflow Task -->
+        <Feature ID="57311b7a-9afd-4ff0-866e-9393ad6647b1" />
+        
+
+        <Feature ID="00bfea71-d8fe-4fec-8dad-01c19a6e4053"></Feature>
+        <!--<Feature ID="22988448-8f13-4723-8022-dfe8c3d29b44">
+          --><!-- Akumina List Privision Web Part --><!--
+        </Feature>-->
+        <Feature ID="1d82be7f-3fa7-403c-be04-ff0ed9282cf8" ></Feature>
+        <!-- Ignite List Provisioning -->
+        <Feature ID="f698c9d7-3b09-49e8-ab7a-999a8cb9f7f2" > </Feature>
+        <!-- Ignite Site Definition Feature-->
+        <!--<Feature ID="b93cdab2-6736-40c5-9f7c-2c650dec5b2a"></Feature>-->
+        <!-- Ignite Department Definition Feature-->
+      </WebFeatures>
+      <Modules>
+        <Module Name="DefaultBlank" />
+      </Modules>
+    </Configuration>
+  </Configurations>
+  <Modules>
+    <Module Name="DefaultBlank" Url="" Path="">
+      <File Url="default.aspx">
+      </File>
+    </Module>
+  </Modules>
+</Project>

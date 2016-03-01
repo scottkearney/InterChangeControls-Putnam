@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Akumina.WebParts.ContentBlock.ContentBlock.ContentBlock, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Content Block</property>
+        <property name="Description" type="string">Content Block Web Part</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <!--<property name="CatalogIconImageUrl" type="string">../Akumina.WebParts.ContentBlock/icon/ia-content-block.png</property>
+        <property name="TitleIconImageUrl" type="string">../Akumina.WebParts.ContentBlock/icon/ia-content-block.png</property>-->
+      </properties>
+    </data>
+  </webPart>
+</webParts>

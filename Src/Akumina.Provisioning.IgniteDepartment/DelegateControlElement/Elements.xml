@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="DelegateControlElement">
+    <File Path="DelegateControlElement\Sample.txt" Url="DelegateControlElement/Sample.txt" />
+  </Module>
+</Elements>

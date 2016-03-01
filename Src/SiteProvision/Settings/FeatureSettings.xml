@@ -1,0 +1,183 @@
+﻿<Features>
+
+  
+  <WebFeatures>
+  <Feature>
+    <WSP>
+      Others
+    </WSP>
+    <FeatureIds> 
+	   <FeatureId>
+       00bfea71-4ea5-48d4-a4ad-7ea5c011abe5
+      </FeatureId>	
+	  <FeatureId>
+        94C94CA6-B32F-4da9-A9E3-1F3D343D7ECB
+      </FeatureId>
+	   <FeatureId>
+        00bfea71-d8fe-4fec-8dad-01c19a6e4053
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>Akumina.ListDefinition.Provision.wsp</WSP>
+    <FeatureIds>
+      <FeatureId>22988448-8f13-4723-8022-dfe8c3d29b44</FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.SiteDefinition.Provision.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        2029a7f9-d4fa-40df-a5ae-d9065f464b67
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  
+  </WebFeatures>
+  <SiteFeatures>
+  <Feature>
+    <WSP>
+      Others
+    </WSP>
+    <FeatureIds>
+	 
+      <FeatureId>
+        A392DA98-270B-4e85-9769-04C0FDE267AA
+      </FeatureId>
+	  <FeatureId>
+        AEBC918D-B20F-4a11-A1DB-9ED84D79C87E
+      </FeatureId>
+	   <FeatureId>
+       F6924D36-2FA8-4f0b-B16D-06B7250180FA
+      </FeatureId>  
+	 
+
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+  
+    <WSP>
+      Akumina.WebParts.Announcement.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        efb862d2-f0c0-4af6-8507-4288c493c6b6
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.WebParts.DiscussionBoard.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        8470b49b-a8f6-4fd0-8066-b1ad096ed31d
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.WebParts.Documents.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        8cbaf2cd-26f9-48bd-b90c-65103f89db61
+
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.WebParts.DocumentSummaryList.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        7d535e10-3b18-4ab8-ba0a-15b6b45b7f44
+
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.WebParts.Miscellaneous.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        1ed9ca27-9012-4e8f-97f1-2e69a1e9c37c
+
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.WebParts.SiteSummaryList.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>e7a82a9b-5b9e-4699-8a48-0d881c7ff8b9</FeatureId>
+      <FeatureId>e775f338-4015-461d-ba7a-d46eddfd9680</FeatureId>
+      <FeatureId>2b2f35d1-63ba-4d52-8e03-96dbc8b65103</FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.WebParts.Banner.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        ef52b877-8ac7-4727-a95d-615e6eb64620
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.WebParts.ContentBlock.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        aa03ba19-08de-4472-b09f-0cd6f41c84d4
+
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  
+  <Feature>
+    <WSP>
+      Akumina.WebParts.SiteLinks.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        6e812311-d318-4869-b863-a76c4e013fbd
+
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  <Feature>
+    <WSP>
+      Akumina.WebParts.LibraryListing.wsp
+    </WSP>
+    <FeatureIds>
+      <FeatureId>
+        2892b02e-2704-4e89-ad10-23130b89e208
+      </FeatureId>
+    </FeatureIds>
+
+  </Feature>
+  
+ </SiteFeatures>
+
+</Features>

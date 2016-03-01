@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="46e99490-d654-47ba-8808-22a1be21ff5c" solutionId="46e99490-d654-47ba-8808-22a1be21ff5c" resetWebServer="false" sharePointProductVersion="15.0" name="Akumina.Provisioning.Ignite" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Akumina.Provisioning.Ignite.dll" deploymentTarget="GlobalAssemblyCache">
+      <safeControls>
+        <safeControl assemblyName="Akumina.Provisioning.Ignite" namespaceName="Akumina.Provisioning.Ignite" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </projectOutputAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="921ae7ee-4db3-43f3-8b65-887ce2823404" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="89b89ac5-1f5a-4f52-99d7-b5bb63aea4f2" />
+    <projectItemReference itemId="42abdaba-9738-4600-8d8f-e39f2aba6852" />
+  </projectItems>
+</package>

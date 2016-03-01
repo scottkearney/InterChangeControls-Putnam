@@ -1,0 +1,21 @@
+<div class="interAction">
+    {{#ShowHeader}}
+    <div class="ia-control-header">
+        <span class="ia-control-header-icon fa fa-{{WebPartIcon}}"></span>
+        <h3 class="ia-control-header-heading">{{WebPartTitle}}</h3>
+    </div>
+    {{/ShowHeader}}
+    <div class="ia-announcements">
+        
+        <ul>
+            {{#Items}}
+            <li>
+                <h4 class="ia-announcement-title"><a href="{{Url}}">{{Title}}</a></h4>
+                <!--<p class="ia-annoucement-summary">{{{Summary}}}</p>-->
+                <p class="ia-announcement-date">{{Created}}</p>
+            </li> 
+            {{/Items}}
+        </ul>
+        <a class="ia-read-more" href="{{ViewAllLink}}">View All {{WebPartTitle}} <span class="fa fa-angle-right"></span></a>
+    </div>
+</div>

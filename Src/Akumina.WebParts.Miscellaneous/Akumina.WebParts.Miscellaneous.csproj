@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BD0D29E-5F47-48E5-ADBC-7A7225ADE8C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Akumina.WebParts.Miscellaneous</RootNamespace>
+    <AssemblyName>Akumina.WebParts.Miscellaneous</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\AkuminaInterAction.cs">
+      <Link>AkuminaInterAction.cs</Link>
+    </Compile>
+    <Compile Include="Image\Image.ascx.cs">
+      <DependentUpon>Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Image\Image.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\Map.ascx.cs">
+      <DependentUpon>Map.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\Map.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Map.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceHolder\PlaceHolder.cs" />
+    <Compile Include="PlaceHolder\PlaceHolderUserControl.ascx.cs">
+      <DependentUpon>PlaceHolderUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlaceHolder\PlaceHolderUserControl.ascx.designer.cs">
+      <DependentUpon>PlaceHolderUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Video\Video.ascx.cs">
+      <DependentUpon>Video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Video\Video.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Weather\Weather.ascx.cs">
+      <DependentUpon>Weather.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Weather\Weather.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Weather.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Container\Container.feature">
+      <FeatureId>{47dae426-bf03-4ffa-8a4b-9d170e3aab22}</FeatureId>
+    </None>
+    <None Include="Image\Image.webpart" />
+    <None Include="Image\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5748b7a0-a1a4-4eb1-a8d0-23d9a3492e39}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Map\Map.webpart" />
+    <None Include="Map\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0cbd3d2d-2a6c-4bd6-85bc-a53d2ff641f5}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{1116cbc8-20b3-41f0-938c-cf0da2efeeca}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PlaceHolder\PlaceHolder.webpart" />
+    <None Include="PlaceHolder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16d7f5b4-6f68-495d-b647-f3017f0d625d}</SharePointProjectItemId>
+    </None>
+    <None Include="Video\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{94346da9-7ef8-441b-83be-ea757bd277e6}</SharePointProjectItemId>
+    </None>
+    <None Include="Video\Video.webpart" />
+    <None Include="Weather\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f951b4c8-03d3-4b19-ad3c-150500f7dee3}</SharePointProjectItemId>
+    </None>
+    <None Include="Weather\Weather.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Container\Container.Template.xml">
+      <DependentUpon>Container.feature</DependentUpon>
+    </Content>
+    <Content Include="Image\Elements.xml" />
+    <Content Include="Image\Image.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Image.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Map\Elements.xml" />
+    <Content Include="Map\Map.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Map.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="PlaceHolder\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PlaceHolder\PlaceHolderUserControl.ascx" />
+    <Content Include="Video\Elements.xml" />
+    <Content Include="Video\Video.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Video.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Weather\Elements.xml" />
+    <Content Include="Weather\Weather.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Weather.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

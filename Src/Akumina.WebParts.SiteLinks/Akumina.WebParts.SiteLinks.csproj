@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFDC6E36-895D-4B25-9478-628BFB96DA40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Akumina.WebParts.SiteLinks</RootNamespace>
+    <AssemblyName>Akumina.WebParts.SiteLinks</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\AkuminaInterAction.cs">
+      <Link>AkuminaInterAction.cs</Link>
+    </Compile>
+    <Compile Include="Enum\Color.cs" />
+    <Compile Include="Enum\Icon.cs" />
+    <Compile Include="Enum\MoreWindow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SiteLinks\SiteLinks.ascx.cs">
+      <DependentUpon>SiteLinks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteLinks\SiteLinks.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteLinks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Template.cs" />
+    <Compile Include="SiteLinksBaseWebPart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Akumina.WebParts.SiteLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5dd88974-2d8f-4850-b0e7-80951e0e6187}</SharePointProjectItemId>
+    </None>
+    <None Include="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\fontawesome-webfont.eot" />
+    <None Include="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\fontawesome-webfont.ttf" />
+    <None Include="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\fontawesome-webfont.woff" />
+    <None Include="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\FontAwesome.otf" />
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{c7c8350d-12d8-47ce-aa1c-8bb5585328f5}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{221dcca6-b09f-482d-b197-c0147475759e}</PackageId>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SiteLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{afea0393-f44e-49d5-b7c8-cadbadf1480e}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteLinks\SiteLinks.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Akumina.WebParts.SiteLinks\css\ia-interaction-controls.css" />
+    <Content Include="Akumina.WebParts.SiteLinks\Elements.xml" />
+    <Content Include="Akumina.WebParts.SiteLinks\icon\ia-sitelinks.png" />
+    <Content Include="Akumina.WebParts.SiteLinks\js\controls\ia-sitelinks.js" />
+    <Content Include="Akumina.WebParts.SiteLinks\js\vendor\jquery-2.1.3.min.js" />
+    <Content Include="Akumina.WebParts.SiteLinks\js\vendor\mustache.min.js" />
+    <Content Include="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <None Include="Resources\ItemTemplate.html" />
+    <None Include="Resources\ControlTemplate.html" />
+    <Content Include="SiteLinks\Elements.xml" />
+    <Content Include="SiteLinks\SiteLinks.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>SiteLinks.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>xcopy "$(SolutionDir)Shared\Content\*.*" "$(SolutionDir)Akumina.WebParts.SiteLinks\Akumina.WebParts.SiteLinks" /Y/E/I</PreBuildEvent>
+  </PropertyGroup>
+</Project>

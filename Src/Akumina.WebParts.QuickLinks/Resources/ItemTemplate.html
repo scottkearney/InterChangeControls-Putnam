@@ -1,0 +1,56 @@
+<div class="interAction">
+		{{#ShowHeader}}
+		<div class="ia-control-header">
+			<span class="ia-control-header-icon fa fa-{{WebPartIcon}}"></span>
+			<h3 class="ia-control-header-heading">{{Title}}</h3>
+		</div>
+		{{/ShowHeader}}
+		<section class="ia-quicklinks">			
+			<nav class="ia-quicklinks-nav">
+                <ul class="ia-quicklinks-level-1">
+                    {{#Items}}
+                    {{^HasLinks}}
+                    {{#HasCategories}}
+                    <li>
+                        <span class="ia-quicklink-flyout-trigger">{{Title}}</span>
+                        <div class="ia-quicklink-cols category-cols">
+                            {{#Items}}
+                            <div class="ia-quicklink-col">
+                                <ul class="ia-quicklinks-level-2">
+                                    <li><span class="ia-quicklink-heading">{{Title}}</span></li>
+                                    {{#Items}}
+                                    <li><a href="{{Link}}" target="{{Target}}">{{Title}}</a></li>
+                                    {{/Items}}
+                                </ul>
+                            </div>
+                            {{/Items}}
+                        </div>
+                    </li>
+                    {{/HasCategories}}                    
+                    {{^HasCategories}}
+                    <li><a href="{{Link}}" target="{{Target}}">{{Title}}</a></li>
+                    {{/HasCategories}}
+                    {{/HasLinks}}
+
+                    {{#HasLinks}}
+                    {{^HasCategories}}
+                    <li>
+                        <span class="ia-quicklink-flyout-trigger">{{Title}}</span>
+                        <div class="ia-quicklink-cols category-cols">
+                            <div class="ia-quicklink-col">
+                                <ul class="ia-quicklinks-level-2">
+                                    {{#Items}}
+                                    <li><a href="{{Link}}" target="{{Target}}">{{Title}}</a></li>
+                                    {{/Items}}
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    {{/HasCategories}}
+                    {{/HasLinks}}
+
+                                {{/Items}}
+                            </ul>
+</nav>
+		</section>
+</div>

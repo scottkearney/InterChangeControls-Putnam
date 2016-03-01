@@ -1,0 +1,16 @@
+﻿<Web>
+  <RemoveFromWebApplication>No</RemoveFromWebApplication>
+  <WebApplication>
+    <Url>http://yourserver</Url>
+  </WebApplication>
+
+  <SiteCollections>
+    <SiteCollection>
+      <Title>Site Title</Title>
+      <Url>http://yourserver/sites/yoursite</Url>
+      <Admin>yourdomain\youradminuser</Admin>
+      <SiteExists>No</SiteExists>
+      <HostHeaderWebApplication>No</HostHeaderWebApplication>
+    </SiteCollection>
+  </SiteCollections>
+</Web>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0e5e9374-2bc2-405e-85c7-10acda24b248" solutionId="0e5e9374-2bc2-405e-85c7-10acda24b248" resetWebServer="false" sharePointProductVersion="15.0" name="Akumina.WebParts.ImportantDates" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e0cba960-4972-4aab-b96e-a2fa6510e7fc" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="e5e4868d-38a4-41c8-ac26-7cd53c79ad9b" />
+  </projectItems>
+</package>

@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24780437-2884-45BF-B3D9-3C81729F0D0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Akumina.ListDefinition.Provision</RootNamespace>
+    <AssemblyName>Akumina.ListDefinition.Provision</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Security, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AkuminaTaxonomyExtensions.cs" />
+    <Compile Include="Features\AkuminaListDefinitionFeature\AkuminaListDefinitionFeature.EventReceiver.cs">
+      <DependentUpon>AkuminaListDefinitionFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ManagedMetadataImporterLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\AkuminaDiscussionBoardContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f4bc18b0-61d2-4aa7-a1dc-b19328ee09d3}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\Akumina Banner Type\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3a8cffc7-508f-4c52-b856-a88d9f33da55}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\AkuminaListDefinitionFeature\AkuminaListDefinitionFeature.feature">
+      <FeatureId>{61ecaa4d-c73e-4d03-9d1d-5757e2d390c1}</FeatureId>
+    </None>
+    <None Include="Fields\AkuminaFields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d637bfe8-0f90-4683-8c86-0817e08a5211}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\Akumina Banner Columns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{79dd65b0-5c89-41fc-9aba-33e46773a713}</SharePointProjectItemId>
+    </None>
+    <None Include="Fields\ModuleFiles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{09582191-04cd-4010-8af8-87d5a0f42f63}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaAnnouncementsIDS\AkuminaAnnouncementsIDSInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c3b485ca-c7e7-4bb5-b497-123d355b4ce8}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaAnnouncementsIDS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01ec507b-1a02-4431-a512-c7240504317a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaAnnouncements\AkuminaAnnouncementsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4eed4122-1b23-4ac0-96e7-43e52b90a301}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaAnnouncements\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{90b5a201-0fd2-4bd1-85b2-62d321657e11}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaAppDisplayOrder\AkuminaAppDisplayOrderInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{92810b4d-9db2-488e-b179-34889b5616c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaAppDisplayOrder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6463ee20-c5d4-411b-915a-7ff4c808f2c6}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaContentBlockIDS\AkuminaContentBlockIDSInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cc98f545-cce5-4844-8393-39c9509902fa}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaContentBlockIDS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af423e72-6853-44c0-b26e-ddae0d746a45}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaContentBlock\AkuminaContentBlockInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55e68a04-6997-427a-a662-c9380602dfb1}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaContentBlock\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3cbbe42b-85ed-4f53-a549-6175fb54649a}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Lists\AkuminaDiscussionsIDS\AkuminaDiscussionsIDSInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bc56f12d-1630-4175-9c02-fda4fbb11861}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDiscussionsIDS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b3a9ad8c-79ba-4d4e-bac1-1f2d8616869e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDiscussionsLibrary\AkuminaDiscussionsLibraryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb056c2a-2bb0-4af9-966a-f966d5967f4a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDiscussionsLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4494c38a-cf69-4520-9125-379f8d1a4dca}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaIDS\AkuminaIDSInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c8bad773-a6bd-4dd9-aa81-f852747abaf3}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaIDS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3f4b4527-9117-4495-a45c-8f8ad8dcb874}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaImages\AkuminaImagesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d57b841e-9ce4-457d-beb0-f13bc4a60495}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaImages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3b9c15c-ddcf-425b-9e8e-a9c949a0599d}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaMiscIDS\AkuminaMiscIDSInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{26a73145-b51d-4b44-8c7c-4e43e904669c}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaMiscIDS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8a3a5a3-d5c7-4c6a-b2a8-1ccf32e5f41e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaQuickLinks\AkuminaQuickLinksInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{00c932d5-9d59-4676-a335-b2dbbe0f8088}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaQuickLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c0455127-2191-4d26-b437-88c36126782b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaSiteLinksIDS\AkuminaSiteLinksIDSInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0737402b-a2f0-4b09-bd23-9e8341896cea}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaSiteLinksIDS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bad278ac-9450-4df8-8de3-92826d0a9e6c}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaSiteLinks\AkSiteLinksInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{950c5adf-cede-4170-b032-ba474ac6e6bb}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaSiteLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{359c0d4c-ea61-497e-903c-a6cd3dda7430}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDiscussions\AkuminaDiscussionsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{338c586c-227a-47b0-a12f-f5b9c0842702}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDiscussions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ffaa1ec9-2824-4e92-8572-63eeeb2df510}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDocumentsIDS\AkuminaDocumentsIDSInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{98a37e33-c3a6-45c9-b119-b5c26855eb23}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDocumentsIDS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{860f6133-4557-4d6d-9840-d2efeaf478d0}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaEventLogs\AkuminaEventLogsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d48c210a-9375-4ac6-9e99-721b7a46e195}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaEventLogs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{67ff3d07-0bd0-40e6-90a8-5cc637bd4bcf}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDocuments\AkuminaDocumentsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{96a1e9a9-4a32-48cd-9dfb-ec757aec0476}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaDocuments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9af202e5-797e-4f94-b06b-24be4c47225a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaBannerIDS\AkuminaBannerIDSInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0bb86e94-a09f-4adb-9ff9-51f0d9c7a32e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaBannerIDS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8fac1c15-1482-4e7d-97e8-90d474850b46}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaBanner\AkuminaBannerInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dc511fce-c704-46ac-acbe-d787cd030ba2}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaBanner\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{66cd3e29-0e39-487c-8c35-f736337336c9}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaSiteRecommendation\AkuminaSiteRecommendationInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63a0adc2-de90-48ad-ae29-1758fb6a9388}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AkuminaSiteRecommendation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{478f468b-ef66-41cf-8459-d086058b9599}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{3f897744-fb49-4996-b6b0-68c88af47df0}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Resources\AkuminaTaxonomy.csv" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ContentTypes\AkuminaDiscussionBoardContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\Akumina Banner Type\Elements.xml" />
+    <Content Include="Features\AkuminaListDefinitionFeature\AkuminaListDefinitionFeature.Template.xml">
+      <DependentUpon>AkuminaListDefinitionFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\AkuminaFields\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\Akumina Banner Columns\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fields\ModuleFiles\AkuminaDocuments.png" />
+    <Content Include="Fields\ModuleFiles\AkuminaImages.png" />
+    <Content Include="Fields\ModuleFiles\Elements.xml" />
+    <Content Include="Fields\ModuleFiles\Sample.txt" />
+    <Content Include="Fields\ModuleFiles\Sparkbanner-1.jpg" />
+    <Content Include="Fields\ModuleFiles\Sparkbanner-2.jpg" />
+    <Content Include="Fields\ModuleFiles\Sparkbanner-3.jpg" />
+    <Content Include="Lists\AkuminaAnnouncementsIDS\AkuminaAnnouncementsIDSInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaAnnouncementsIDS\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\AkuminaAnnouncementsIDS\Schema.xml" />
+    <Content Include="Lists\AkuminaAnnouncements\AkuminaAnnouncementsInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaAnnouncements\Elements.xml" />
+    <Content Include="Lists\AkuminaAnnouncements\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\AkuminaAppDisplayOrder\AkuminaAppDisplayOrderInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaAppDisplayOrder\Elements.xml" />
+    <Content Include="Lists\AkuminaAppDisplayOrder\Schema.xml" />
+    <Content Include="Lists\AkuminaContentBlockIDS\AkuminaContentBlockIDSInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaContentBlockIDS\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\AkuminaContentBlockIDS\Schema.xml" />
+    <Content Include="Lists\AkuminaContentBlock\AkuminaContentBlockInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaContentBlock\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\AkuminaContentBlock\Schema.xml" />
+    <Content Include="Lists\AkuminaDiscussionsIDS\AkuminaDiscussionsIDSInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaDiscussionsIDS\Elements.xml" />
+    <Content Include="Lists\AkuminaDiscussionsIDS\Schema.xml" />
+    <Content Include="Lists\AkuminaDiscussionsLibrary\AkuminaDiscussionsLibraryInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaDiscussionsLibrary\EditDlg.htm" />
+    <Content Include="Lists\AkuminaDiscussionsLibrary\Elements.xml" />
+    <Content Include="Lists\AkuminaDiscussionsLibrary\FileDlg.htm" />
+    <Content Include="Lists\AkuminaDiscussionsLibrary\Repair.aspx" />
+    <Content Include="Lists\AkuminaDiscussionsLibrary\Schema.xml" />
+    <Content Include="Lists\AkuminaDiscussionsLibrary\Upload.aspx" />
+    <Content Include="Lists\AkuminaIDS\AkuminaIDSInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaIDS\Elements.xml" />
+    <Content Include="Lists\AkuminaIDS\Schema.xml" />
+    <Content Include="Lists\AkuminaImages\AkuminaImagesInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaImages\AllItems.aspx" />
+    <Content Include="Lists\AkuminaImages\DispForm.aspx" />
+    <Content Include="Lists\AkuminaImages\EditDlg.htm" />
+    <Content Include="Lists\AkuminaImages\EditForm.aspx" />
+    <Content Include="Lists\AkuminaImages\Elements.xml" />
+    <Content Include="Lists\AkuminaImages\FileDlg.htm" />
+    <Content Include="Lists\AkuminaImages\Repair.aspx" />
+    <Content Include="Lists\AkuminaImages\Schema.xml" />
+    <Content Include="Lists\AkuminaImages\Upload.aspx" />
+    <Content Include="Lists\AkuminaMiscIDS\AkuminaMiscIDSInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaMiscIDS\Elements.xml" />
+    <Content Include="Lists\AkuminaMiscIDS\Schema.xml" />
+    <Content Include="Lists\AkuminaQuickLinks\AkuminaQuickLinksInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaQuickLinks\Elements.xml" />
+    <Content Include="Lists\AkuminaQuickLinks\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\AkuminaSiteLinksIDS\AkuminaSiteLinksIDSInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaSiteLinksIDS\Elements.xml" />
+    <Content Include="Lists\AkuminaSiteLinksIDS\Schema.xml" />
+    <Content Include="Lists\AkuminaSiteLinks\AkSiteLinksInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaSiteLinks\Elements.xml" />
+    <Content Include="Lists\AkuminaSiteLinks\Schema.xml" />
+    <Content Include="Lists\AkuminaDiscussions\AkuminaDiscussionsInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaDiscussions\Elements.xml" />
+    <Content Include="Lists\AkuminaDiscussions\Schema.xml" />
+    <Content Include="Lists\AkuminaDocumentsIDS\AkuminaDocumentsIDSInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaDocumentsIDS\Elements.xml" />
+    <Content Include="Lists\AkuminaDocumentsIDS\Schema.xml" />
+    <Content Include="Lists\AkuminaEventLogs\AkuminaEventLogsInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaEventLogs\Elements.xml" />
+    <Content Include="Lists\AkuminaEventLogs\Schema.xml" />
+    <Content Include="Lists\AkuminaDocuments\AkuminaDocumentsInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaDocuments\EditDlg.htm" />
+    <Content Include="Lists\AkuminaDocuments\Elements.xml" />
+    <Content Include="Lists\AkuminaDocuments\FileDlg.htm" />
+    <Content Include="Lists\AkuminaDocuments\Repair.aspx" />
+    <Content Include="Lists\AkuminaDocuments\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\AkuminaDocuments\Upload.aspx" />
+    <Content Include="Lists\AkuminaBannerIDS\AkuminaBannerIDSInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaBannerIDS\Elements.xml" />
+    <Content Include="Lists\AkuminaBannerIDS\Schema.xml" />
+    <Content Include="Lists\AkuminaBanner\Elements.xml" />
+    <Content Include="Lists\AkuminaBanner\AkuminaBannerInstance\Elements.xml" />
+    <Content Include="Lists\AkuminaBanner\Schema.xml" />
+    <Content Include="Lists\AkuminaSiteRecommendation\AkuminaSiteRecommendationInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\AkuminaSiteRecommendation\Elements.xml" />
+    <Content Include="Lists\AkuminaSiteRecommendation\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

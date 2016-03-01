@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Akumina.WebParts.SiteLinks\" Type="ElementManifest" />
+    <ProjectItemFile Source="css\fonts\font-awesome\fontawesome-webfont.eot" Target="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\" Type="ElementFile" />
+    <ProjectItemFile Source="css\fonts\font-awesome\fontawesome-webfont.svg" Target="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\" Type="ElementFile" />
+    <ProjectItemFile Source="css\fonts\font-awesome\fontawesome-webfont.ttf" Target="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\" Type="ElementFile" />
+    <ProjectItemFile Source="css\fonts\font-awesome\fontawesome-webfont.woff" Target="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\" Type="ElementFile" />
+    <ProjectItemFile Source="css\fonts\font-awesome\FontAwesome.otf" Target="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\" Type="ElementFile" />
+    <ProjectItemFile Source="css\ia-interaction-controls.css" Target="Akumina.WebParts.SiteLinks\css\" Type="ElementFile" />
+    <ProjectItemFile Source="js\vendor\jquery-2.1.3.min.js" Target="Akumina.WebParts.SiteLinks\js\vendor\" Type="ElementFile" />
+    <ProjectItemFile Source="js\vendor\mustache.min.js" Target="Akumina.WebParts.SiteLinks\js\vendor\" Type="ElementFile" />
+    <ProjectItemFile Source="js\controls\ia-sitelinks.js" Target="Akumina.WebParts.SiteLinks\js\controls\" Type="ElementFile" />
+    <ProjectItemFile Source="icon\ia-sitelinks.png" Target="Akumina.WebParts.SiteLinks\icon\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

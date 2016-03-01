@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Banner" List="113" Url="_catalogs/wp">
+    <File Path="Banner\Banner.webpart" Url="AkuminaInterActionBanner.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Akumina" />
+    </File>
+  </Module>
+</Elements>

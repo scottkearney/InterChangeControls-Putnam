@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Schemas">
+    <File Path="Schemas\Sample.txt" Url="Schemas/Sample.txt" />
+    <File Path="Schemas\Lists.xml" Url="Schemas/Lists.xml" />
+    <File Path="Schemas\Department.xml" Url="Schemas/Department.xml" />
+    <File Path="Schemas\ContentTypes.xml" Url="Schemas/ContentTypes.xml" />
+  </Module>
+</Elements>

@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lists>
+  <list name="EventLogs_AK" noCrawl ="true">
+
+    <Field Name="Description1"  DisplayName="Description" NumLines="6" Type="Note" />
+  </list>
+  <list name="MainMenu_AK" noCrawl="true">
+    <Field Name="NodeType" DisplayName="NodeType" Type="Choice">
+      <CHOICES>
+        <CHOICE>Root</CHOICE>
+        <CHOICE>Category</CHOICE>
+        <CHOICE>Item</CHOICE>
+      </CHOICES>
+      <Default>Root</Default>
+    </Field>
+    <Field Name="Link"  DisplayName="Link" Type="URL" />
+    <Field Name="DisplayOrder"  DisplayName="DisplayOrder" Type="Number"  Decimals="0"/>
+    <Field Name="ParentItem" ID="{22a538a0-5224-44ca-89f8-b429501b4482}" DisplayName="ParentItem" Type="Lookup" ShowField="Title" List="Self"/>
+    <Field FieldRef="{22a538a0-5224-44ca-89f8-b429501b4482}" Name="ParentItem_ID" DisplayName="ParentItem:ID" Type="Lookup" Required="FALSE" ShowField="ID" List="Self"></Field>
+    <Field FieldRef="{22a538a0-5224-44ca-89f8-b429501b4482}" Name="ParentItem_Title" DisplayName="ParentItem:Title" Type="Lookup" Required="FALSE" ShowField="Title" List="Self"></Field>
+    <Field Name="Active" DisplayName="Active" Type="Boolean">
+      <Default>1</Default>
+    </Field>
+    <Field Name="Open_x0020_With"  DisplayName="Open With" Type="Choice" >
+      <CHOICES>
+        <CHOICE>Same Window</CHOICE>
+        <CHOICE>New Window</CHOICE>
+      </CHOICES>
+      <Default>Same Window</Default>
+    </Field>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">TopNav</Field>
+          <Field Name="NodeType">Root</Field>
+          <!--<Field Name="Link">5</Field>-->
+          <Field Name="DisplayOrder">0</Field>
+          <Field Name="ParentItem"></Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Home</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">1</Field>
+          <Field Name="ParentItem">1;#TopNav</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">TopNav</Field>
+
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Department</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">2</Field>
+          <Field Name="ParentItem">1;#TopNav</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">TopNav</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+
+      </Rows>
+    </Data>
+  </list>
+  <!--<list  name="DocumentsIDS_AK" Enforce="true">
+
+    <Field Name="ListName"  DisplayName="ListName" Type="Text" />
+    <Field Name="Tab_x002e_NumberOfPopularFiles"  DisplayName="Tab.NumberOfPopularFiles" Type="Number"  Decimals="0" />
+    <Field Name="Tab_x002e_NumberOfRecentFiles"  DisplayName="Tab.NumberOfRecentFiles" Type="Number"  Decimals="0" />
+    <Field Name="Grid_x002e_HeaderName"  DisplayName="Grid.HeaderName" Type="Text" />
+    <Field Name="RootResourcePath"  DisplayName="RootResourcePath" Type="Text" />
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Document Title1</Field>
+          <Field Name="ListName">Documents</Field>
+          <Field Name="Tab_x002e_NumberOfPopularFiles">5</Field>
+          <Field Name="Tab_x002e_NumberOfRecentFiles">5</Field>
+          <Field Name="Grid_x002e_HeaderName">Name,Modified,Modified By</Field>
+
+        </Row>
+        <Row>
+          <Field Name="Title">Document Title2</Field>
+          <Field Name="ListName">Documents</Field>
+          <Field Name="Tab_x002e_NumberOfPopularFiles">5</Field>
+          <Field Name="Tab_x002e_NumberOfRecentFiles">5</Field>
+          <Field Name="Grid_x002e_HeaderName">Name,Modified,Modified By</Field>
+
+        </Row>
+      </Rows>
+    </Data>
+  </list>-->
+  <list name="Quicklinks_AK" noCrawl="true">
+    <Field Name="NodeType" DisplayName="NodeType" Type="Choice">
+      <CHOICES>
+        <CHOICE>Root</CHOICE>
+        <CHOICE>Category</CHOICE>
+        <CHOICE>Item</CHOICE>
+      </CHOICES>
+      <Default>Root</Default>
+    </Field>
+    <Field Name="Link"  DisplayName="Link" Type="URL" />
+    <Field Name="DisplayOrder"  DisplayName="DisplayOrder" Type="Number"  Decimals="0"/>
+    <Field Name="ParentItem" ID="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}"   DisplayName="ParentItem" Type="Lookup" ShowField="Title" List="Self"/>
+    <Field FieldRef="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}" Name="ParentItem_ID" DisplayName="ParentItem:ID" Type="Lookup" Required="FALSE" ShowField="ID" List="Self"></Field>
+    <Field FieldRef="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}" Name="ParentItem_Title" DisplayName="ParentItem:Title" Type="Lookup" Required="FALSE" ShowField="Title" List="Self"></Field>
+    <Field Name="Active" DisplayName="Active" Type="Boolean">
+      <Default>1</Default>
+    </Field>
+    <Field Name="Open_x0020_With"  DisplayName="Open With" Type="Choice" >
+      <CHOICES>
+        <CHOICE>Same Window</CHOICE>
+        <CHOICE>New Window</CHOICE>
+      </CHOICES>
+      <Default>Same Window</Default>
+    </Field>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">IGNITE</Field>
+          <Field Name="NodeType">Root</Field>
+          <!--<Field Name="Link">5</Field>-->
+          <Field Name="DisplayOrder">0</Field>
+          <Field Name="ParentItem"></Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">I Want to</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">1</Field>
+          <Field Name="ParentItem">1;#IGNITE</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">IGNITE</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Get my PTO balance</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">2</Field>
+          <Field Name="ParentItem">2;#I Want to</Field>
+          <Field Name="ParentItem_ID">2</Field>
+          <Field Name="ParentItem_Title">I Want to</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Submit Expense Report</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">3</Field>
+          <Field Name="ParentItem">2;#I Want to</Field>
+          <Field Name="ParentItem_ID">2</Field>
+          <Field Name="ParentItem_Title">I Want to</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Request Account Access</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">4</Field>
+          <Field Name="ParentItem">2;#I Want to</Field>
+          <Field Name="ParentItem_ID">2</Field>
+          <Field Name="ParentItem_Title">I Want to</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            Human Resources
+          </Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">5</Field>
+          <Field Name="ParentItem">1;#IGNITE</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">IGNITE</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">BENEFITS</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">6</Field>
+          <Field Name="ParentItem">6;#Human Resources</Field>
+          <Field Name="ParentItem_ID">6</Field>
+          <Field Name="ParentItem_Title">Human Resources</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">FORMS</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">7</Field>
+          <Field Name="ParentItem">6;#Human Resources</Field>
+          <Field Name="ParentItem_ID">6</Field>
+          <Field Name="ParentItem_Title">Human Resources</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Change Form</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">8</Field>
+          <Field Name="ParentItem">8;#FORMS</Field>
+          <Field Name="ParentItem_ID">8</Field>
+          <Field Name="ParentItem_Title">FORMS</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Benefits Overview</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">9</Field>
+          <Field Name="ParentItem">7;#BENEFITS</Field>
+          <Field Name="ParentItem_ID">7</Field>
+          <Field Name="ParentItem_Title">BENEFITS</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+
+        <Row>
+          <Field Name="Title">Document Library</Field>
+          <Field Name="NodeType">Item</Field>
+          <Field Name="Link">{0}/pages/documents.aspx</Field>
+          <Field Name="DisplayOrder">10</Field>
+          <Field Name="ParentItem">1;#IGNITE</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">IGNITE</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="Banner_AK" contentType="Akumina Banner Type" noCrawl="true">
+    <Field  Name="BannerHeading" DisplayName="BannerHeading" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+    <Field  Name="BannerSubHeading" DisplayName="BannerSubHeading" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+    <Field  Name="BannerLinkText" DisplayName="BannerLinkText" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+    <Field  Name="BannerLinkUrl" DisplayName="BannerLinkUrl" Type="URL" Required="FALSE" Group="Akumina Banner Columns"></Field>
+    <Field  Name="BannerLinkTarget" DisplayName="BannerLinkTarget" Type="Choice" Required="FALSE" Group="Akumina Banner Columns">
+      <CHOICES>
+        <CHOICE>Same Window</CHOICE>
+        <CHOICE>New Window</CHOICE>
+      </CHOICES>
+      <Default>Same Window</Default>
+    </Field>
+    <Field  Name="BannerLinkHoverText" DisplayName="BannerLinkHoverText" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+    <Field  Name="BannerImage" DisplayName="BannerImage" Type="URL" Format="Image" Required="FALSE" Group="Akumina Banner Columns"></Field>
+    <Field  Name="BannerImageAltText" DisplayName="BannerImageAltText" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+    <Field  Name="BannerActive" DisplayName="BannerActive" Type="Boolean" Required="FALSE" Group="Akumina Banner Columns">
+      <Default>1</Default>
+    </Field>
+    <Field  Name="BannerItemOrder" DisplayName="BannerItemOrder" Type="Number" Required="FALSE" Group="Akumina Banner Columns">
+      <Default>0</Default>
+    </Field>
+    <Data>
+      <Rows>
+
+        <Row>
+          <Field Name ="Title">First Banner Item</Field>
+          <Field Name ="BannerItemOrder">1</Field>
+          <Field Name ="BannerHeading">Marketing Banner</Field>
+          <Field Name ="BannerSubHeading"></Field>
+          <Field Name ="BannerLinkText">Banner Link</Field>
+          <Field Name ="BannerLinkHoverText">Marketing Banner</Field>
+          <Field Name ="BannerImageAltText">First Banner Item</Field>
+        </Row>
+
+        <Row>
+          <Field Name ="Title">Second Banner Item</Field>
+          <!--<Field Name ="BannerActive">Homw Banner</Field>-->
+          <Field Name ="BannerItemOrder">2</Field>
+          <!--<Field Name ="BannerLinkUrl">Homw Banner</Field>-->
+          <!--<Field Name ="BannerImage"><![CDATA[<IMG SRC="/Lists/AkuminaImages/Sparkbanner-2.jpg"></IMG>]]></Field>-->
+          <Field Name ="BannerHeading">Communication Banner</Field>
+          <Field Name ="BannerSubHeading"></Field>
+          <Field Name ="BannerLinkText">Banner Link</Field>
+          <!--<Field Name ="BannerLinkTarget">5</Field>-->
+          <Field Name ="BannerLinkHoverText">Communication Banner</Field>
+          <Field Name ="BannerImageAltText">Second Banner Item</Field>
+        </Row>
+
+      </Rows>
+    </Data>
+  </list>
+  <list name="BannerIDS_AK" Enforce="true">
+
+    <Field Name="SlideNavigation"  DisplayName="SlideNavigation" Type="Boolean">
+      <Default>1</Default>
+    </Field>
+    <Field Name="MaximumSlideCount"  DisplayName="MaximumSlideCount" Type="Number">
+      <Default>3</Default>
+    </Field>
+    <Field Name="Autoplay" DisplayName="Autoplay" Type="Boolean">
+      <Default>1</Default>
+    </Field>
+    <Field Name="Animation_x002e_SlideTransition"  DisplayName="Animation.SlideTransition" Type="Choice">
+      <CHOICES>
+        <CHOICE>Horizontal</CHOICE>
+        <CHOICE>Fade</CHOICE>
+      </CHOICES>
+      <Default>Horizontal</Default>
+    </Field>
+    <Field Name="Animation_x002e_SlideDuration"  DisplayName="Animation.SlideDuration" Type="Number">
+      <Default>3000</Default>
+    </Field>
+    <Field Name="TextSettings_x002e_ColorTheme"  DisplayName="TextSettings.ColorTheme" Type="Choice">
+      <CHOICES>
+        <CHOICE>White</CHOICE>
+        <CHOICE>Black</CHOICE>
+        <CHOICE>Grey</CHOICE>
+      </CHOICES>
+      <Default>White</Default>
+    </Field>
+    <Field Name="TextSettings_x002e_Alignment"  DisplayName="TextSettings.Alignment" Type="Choice">
+      <CHOICES>
+        <CHOICE>left</CHOICE>
+        <CHOICE>right</CHOICE>
+        <CHOICE>center</CHOICE>
+      </CHOICES>
+      <Default>left</Default>
+    </Field>
+    <Field Name="TextSettings_x002e_SubtitleMaxCharacters"  DisplayName="TextSettings.SubtitleMaxCharacters" Type="Number">
+      <Default>80</Default>
+    </Field>
+    <Field Name="TextSettings_x002e_ButtonMaxCharacters"  DisplayName="TextSettings.ButtonMaxCharacters" Type="Number">
+      <Default>60</Default>
+    </Field>
+    <Field Name="TextSettings_x002e_MaxCharacters"  DisplayName="TextSettings.MaxCharacters" Type="Number">
+      <Default>80</Default>
+    </Field>
+    <Field Name="TextSettings_x002e_Location"  DisplayName="TextSettings.Location" Type="Choice">
+      <CHOICES>
+        <CHOICE>top-left</CHOICE>
+        <CHOICE>top-center</CHOICE>
+        <CHOICE>top-right</CHOICE>
+        <CHOICE>middle-left</CHOICE>
+        <CHOICE>middle-center</CHOICE>
+        <CHOICE>middle-right</CHOICE>
+        <CHOICE>bottom-left</CHOICE>
+        <CHOICE>bottom-center</CHOICE>
+        <CHOICE>bottom-right</CHOICE>
+      </CHOICES>
+      <Default>top-left</Default>
+    </Field>
+    <Field Name="ResultSourceId"  DisplayName="ResultSourceId" Type="Text" />
+    <Field Name="RootResourcePath"  DisplayName="RootResourcePath" Type="Text" />
+    <Field Name="Infin"  DisplayName="InfiniteLoop" Type="Boolean" />
+    <Field Name="QueryType" DisplayName="QueryType" Type="Choice">
+      <CHOICES>
+        <CHOICE>ListQuery</CHOICE>
+        <CHOICE>SearchQuery</CHOICE>
+      </CHOICES>
+      <Default>ListQuery</Default>
+    </Field>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Home Banner</Field>
+          <Field Name="MaximumSlideCount">4</Field>
+          <Field Name="Animation_x002e_SlideDuration">3000</Field>
+          <Field Name="TextSettings_x002e_SubtitleMaxCharacters">80</Field>
+          <Field Name="TextSettings_x002e_MaxCharacters">80</Field>
+          <Field Name="TextSettings_x002e_ButtonMaxCharacters">60</Field>
+          <Field Name="TextSettings_x002e_Location">top-left</Field>
+          <Field Name="ResultSourceId">Banner_AK</Field>
+          <Field Name="RootResourcePath"></Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="CompanyNews_AK" templateID="104" Enforce="true" noCrawl="true">    
+    <Field Name="StartDate1"  DisplayName="Start Date" Type="DateTime" />
+    <Field Name="AnnouncementTitle"  DisplayName="AnnouncementTitle" Type="Text" />
+    <Field Name="Summary"  DisplayName="Summary" NumLines="6" Type="Note" RichTextMode="FullHtml" RichText="TRUE" />
+    <Field Name="Seo_x002d_Title"  DisplayName="Seo-Title" Type="Text" />
+    <Field Name="Seo_x002d_Keywords"  DisplayName="Seo-Keywords" Type="Text" />
+    <Field Name="Seo_x002d_Description"  DisplayName="Seo-Description" Type="Note" />
+    <Field Name="FriendlyUrl"  DisplayName="FriendlyUrl" Type="Calculated" Required="FALSE" ColName="sql_variant1" StaticName="FriendlyUrl" Indexed="FALSE" ResultType="Text" Version="1" RowOrdinal="0">
+      <Formula>=[Title]</Formula>
+      <!--<FieldRefs>
+          <FieldRef Name="Title" />
+        </FieldRefs>-->
+    </Field>
+    <Field Name="Expires" Format="DateTime"  DisplayName="Expires" Type="DateTime"/>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Sample Company News Item 1</Field>
+          <Field Name="AnnouncementTitle">Sample Company News Item 1</Field>
+          <Field Name="Body">
+            Sample Company News Item 1 body text.<![CDATA[<br></br>]]>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+            <![CDATA[<br></br>]]>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+            <![CDATA[<br></br>]]>
+            Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+          </Field>
+          <Field Name="Summary">Sample Company News Item 1 summary text.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</Field>
+          <Field Name="Seo_x002d_Title">Seo-Title</Field>
+          <Field Name="Seo_x002d_Keywords">Seo-Keywords</Field>
+          <Field Name="Seo_x002d_Description">Seo-Description</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sample Company News Item 2</Field>
+          <Field Name="AnnouncementTitle">Sample Company News Item 2</Field>
+          <Field Name="Body">
+            Sample Company News Item 1 body text.
+            <![CDATA[<br></br>]]>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+            <![CDATA[<br></br>]]>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+            <![CDATA[<br></br>]]>
+            Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+          </Field>
+          <Field Name="Summary">Sample Company News Item 2 summary text.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</Field>
+          <Field Name="Seo_x002d_Title">Seo-Title</Field>
+          <Field Name="Seo_x002d_Keywords">Seo-Keywords</Field>
+          <Field Name="Seo_x002d_Description">Seo-Description</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="CompanyNewsIDS_AK" Enforce="true">
+    <!--<Field  Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />-->
+    <Field Name="ListName"  DisplayName="ListName" Type="Text" />
+    <!--<Field Name="InstructionSet"  DisplayName="InstructionSet" Type="Text" />-->
+    <Field Name="ScriptsPath"  DisplayName="ScriptsPath" Type="Text" />
+    <Field Name="ItemsToDisplay"  DisplayName="ItemsToDisplay" Type="Number" Decimals="0" />
+    <!--<Field Name="Expires" Format="DateTime"  DisplayName="Expires" Type="DateTime"/>-->
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">SummaryView</Field>
+          <Field Name="ListName">CompanyNews_AK</Field>
+          <Field Name="ScriptsPath"></Field>
+          <Field Name="ItemsToDisplay">5</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">FullListView</Field>
+          <Field Name="ListName">CompanyNews_AK</Field>
+          <Field Name="ScriptsPath"></Field>
+          <Field Name="ItemsToDisplay"></Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="Documents" templateID="101" noCrawl="true" filesUpload="Test Upload file28.txt">
+    <!--<Field Type="Text" Name="Title" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Title;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title"></Field>-->
+    <Field  Type="Text" Name="TemplateUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Template_Link;" XName="TemplateUrl" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" PITarget="mso-infoPathSolution" PIAttribute="href" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TemplateUrl"></Field>
+    <Field  Type="Text" Name="xd_ProgID" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Html_File_Link;" XName="ProgID" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_ProgID"></Field>
+    <Field  Type="Boolean" Group="_Hidden" Name="xd_Signature" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_Signature" DisplayName="$Resources:core,Xml_signed;" XName="{FBF29B2D-CAE5-49aa-8E0A-29955B540122}" Filterable="TRUE" Sortable="TRUE" Sealed="TRUE" Hidden="TRUE" FromBaseType="TRUE" ReadOnly="TRUE"></Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Name="Combine" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Merge;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Combine">
+      <FieldRefs>
+        <FieldRef Name="FSObjType" Key="Primary" />
+        <FieldRef Name="EncodedAbsUrl" />
+        <FieldRef Name="TemplateUrl" />
+      </FieldRefs>
+    </Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Name="RepairDocument" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Relink;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RepairDocument">
+      <FieldRefs>
+        <FieldRef Name="FSObjType" Key="Primary" />
+        <FieldRef Name="ID" />
+      </FieldRefs>
+    </Field>
+  </list>
+  <list name="Traffic_WeatherIDS_AK" Enforce="true">
+    <Field Name="WebPartId" DisplayName="WebPartId" Type="MultiChoice">
+      <CHOICES>
+        <CHOICE>Traffic</CHOICE>
+        <CHOICE>Weather</CHOICE>
+      </CHOICES>
+      <Default></Default>
+    </Field>
+    <Field Name="RootResourcePath" DisplayName="RootResourcePath" Type="Text"/>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">TrafficWeather</Field>
+          <Field Name="WebPartId">Traffic;#Weather</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="SiteAlertIDS_AK" Enforce="true" noCrawl="true">
+    <Field Name="SiteAlertIDS_AK" DisplayName="SiteWideAlertMessage" Type="Note" NumLines="6"  RichText="TRUE"  />
+    <Field Name="EnableAlert"  DisplayName="EnableAlert" Type="Boolean" >
+      <Default>0</Default>
+    </Field>
+    <Field Name="RootResourcePath"  DisplayName="RootResourcePath" Type="Text" />
+    <Field Name="Expires" Format="DateTime"  DisplayName="Expires" Type="DateTime"/>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">SiteAlert!</Field>
+          <Field Name="SiteWideAlertMessage">
+            <![CDATA[Office Shutdown at 2pm due to the approaching storm.   <a href="weather.com">More <span class="fa fa-caret-right"></span></a>]]>
+          </Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="ImportantDates_AK" contentType="ImportantDate" Required="true" noCrawl="true">
+    <!--<Field Type="Text" Name="Title" Required="FALSE" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Title;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title"></Field>-->
+    <Field Name="Start Date" Format="DateOnly"  DisplayName="Start Date" Type="DateTime">
+      <Default>[today]</Default>
+    </Field>
+
+    <Field Name="Subtext"  Type="Text" DisplayName="Subtext" />
+
+    <!--Summary Links 	Summary Links-->
+    <Field Name="DetailsLink"  DisplayName="DetailsLink" Type="URL" />
+
+
+    <Field Name="MoreWindow" DisplayName="MoreWindow" Type="Choice">
+      <CHOICES>
+        <CHOICE>Same Window</CHOICE>
+        <CHOICE>New Window</CHOICE>
+      </CHOICES>
+      <Default>Same Window</Default>
+    </Field>
+    <Field Name="DoNotDisplayThisItem" Type="Boolean" DisplayName="DoNotDisplayThisItem">
+      <Default>0</Default>
+    </Field>
+    <Field Name="Expires" Format="DateTime"  DisplayName="Expires" Type="DateTime">
+    </Field>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Welcome</Field>
+          <Field Name="Subtext">Welcome to Ignite</Field>
+          <Field Name="DetailsLink">{Token_SiteUrl}</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Benefits Enrollment Deadline</Field>
+          <Field Name="Start Date">11/20/2015</Field>
+          <Field Name="Subtext">All forms must be submitted</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="IDS_AK">
+    <Field Type="Text" DisplayName="ReferenceList" Required="TRUE" />
+    <Field Type="Note" DisplayName="ColumnOrder" />
+    <Field Type="Text" DisplayName="SiteId" />
+  </list>
+  <list name="AppDisplayOrder_AK">
+    <Field Type="Text" DisplayName="SortId" />
+    <Field Type="Text" DisplayName="UserId" />
+    <Field Type="Text" DisplayName="SiteId" />
+    <Field Type="Text" DisplayName="AppId" />
+    <Field Type="Number" DisplayName="SortOrder" />
+  </list>
+  <list name="Images_AK" noCrawl="true" contentType="Picture" templateID="109" filesUpload="Sparkbanner-1.jpg;Sparkbanner-2.jpg">
+    <Field Type="Text" Name="Title" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Title;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title"></Field>
+    <Field  Type="Text" Name="TemplateUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Template_Link;" XName="TemplateUrl" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" PITarget="mso-infoPathSolution" PIAttribute="href" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TemplateUrl"></Field>
+    <Field  Type="Text" Name="xd_ProgID" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Html_File_Link;" XName="ProgID" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_ProgID"></Field>
+    <Field  Type="Boolean" Group="_Hidden" Name="xd_Signature" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_Signature" DisplayName="$Resources:core,Xml_signed;" XName="{FBF29B2D-CAE5-49aa-8E0A-29955B540122}" Filterable="TRUE" Sortable="TRUE" Sealed="TRUE" Hidden="TRUE" FromBaseType="TRUE" ReadOnly="TRUE"></Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Name="Combine" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Merge;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Combine">
+      <FieldRefs>
+        <FieldRef Name="FSObjType" Key="Primary" />
+        <FieldRef Name="EncodedAbsUrl" />
+        <FieldRef Name="TemplateUrl" />
+      </FieldRefs>
+    </Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Name="RepairDocument" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Relink;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RepairDocument">
+      <FieldRefs>
+        <FieldRef Name="FSObjType" Key="Primary" />
+        <FieldRef Name="ID" />
+      </FieldRefs>
+    </Field>
+    <Field  Type="Computed" Name="PreviewOnForm" Group="_Hidden" ShowInEditForm="FALSE" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Preview;" Sealed="TRUE" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="PreviewOnForm">
+      <FieldRefs>
+        <FieldRef  Name="FSObjType" />
+        <FieldRef  Name="EncodedAbsWebImgUrl" />
+        <FieldRef  Name="PreviewExists" />
+        <FieldRef  Name="AlternateThumbnailUrl" />
+      </FieldRefs>
+      <DisplayPattern>
+        <HTML><![CDATA[<a href=']]></HTML>
+        <Field Name="EncodedAbsUrl" />
+        <HTML><![CDATA['><img id=webImgShrinked alt="]]></HTML>
+        <IfEqual>
+          <Expr1>
+            <Column Name="Description" />
+          </Expr1>
+          <Expr2 />
+          <Then>
+            <HTML><![CDATA[$Resources:core,Picture;]]></HTML>
+          </Then>
+          <Else>
+            <Column Name="Description" HTMLEncode="TRUE" />
+          </Else>
+        </IfEqual>
+        <HTML><![CDATA[" galleryimg=false border="0" src=']]></HTML>
+        <Field Name="EncodedAbsWebImgUrl" />
+        <HTML><![CDATA['></a>]]></HTML>
+      </DisplayPattern>
+    </Field>
+    <Field Type="Computed" Group="$Resources:core,Document_Columns;" Name="FileType" DisplayName="$Resources:core,File_Type;" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" ShowInEditForm="FALSE" Filterable="TRUE" Sortable="TRUE" AuthoringInfo="$Resources:core,file_extension;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="FileType">
+      <FieldRefs>
+        <FieldRef  Name="File_x0020_Type" />
+      </FieldRefs>
+      <DisplayPattern>
+        <Column Name="File_x0020_Type" HTMLEncode="TRUE" />
+      </DisplayPattern>
+    </Field>
+    <Field  Type="Computed" Group="_Hidden" Name="ImageSize" DisplayName="$Resources:core,Picture_Size;" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" ShowInEditForm="FALSE" Filterable="FALSE" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="ImageSize">
+      <FieldRefs>
+        <FieldRef  Name="ImageWidth" />
+        <FieldRef  Name="ImageHeight" />
+        <FieldRef  Name="FSObjType" />
+      </FieldRefs>
+      <DisplayPattern>
+        <IfEqual>
+          <Expr1>
+            <LookupColumn Name="FSObjType" />
+          </Expr1>
+          <Expr2>0</Expr2>
+          <Then>
+            <IfEqual>
+              <Expr1>
+                <LookupColumn Name="ImageWidth" />
+              </Expr1>
+              <Expr2 />
+              <Then />
+              <Else>
+                <IfEqual>
+                  <Expr1>
+                    <LookupColumn Name="ImageWidth" />
+                  </Expr1>
+                  <Expr2>0</Expr2>
+                  <Then />
+                  <Else>
+                    <HTML><![CDATA[<span dir=ltr>]]></HTML>
+                    <Column Name="ImageWidth" />
+                    <HTML>
+                      <![CDATA[
+                                    x
+                                    ]]>
+                    </HTML>
+                    <Column Name="ImageHeight" />
+                    <HTML><![CDATA[</span>]]></HTML>
+                  </Else>
+                </IfEqual>
+              </Else>
+            </IfEqual>
+          </Then>
+        </IfEqual>
+      </DisplayPattern>
+    </Field>
+    <Field  ReadOnly="TRUE" Type="Integer" Group="$Resources:core,Document_Columns;" Name="ImageWidth" DisplayName="$Resources:core,Picture_Width;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="ImageWidth" />
+    <Field  ReadOnly="TRUE" Type="Integer" Group="$Resources:core,Document_Columns;" Name="ImageHeight" DisplayName="$Resources:core,Picture_Height;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="ImageHeight" />
+    <Field  Type="DateTime" Group="$Resources:core,Document_Columns;" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" Name="ImageCreateDate" DisplayName="$Resources:core,Date_Picture_Taken;" Format="DateTime" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" AllowDeletion="TRUE" StaticName="ImageCreateDate" />
+    <Field  Type="Note" RichText="TRUE" Name="Comments" Group="_Hidden" DisplayName="$Resources:core,Comments;" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Comments" ShowInNewForm="FALSE" />
+    <Field  ReadOnly="TRUE" Type="Computed" Group="_Hidden" Name="EncodedAbsThumbnailUrl" DisplayName="$Resources:core,Thumbnail_URL;" DisplayNameSrcField="FileLeafRef" Filterable="FALSE" Sortable="FALSE" RenderXMLUsingPattern="TRUE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="EncodedAbsThumbnailUrl">
+      <FieldRefs>
+        <FieldRef  Name="ImageWidth" />
+        <FieldRef  Name="EncodedAbsUrl" />
+        <FieldRef  Name="FileRef" />
+        <FieldRef  Name="File_x0020_Type" />
+        <FieldRef  Name="HTML_x0020_File_x0020_Type" />
+        <FieldRef  Name="ThumbnailExists" />
+        <FieldRef  Name="AlternateThumbnailUrl" />
+      </FieldRefs>
+      <DisplayPattern>
+        <IfEqual>
+          <Expr1>
+            <Column Name="AlternateThumbnailUrl" />
+          </Expr1>
+          <Expr2 />
+          <Then>
+            <IfEqual>
+              <Expr1>
+                <Column Name="ThumbnailExists" />
+              </Expr1>
+              <Expr2>1</Expr2>
+              <Then>
+                <HttpHost />
+                <UrlDirName>
+                  <HTML>/</HTML>
+                  <LookupColumn URLEncodeAsURL="TRUE" IncludeVersions="TRUE" Name="FileRef" />
+                </UrlDirName>
+                <HTML>/_t/</HTML>
+                <UrlBaseName>
+                  <Field Name="EncodedAbsUrl" />
+                </UrlBaseName>
+                <HTML>_</HTML>
+                <GetFileExtension>
+                  <Field Name="EncodedAbsUrl" />
+                </GetFileExtension>
+                <HTML>.jpg</HTML>
+              </Then>
+              <Else>
+                <IfEqual>
+                  <Expr1>
+                    <LookupColumn Name="ThumbnailExists" />
+                  </Expr1>
+                  <Expr2>0</Expr2>
+                  <Then>
+                    <HTML><![CDATA[/_layouts/images/]]></HTML>
+                    <MapToIcon>
+                      <Column Name="HTML_x0020_File_x0020_Type" />
+                      <HTML>|</HTML>
+                      <Column Name="File_x0020_Type" />
+                    </MapToIcon>
+                  </Then>
+                  <Else>
+                    <IfEqual>
+                      <Expr1>
+                        <LookupColumn Name="ImageWidth" />
+                      </Expr1>
+                      <Expr2 />
+                      <Then>
+                        <HTML><![CDATA[/_layouts/images/]]></HTML>
+                        <MapToIcon>
+                          <Column Name="HTML_x0020_File_x0020_Type" />
+                          <HTML>|</HTML>
+                          <Column Name="File_x0020_Type" />
+                        </MapToIcon>
+                      </Then>
+                      <Else>
+                        <HttpHost />
+                        <UrlDirName>
+                          <HTML>/</HTML>
+                          <LookupColumn URLEncodeAsURL="TRUE" IncludeVersions="TRUE" Name="FileRef" />
+                        </UrlDirName>
+                        <HTML>/_t/</HTML>
+                        <UrlBaseName>
+                          <Field Name="EncodedAbsUrl" />
+                        </UrlBaseName>
+                        <HTML>_</HTML>
+                        <GetFileExtension>
+                          <Field Name="EncodedAbsUrl" />
+                        </GetFileExtension>
+                        <HTML>.jpg</HTML>
+                      </Else>
+                    </IfEqual>
+                  </Else>
+                </IfEqual>
+              </Else>
+            </IfEqual>
+          </Then>
+          <Else>
+            <Column Name="AlternateThumbnailUrl" />
+          </Else>
+        </IfEqual>
+      </DisplayPattern>
+    </Field>
+    <Field ReadOnly="TRUE" Type="Computed" Group="_Hidden" Name="EncodedAbsWebImgUrl" DisplayName="$Resources:core,Web_Image_URL;" DisplayNameSrcField="FileLeafRef" Filterable="FALSE" Sortable="FALSE" RenderXMLUsingPattern="TRUE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="EncodedAbsWebImgUrl">
+      <FieldRefs>
+        <FieldRef Name="ImageWidth" />
+        <FieldRef Name="EncodedAbsUrl" />
+        <FieldRef Name="FileRef" />
+        <FieldRef Name="File_x0020_Type" />
+        <FieldRef Name="HTML_x0020_File_x0020_Type" />
+        <FieldRef Name="PreviewExists" />
+        <FieldRef Name="AlternateThumbnailUrl" />
+      </FieldRefs>
+      <DisplayPattern>
+        <IfEqual>
+          <Expr1>
+            <Column Name="AlternateThumbnailUrl" />
+          </Expr1>
+          <Expr2 />
+          <Then>
+            <IfEqual>
+              <Expr1>
+                <Column Name="PreviewExists" />
+              </Expr1>
+              <Expr2>1</Expr2>
+              <Then>
+                <HttpHost />
+                <UrlDirName>
+                  <HTML>/</HTML>
+                  <LookupColumn URLEncodeAsURL="TRUE" IncludeVersions="TRUE" Name="FileRef" />
+                </UrlDirName>
+                <HTML>/_w/</HTML>
+                <UrlBaseName>
+                  <Field Name="EncodedAbsUrl" />
+                </UrlBaseName>
+                <HTML>_</HTML>
+                <GetFileExtension>
+                  <Field Name="EncodedAbsUrl" />
+                </GetFileExtension>
+                <HTML>.jpg</HTML>
+              </Then>
+              <Else>
+                <IfEqual>
+                  <Expr1>
+                    <Column Name="PreviewExists" />
+                  </Expr1>
+                  <Expr2>0</Expr2>
+                  <Then>
+                    <HTML><![CDATA[/_layouts/images/]]></HTML>
+                    <MapToIcon>
+                      <Column Name="HTML_x0020_File_x0020_Type" />
+                      <HTML>|</HTML>
+                      <Column Name="File_x0020_Type" />
+                    </MapToIcon>
+                  </Then>
+                  <Else>
+                    <IfEqual>
+                      <Expr1>
+                        <LookupColumn Name="ImageWidth" />
+                      </Expr1>
+                      <Expr2 />
+                      <Then>
+                        <HTML><![CDATA[/_layouts/images/]]></HTML>
+                        <MapToIcon>
+                          <Column Name="HTML_x0020_File_x0020_Type" />
+                          <HTML>|</HTML>
+                          <Column Name="File_x0020_Type" />
+                        </MapToIcon>
+                      </Then>
+                      <Else>
+                        <HttpHost />
+                        <UrlDirName>
+                          <HTML>/</HTML>
+                          <LookupColumn URLEncodeAsURL="TRUE" IncludeVersions="TRUE" Name="FileRef" />
+                        </UrlDirName>
+                        <HTML>/_w/</HTML>
+                        <UrlBaseName>
+                          <Field Name="EncodedAbsUrl" />
+                        </UrlBaseName>
+                        <HTML>_</HTML>
+                        <GetFileExtension>
+                          <Field Name="EncodedAbsUrl" />
+                        </GetFileExtension>
+                        <HTML>.jpg</HTML>
+                      </Else>
+                    </IfEqual>
+                  </Else>
+                </IfEqual>
+              </Else>
+            </IfEqual>
+          </Then>
+          <Else>
+            <Column Name="AlternateThumbnailUrl" />
+          </Else>
+        </IfEqual>
+      </DisplayPattern>
+    </Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Group="_Hidden" Name="SelectedFlag" DisplayName="$Resources:core,Selection_Checkbox;" Filterable="FALSE" Sortable="FALSE" HeaderImage="blank.gif" AuthoringInfo="$Resources:core,select_picture;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="SelectedFlag">
+      <FieldRefs>
+        <FieldRef  Name="FSObjType" />
+      </FieldRefs>
+      <DisplayPattern>
+        <IfEqual>
+          <Expr1>
+            <LookupColumn Name="FSObjType" />
+          </Expr1>
+          <Expr2>0</Expr2>
+          <Then>
+            <HTML>
+              <![CDATA[
+                    <script type="text/javascript">fSelectFieldAppeared = true; firstIdWithCheckbox =']]>
+            </HTML>
+            <Column Name="ID" />
+            <HTML>
+              <![CDATA['; </script>
+                    <input type=checkbox disabled style="visibility:hidden" title='selection checkbox' name="selectionCheckBox" id="cbx_]]>
+            </HTML>
+            <Column Name="ID" />
+            <HTML><![CDATA[" onfocus="if (!IsImgLibJssLoaded()) return; HiLiteRow(]]></HTML>
+            <Column Name="ID" />
+            <HTML><![CDATA[)" onclick="if (!IsImgLibJssLoaded()) return; ToggleSelection(]]></HTML>
+            <Column Name="ID" />
+            <HTML><![CDATA[)">]]></HTML>
+          </Then>
+        </IfEqual>
+      </DisplayPattern>
+    </Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Group="_Hidden" Name="NameOrTitle" ClassInfo="Menu" DisplayName="$Resources:core,Name;" DisplayNameSrcField="FileLeafRef" Filterable="FALSE" AuthoringInfo="$Resources:core,linked_to_display_items;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="NameOrTitle">
+      <FieldRefs>
+        <FieldRef  Name="FileLeafRef" />
+        <FieldRef  Name="FileDirRef" />
+        <FieldRef Name="Title" />
+        <FieldRef  Name="DocIcon" />
+        <FieldRef  Name="FileRef" />
+        <FieldRef  Name="Description" />
+        <FieldRef  Name="FSObjType" />
+        <FieldRef  Name="CheckedOutUserId" />
+        <FieldRef  Name="ServerUrl" />
+        <FieldRef  Name="Created_x0020_Date" />
+      </FieldRefs>
+      <DisplayPattern>
+        <HTML>
+          <![CDATA[
+            <table cellspacing="0" class="ms-unselectedtitle" NameOrTitle="true"
+            Url="]]>
+        </HTML>
+        <Field Name="ServerUrl" URLEncodeAsURL="TRUE" />
+        <HTML>
+          <![CDATA[" 
+            DRef="]]>
+        </HTML>
+        <Field Name="FileDirRef" />
+        <HTML>
+          <![CDATA["
+            COUId="]]>
+        </HTML>
+        <Field Name="CheckedOutUserId" />
+        <HTML>
+          <![CDATA["
+            Type="]]>
+        </HTML>
+        <Column Name="HTML_x0020_File_x0020_Type" />
+        <HTML>
+          "
+          Icon="
+        </HTML>
+        <MapToAll>
+          <Column Name="HTML_x0020_File_x0020_Type" />
+          <HTML>|</HTML>
+          <Column Name="File_x0020_Type" />
+        </MapToAll>
+        <HTML>" OType="</HTML>
+        <LookupColumn Name="FSObjType" />
+        <HTML>
+          <![CDATA["
+                        Ext="]]>
+        </HTML>
+        <Column Name="File_x0020_Type" />
+        <HTML><![CDATA[" cellspacing="0" cellpadding="0"><tr id="title]]></HTML>
+        <Column Name="ID" />
+        <HTML><![CDATA[" onclick="if (!IsImgLibJssLoaded()) return; ClickRow(]]></HTML>
+        <Column Name="ID" />
+        <HTML><![CDATA[)" oncontextmenu="if (!IsImgLibJssLoaded()) return true; return ContextMenuOnRow(]]></HTML>
+        <Column Name="ID" />
+        <HTML><![CDATA[);" onmouseover="if (!IsImgLibJssLoaded()) return; MouseOverRow(]]></HTML>
+        <Column Name="ID" />
+        <HTML><![CDATA[)" onmouseout="if (!IsImgLibJssLoaded()) return; MouseOutRow(]]></HTML>
+        <Column Name="ID" />
+        <HTML>
+          <![CDATA[)">
+            <td width="100%" class="ms-vb">]]>
+        </HTML>
+        <IfEqual>
+          <Expr1>
+            <LookupColumn Name="FSObjType" />
+          </Expr1>
+          <Expr2>0</Expr2>
+          <Then>
+            <IfEqual>
+              <Expr1>
+                <LookupColumn Name="ImageWidth" />
+              </Expr1>
+              <Expr2 />
+              <Then>
+                <HTML><![CDATA[<a href="]]></HTML>
+                <Field Name="EncodedAbsUrl" />
+                <HTML><![CDATA[" onclick="if (!IsImgLibJssLoaded()) return; javascript:DisplayItemOnFileRef(]]></HTML>
+                <Column Name="ID" />
+                <HTML><![CDATA[);return false;" onmouseover="if (!IsImgLibJssLoaded()) return; javascript:MouseOverRow(]]></HTML>
+                <Column Name="ID" />
+                <HTML><![CDATA[)" target="_self">]]></HTML>
+                <UrlBaseName HTMLEncode="TRUE">
+                  <LookupColumn Name="FileLeafRef" />
+                </UrlBaseName>
+                <HTML><![CDATA[</a>]]></HTML>
+              </Then>
+              <Else>
+                <HTML><![CDATA[<a href="]]></HTML>
+                <URL Cmd="Display" />
+                <HTML><![CDATA[" ]]></HTML>
+                <HTML><![CDATA[onclick="if (!IsImgLibJssLoaded()) return; javascript:DisplayItemOnFileRef(]]></HTML>
+                <Column Name="ID" />
+                <HTML><![CDATA[);return false;" onmouseover="if (!IsImgLibJssLoaded()) return; javascript:MouseOverRow(]]></HTML>
+                <Column Name="ID" />
+                <HTML><![CDATA[)" target="_self">]]></HTML>
+                <UrlBaseName HTMLEncode="TRUE">
+                  <LookupColumn Name="FileLeafRef" />
+                </UrlBaseName>
+                <HTML><![CDATA[</a>]]></HTML>
+              </Else>
+            </IfEqual>
+            <IfNew Name="Created_x0020_Date">
+              <HTML><![CDATA[<img src="/_layouts/15/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/new.gif" alt="]]></HTML>
+              <HTML>$Resources:core,new_gif_alttext;</HTML>
+              <HTML><![CDATA[" class="ms-newgif" />]]></HTML>
+            </IfNew>
+          </Then>
+          <Else>
+            <Switch>
+              <Expr>
+                <GetVar Name="RecursiveView" />
+              </Expr>
+              <Case Value="1">
+                <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+              </Case>
+              <Default>
+                <HTML><![CDATA[<a href="]]></HTML>
+                <SetVar Name="RootFolder">
+                  <HTML>/</HTML>
+                  <LookupColumn Name="FileRef" />
+                </SetVar>
+                <FilterLink Default="" Paged="FALSE" />
+                <HTML><![CDATA[" target="_self">]]></HTML>
+                <LookupColumn Name="FileLeafRef" HTMLEncode="TRUE" />
+                <HTML><![CDATA[</a>]]></HTML>
+              </Default>
+            </Switch>
+          </Else>
+        </IfEqual>
+        <HTML>
+          <![CDATA[</td>
+                <td class='ms-menuimagecell' style='visibility:hidden' width="10" id="menuTd]]>
+        </HTML>
+        <Column Name="ID" />
+        <HTML><![CDATA["><a id="menuHref]]></HTML>
+        <Column Name="ID" />
+        <HTML><![CDATA[" href="javascript:ClickRow(]]></HTML>
+        <Column Name="ID" />
+        <HTML><![CDATA[)" onclick="JavaScript:ClickRow(]]></HTML>
+        <Column Name="ID" />
+        <HTML><![CDATA[); JavaScript:return false;"><img border="0" width="13" src="/_layouts/15/images/menudark.gif?rev=23" alt="]]></HTML>
+        <HTML>Edit Menu</HTML>
+        <HTML>
+          <![CDATA["></a></td>
+            </tr></table>
+            ]]>
+        </HTML>
+      </DisplayPattern>
+    </Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Group="_Hidden" Name="RequiredField" DisplayName="$Resources:core,RequiredField;" AuthoringInfo="$Resources:core,select_for_piclib_details_view;" Sortable="FALSE" Filterable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="RequiredField">
+      <FieldRefs>
+        <FieldRef  Name="FileRef" />
+        <FieldRef  Name="FileLeafRef" />
+        <FieldRef Name="Title" />
+        <FieldRef  Name="Description" />
+        <FieldRef  Name="ImageSize" />
+        <FieldRef  Name="DocIcon" />
+      </FieldRefs>
+      <DisplayPattern />
+    </Field>
+    <!--<Field  Type="Note" Group="$Resources:core,Document_Columns;" Name="Keywords" DisplayName="$Resources:core,Keywords;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="Keywords" Sealed="TRUE" NumLines="1" UnlimitedLengthInDocumentLibrary="TRUE" AllowDeletion="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" />-->
+    <Field  ReadOnly="TRUE" Type="Computed" Group="_Hidden" Name="Thumbnail" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" ShowInEditForm="FALSE" DisplayName="$Resources:core,Thumbnail;" Sealed="TRUE" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="Thumbnail">
+      <FieldRefs>
+        <FieldRef  Name="ImageWidth" />
+        <FieldRef  Name="ImageHeight" />
+        <FieldRef  Name="FSObjType" />
+        <FieldRef  Name="EncodedAbsThumbnailUrl" />
+        <FieldRef  Name="ThumbnailExists" />
+        <FieldRef  Name="AlternateThumbnailUrl" />
+      </FieldRefs>
+      <DisplayPattern>
+        <IfEqual>
+          <Expr1>
+            <LookupColumn Name="FSObjType" />
+          </Expr1>
+          <Expr2>0</Expr2>
+          <Then>
+            <IfEqual>
+              <Expr1>
+                <LookupColumn Name="ImageWidth" />
+              </Expr1>
+              <Expr2 />
+              <Then />
+              <Else>
+                <IfEqual>
+                  <Expr1>
+                    <LookupColumn Name="ImageWidth" />
+                  </Expr1>
+                  <Expr2>0</Expr2>
+                  <Then />
+                  <Else>
+                    <HTML><![CDATA[<a href="]]></HTML>
+                    <URL Cmd="Display" />
+                    <HTML><![CDATA["><img border="0" ALT="$Resources:core,Thumbnail;" src="]]></HTML>
+                    <Field Name="EncodedAbsThumbnailUrl" />
+                    <HTML>
+                      <![CDATA[">
+                                    </a>
+                                    ]]>
+                    </HTML>
+                  </Else>
+                </IfEqual>
+              </Else>
+            </IfEqual>
+          </Then>
+        </IfEqual>
+      </DisplayPattern>
+    </Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Group="_Hidden" Name="Preview" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" ShowInEditForm="FALSE" DisplayName="$Resources:core,Web_Preview;" Sealed="TRUE" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="Preview">
+      <FieldRefs>
+        <FieldRef  Name="ImageWidth" />
+        <FieldRef  Name="ImageHeight" />
+        <FieldRef  Name="FSObjType" />
+        <FieldRef  Name="EncodedAbsWebImgUrl" />
+        <FieldRef  Name="PreviewExists" />
+        <FieldRef  Name="AlternateThumbnailUrl" />
+      </FieldRefs>
+      <DisplayPattern>
+        <IfEqual>
+          <Expr1>
+            <LookupColumn Name="FSObjType" />
+          </Expr1>
+          <Expr2>0</Expr2>
+          <Then>
+            <IfEqual>
+              <Expr1>
+                <LookupColumn Name="ImageWidth" />
+              </Expr1>
+              <Expr2 />
+              <Then />
+              <Else>
+                <IfEqual>
+                  <Expr1>
+                    <LookupColumn Name="ImageWidth" />
+                  </Expr1>
+                  <Expr2>0</Expr2>
+                  <Then />
+                  <Else>
+                    <HTML><![CDATA[<a href="]]></HTML>
+                    <URL Cmd="Display" />
+                    <HTML><![CDATA["><img  ALT="$Resources:core,Web_Preview;" src="]]></HTML>
+                    <Field Name="EncodedAbsWebImgUrl" />
+                    <HTML>
+                      <![CDATA[">
+                                    </a>
+                                    ]]>
+                    </HTML>
+                  </Else>
+                </IfEqual>
+              </Else>
+            </IfEqual>
+          </Then>
+        </IfEqual>
+      </DisplayPattern>
+    </Field>
+    <Field  Name="ThumbnailExists" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ThumbnailExists" Group="_Hidden" ReadOnly="TRUE" Type="Boolean" DisplayName="$Resources:core,ThumbnailExists;" Hidden="TRUE" Required="FALSE">
+      <Default>FALSE</Default>
+    </Field>
+    <Field  Name="PreviewExists" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="PreviewExists" Group="_Hidden" ReadOnly="TRUE" Type="Boolean" DisplayName="$Resources:core,PreviewExists;" Hidden="TRUE" Required="FALSE">
+      <Default>FALSE</Default>
+    </Field>
+    <Field  SourceID="http://schemas.microsoft.com/sharepoint/v4" Name="AlternateThumbnailUrl" DisplayName="$Resources:core,AlternateThumbnailUrl;" Group="_Hidden" Type="URL" Format="Image" Sealed="TRUE" />
+
+  </list>
+
+</lists>

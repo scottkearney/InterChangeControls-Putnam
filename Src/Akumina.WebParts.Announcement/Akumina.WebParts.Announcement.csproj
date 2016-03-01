@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D39984B0-1795-4171-9BE3-8D57E2DBD4FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Akumina.WebParts.Announcement</RootNamespace>
+    <AssemblyName>Akumina.WebParts.Announcement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\AkuminaInterAction.cs">
+      <Link>AkuminaInterAction.cs</Link>
+    </Compile>
+    <Compile Include="AnnouncementDetailBaseWebPart.cs" />
+    <Compile Include="AnnouncementDetail\AnnouncementDetail.ascx.cs">
+      <DependentUpon>AnnouncementDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AnnouncementDetail\AnnouncementDetail.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnouncementDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AnnouncementDetail\AnnouncementDetailModel.cs" />
+    <Compile Include="AnnouncementItemsBaseWebPart.cs" />
+    <Compile Include="AnnouncementItems\AnnouncementItems.ascx.cs">
+      <DependentUpon>AnnouncementItems.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AnnouncementItems\AnnouncementItems.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnouncementItems.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AnnouncementItems\AnnouncementItemsModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AnnouncementDetail\AnnouncementDetail.webpart" />
+    <None Include="AnnouncementDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9a89f257-a65c-4e56-8ea1-26f665cb4283}</SharePointProjectItemId>
+    </None>
+    <None Include="AnnouncementItems\AnnouncementItems.webpart" />
+    <None Include="AnnouncementItems\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{83b7145a-8172-4877-8682-0aee07b5d142}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Announcement\Announcement.feature">
+      <FeatureId>{6ea93aa9-826b-4934-b7be-f25ee63eb6da}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\Akumina.WebParts.Announcement\css\fonts\font-awesome\fontawesome-webfont.eot" />
+    <None Include="Layouts\Akumina.WebParts.Announcement\css\fonts\font-awesome\fontawesome-webfont.ttf" />
+    <None Include="Layouts\Akumina.WebParts.Announcement\css\fonts\font-awesome\fontawesome-webfont.woff" />
+    <None Include="Layouts\Akumina.WebParts.Announcement\css\fonts\font-awesome\FontAwesome.otf" />
+    <None Include="Layouts\Akumina.WebParts.Announcement\css\ia-interaction-controls.css.map" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{893a342a-82a6-44cf-b04b-db6e1f5c9082}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{548a678b-4cf1-4878-a9cc-8ecbd25d7dae}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AnnouncementDetail\AnnouncementDetail.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AnnouncementDetail.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="AnnouncementDetail\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="AnnouncementItems\AnnouncementItems.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AnnouncementItems.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="AnnouncementItems\Elements.xml" />
+    <Content Include="Features\Announcement\Announcement.Template.xml">
+      <DependentUpon>Announcement.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Akumina.WebParts.Announcement\css\fonts\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="Layouts\Akumina.WebParts.Announcement\css\ia-interaction-controls.css" />
+    <Content Include="Layouts\Akumina.WebParts.Announcement\js\vendor\jquery-2.1.3.min.js" />
+    <Content Include="Layouts\Akumina.WebParts.Announcement\js\vendor\mustache.min.js" />
+    <Content Include="Resources\PageItemListTemplate.html" />
+    <None Include="Resources\ItemListTemplate.html" />
+    <None Include="Resources\ItemDetailTemplate.html" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>xcopy "$(SolutionDir)Shared\Content\*.*" "$(SolutionDir)Akumina.WebParts.Announcement\Layouts\Akumina.WebParts.Announcement" /Y/E/I</PreBuildEvent>
+  </PropertyGroup>
+</Project>

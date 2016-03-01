@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+<Control ControlClass="Akumina.WebParts.SiteSummaryList.SiteSummaryList.DelegateClass" ControlAssembly="Akumina.WebParts.SiteSummaryList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1c6494ded3d64ff2" Id="AdditionalPageHead"  Sequence="50"/>
+</Elements>

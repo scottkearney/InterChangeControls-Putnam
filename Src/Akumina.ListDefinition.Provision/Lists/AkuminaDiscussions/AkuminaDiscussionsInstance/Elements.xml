@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaDiscussions" OnQuickLaunch="TRUE" TemplateType="10018" Url="Lists/AkuminaDiscussions" Description="Akumina Discussions List Instance">
+
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name ="Title">Marketing Discussion</Field>
+          <Field Name ="Body">This is a marketing content</Field>
+
+        </Row>
+
+        <Row>
+          <Field Name ="Title">Start a new discussion</Field>
+          <Field Name ="Links">This is a new discussion content</Field>
+
+        </Row>
+
+      </Rows>
+    </Data>
+
+  </ListInstance>
+</Elements>

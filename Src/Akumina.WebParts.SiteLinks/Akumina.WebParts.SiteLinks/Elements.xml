@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Akumina.WebParts.SiteLinks">
+    <File Path="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\fontawesome-webfont.eot" Url="Akumina.WebParts.SiteLinks/css/fonts/font-awesome/fontawesome-webfont.eot" />
+    <File Path="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\fontawesome-webfont.svg" Url="Akumina.WebParts.SiteLinks/css/fonts/font-awesome/fontawesome-webfont.svg" />
+    <File Path="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\fontawesome-webfont.ttf" Url="Akumina.WebParts.SiteLinks/css/fonts/font-awesome/fontawesome-webfont.ttf" />
+    <File Path="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\fontawesome-webfont.woff" Url="Akumina.WebParts.SiteLinks/css/fonts/font-awesome/fontawesome-webfont.woff" />
+    <File Path="Akumina.WebParts.SiteLinks\css\fonts\font-awesome\FontAwesome.otf" Url="Akumina.WebParts.SiteLinks/css/fonts/font-awesome/FontAwesome.otf" />
+    <File Path="Akumina.WebParts.SiteLinks\css\ia-interaction-controls.css" Url="Akumina.WebParts.SiteLinks/css/ia-interaction-controls.css" />
+    <File Path="Akumina.WebParts.SiteLinks\js\vendor\jquery-2.1.3.min.js" Url="Akumina.WebParts.SiteLinks/js/vendor/jquery-2.1.3.min.js" />
+    <File Path="Akumina.WebParts.SiteLinks\js\vendor\mustache.min.js" Url="Akumina.WebParts.SiteLinks/js/vendor/mustache.min.js" />
+    <File Path="Akumina.WebParts.SiteLinks\js\controls\ia-sitelinks.js" Url="Akumina.WebParts.SiteLinks/js/controls/ia-sitelinks.js" ReplaceContent="TRUE"/>
+    <File Path="Akumina.WebParts.SiteLinks\icon\ia-sitelinks.png" Url="Akumina.WebParts.SiteLinks/icon/ia-sitelinks.png" />
+  </Module>
+</Elements>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ContentBlock" List="113" Url="_catalogs/wp">
+    <File Path="ContentBlock\ContentBlock.webpart" Url="Akumina.WebParts.ContentBlock_ListItem.webpart"
+          Type="GhostableInLibrary">
+      <Property Name="Group" Value="Akumina" />
+    </File>
+  </Module>
+</Elements>

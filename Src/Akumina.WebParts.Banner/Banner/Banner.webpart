@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Akumina.WebParts.Banner.Banner.Banner, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Banner</property>
+        <property name="Description" type="string">Banner Web Part</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <!--<property name="CatalogIconImageUrl" type="string">~sitecollection/Akumina.WebParts.Banner/icon/ia-banner.png</property>
+        <property name="TitleIconImageUrl" type="string">~sitecollection/Akumina.WebParts.Banner/icon/ia-banner.png</property>-->
+        <property name="InstructionSet" type="string">BannerIDS_AK.1</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

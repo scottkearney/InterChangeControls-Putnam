@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010029626DF56B944801AE5CC641A8A6696A" Name="Akumina Banner Type" Group="Akumina Content Types" Description="Akumina Banner Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{DDDD2B9E-942B-48B3-A695-B5B9C33810B5}" DisplayName="BannerHeading" Required="FALSE" Name="BannerHeading" />
+      <FieldRef ID="{222DE0CE-1181-4954-BD8A-07500ABFC4B7}" DisplayName="BannerSubHeading" Required="FALSE" Name="BannerSubHeading" />
+      <FieldRef ID="{7E4BB9DF-94CA-4AFA-8897-16DD89640E95}" DisplayName="BannerLinkText" Required="FALSE" Name="BannerLinkText" />
+      <FieldRef ID="{4A49D575-AA4B-405D-940D-3253BDE8CF71}" DisplayName="BannerLinkUrl" Required="FALSE" Name="BannerLinkUrl" />
+      <FieldRef ID="{0FC8DBDC-B44B-49DC-BCB9-305E3964A203}" DisplayName="BannerLinkTarget" Required="FALSE" Name="BannerLinkTarget" />
+      <FieldRef ID="{03E54425-DDA0-4676-9410-83519FD5A400}" DisplayName="BannerLinkHoverText" Required="FALSE" Name="BannerLinkHoverText" />
+      <FieldRef ID="{46A6A43F-6D12-42A7-9F04-F57787C5C1D9}" DisplayName="BannerImage" Required="FALSE" Name="BannerImage" />
+      <FieldRef ID="{EA66E3A5-2420-4396-969B-259443B50801}" DisplayName="BannerImageAltText" Required="FALSE" Name="BannerImageAltText" />
+      <FieldRef ID="{895ACA16-CC05-4021-8016-256F9E017D03}" DisplayName="BannerActive" Required="FALSE" Name="BannerActive" />
+      <FieldRef ID="{B8E595BE-B58D-43A4-90A7-8FC41F2106D4}" DisplayName="BannerItemOrder" Required="FALSE" Name="BannerItemOrder" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

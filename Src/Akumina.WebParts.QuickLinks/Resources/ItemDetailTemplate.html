@@ -1,0 +1,62 @@
+<div class="interAction">    
+    <nav class="ia-top-nav">
+        <ul>
+            {{#Items}}
+            {{^HasLinks}}
+            {{#HasCategories}}
+            <li>
+                <span class="ia-dropdown-trigger">{{Title}}</span>                
+                    
+                        <ul>                            
+                            {{#Items}}
+                            
+                            {{#IsItem}}
+                            <li><a href="{{Link}}" target="{{Target}}">{{Title}}</a></li>
+                            {{/IsItem}}
+                               
+                            {{#IsFolder}}
+                            <li>
+                                <span class="ia-dropdown-trigger">{{Title}}</span>
+                                
+                                <ul>
+                                    {{#Items}}    
+                                    <li><a href="{{Link}}" target="{{Target}}">{{Title}}</a></li>
+                                    {{/Items}}    
+                                </ul>
+
+                                
+
+                            </li>
+                            {{/IsFolder}}
+                                
+                            {{/Items}}
+                        </ul>
+                
+                    
+                
+            </li>
+            {{/HasCategories}}
+            {{^HasCategories}}
+            <li><a href="{{Link}}" target="{{Target}}" >{{Title}}</a></li>
+            {{/HasCategories}}
+            {{/HasLinks}}
+
+            {{#HasLinks}}
+            <li>
+                <span class="ia-dropdown-trigger">{{Title}}</span>
+                <ul>
+                    {{#Items}}
+
+                    {{#IsItem}}
+                    <li><a href="{{Link}}" target="{{Target}}">{{Title}}</a></li>
+                    {{/IsItem}}                 
+                    {{/Items}}
+                </ul>
+            </li>
+            {{/HasLinks}}
+
+            {{/Items}}
+        </ul>
+    </nav>
+    
+</div>

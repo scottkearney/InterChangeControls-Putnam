@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="AnnouncementDetail" List="113" Url="_catalogs/wp">
+    <File Path="AnnouncementDetail\AnnouncementDetail.webpart" Url="Akumina.WebParts.Announcement_AnnouncementDetail.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Akumina" />
+    </File>
+  </Module>
+</Elements>

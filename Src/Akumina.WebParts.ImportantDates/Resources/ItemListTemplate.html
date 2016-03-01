@@ -1,0 +1,35 @@
+<div class="interAction">
+    {{#ShowHeader}}
+    <div class="ia-control-header">
+        <span class="ia-control-header-icon fa fa-{{WebPartIcon}}"></span>
+        <h3 class="ia-control-header-heading">{{WebPartTitle}}</h3>
+    </div>
+    {{/ShowHeader}}
+    <div class="ia-event-summary">
+        <ul class="ia-event-summary-list">
+            {{#Items}}
+            <li>
+                <div class="ia-event-cal-date">
+                    <time datetime="{{FullDate}}">
+                        <span class="ia-event-month">{{DateMonth}}</span>
+                        <span class="ia-event-date">{{DateDay}}</span>
+                    </time>
+                </div>
+                <div class="ia-event-detail">
+                    {{#HasLink}}
+                    <h4 class="ia-event-title"><a class="ia-event-title" href="{{LinkSrc}}" target="{{Target}}" target="{{Target}}">{{LinkText}}</a></h4>
+                    {{/HasLink}}
+                    {{^HasLink}}
+                    <h4 class="ia-event-title">{{LinkText}}</h4>
+                    {{/HasLink}}
+                    <p class="ia-event-details">
+                        {{SubText}}<br>
+                    </p>
+                </div>
+            </li>  
+            {{/Items}}          
+        </ul>
+
+    </div>
+
+</div>

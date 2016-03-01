@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Akumina.WebParts.Miscellaneous.PlaceHolder.PlaceHolder, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Miscellaneous - PlaceHolder</property>
+        <property name="Description" type="string">Miscellaneous - PlaceHolder WebPart</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="InstructionSet" type="string">Traffic_WeatherIDS_AK.1</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

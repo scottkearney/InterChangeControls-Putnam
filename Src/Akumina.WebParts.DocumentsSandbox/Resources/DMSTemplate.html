@@ -1,0 +1,66 @@
+﻿<script id="dms_template" type="text/html">
+   
+        <table id="ogrid" class="ia-document-library-list tablesaw tablesaw-stack fixed_headers" cellspacing="0" rules="all" data-mode="stack" border="1" id="ogrid" style="border-collapse: collapse;">
+            <thead>
+                <tr class="sticky">
+                    <th class="ia-doclib-header-checkbox" scope="col">
+                        <input type="checkbox" class="ia-doclist-selectAll" onchange="selectall(this.checked);"></th>
+                    <th class="ia-doclib-header-name ia-doclib-header-sorted header" scope="col"><span>Name</span></th>
+                    <th class="ia-doclib-header-modified header" scope="col"><span>Modified</span></th>
+                    <th class="ia-doclib-header-modifiedBy header" scope="col"><span>ModifiedBy</span></th>
+                    <th class="itemhidden header" scope="col"><span>ID</span></th>
+                    <th class="itemhiddenFileType header" scope="col"><span>File Type</span></th>
+                    <th class="itemhiddenPath header" scope="col"><span>Path</span></th>
+                    <th class="itemhiddendate header" scope="col"><span>ModifiedTime</span></th>
+                    <th class="itemEditPermission header" scope="col"><span>EditPermission</span></th>
+                    <td class="itemCategory">yes:yes</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{#.}}
+            <tr>
+
+                <td class="ia-doclib-checkbox">
+                    <input type="checkbox" class="selection" onchange="onselection();"></td>
+                <td class="ia-doclist-name-icon">{{^File_x0020_Type}}
+                    <span class="ia-doclib-file-icon fa fa-folder"></span>
+                    <span class="ia-doclist-name"><a class="filename" href="#" onclick="getcurrentfolder(this);" url-data="{{EncodedAbsUrl}}">{{NoExtensionName}}</a></span>{{/File_x0020_Type}}
+                    {{#File_x0020_Type}}
+                 <span class="ia-doclib-file-icon ">
+                     <img src="{{DocIconUrl}}">{{#CheckoutUserId}}<span class="ia-doc-checkedOut" title="Checked Out"></span>{{/CheckoutUserId}}</span>
+
+                    <span class="ia-doclist-name">
+                        <a class="docOpen disp-File-Name" onclick="setCookie();" onmousedown="return VerifyHref(this,event,'0','SharePoint.OpenDocuments','')" href="{{EncodedAbsUrl}}?web=1">{{NoExtensionName}}</a>
+                        <a class="ia-document-preview ia-modal-inline-trigger" href="#document-preview-1" onclick="OpenItemFilePreviewCallOut(this);">
+                            <span class="fa fa-search-plus"></span>
+                        </a>
+                        <div class="hdnbutton">{{FileLeafRef}},{{EncodedAbsUrl}},<a href="/_layouts/userdisp.aspx?ID=12" target="_blank">{{Editor.Title}}</a>,{{ModifiedDate}} at {{ModifiedTime}},{{File_x0020_Type}}</div>{{/File_x0020_Type}}
+                </td>
+                <td class="ia-doc-list-modified">{{ModifiedDate}}</td>
+                <td class="ia-doc-list-modifiedBy"><a class="userlink" href="/_layouts/userdisp.aspx?ID={{EditorId}}" target="_blank">{{Editor.Title}}</a></td>
+                <td class="itemhidden">{{Id}}</td>
+                <td class="itemhiddenFileType">{{File_x0020_Type}}</td>
+                <td class="itemhiddenPath">{{EncodedAbsUrl}}</td>
+                <td class="itemhiddendate">{{ModifiedDate}} at {{ModifiedTime}}</td>
+                <td class="itemEditPermission">yes:yes</td>
+                <td class="itemCategory">{{#Category}}{{#results}}{{Label}},{{/results}}{{/Category}}</td>
+            </tr>
+                {{/.}}
+            </tbody>
+        </table>
+
+</script>
+<div id="docIconUrlMap" style="display: none">
+    {"doc": "icdocx.png","docx": "icdocx.png", 
+    "gif": "icgif.gif", 
+    "jpeg": "icjpg.gif",    "jpg": "icjpg.gif",
+    "onetoc2": "icnotebk.png",    "notebk": "icnotebk.png",   "one": "icnotebk.png",
+      "pdf": "icpdf.png",    
+    "ppt": "icpptx.png",   "pptx": "icpptx.png",
+      "mpp": "icpub.png",   "pup": "icpub.png",
+    "vsdx": "icvsx.png",   "vsx": "icvsx.png",
+     "xsl": "icxlsx.png",   "xls": "icxlsx.png", "xslx": "icxlsx.png",   "xlsx": "icxlsx.png", 
+    "txt": "ictxt.gif", 
+    "png": "icpng.gif" ,"default":"icjpg.gif"
+    }
+</div>

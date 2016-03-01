@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AkuminaBanner" FolderCreation="FALSE" DisableAttachments="TRUE" Direction="$Resources:Direction;" Url="Lists/AkuminaBanner" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+
+      <ContentType ID="0x010029626DF56B944801AE5CC641A8A6696A" Name="Akumina Banner Type" Group="Akumina Content Types" Description="Akumina Banner Content Type" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{DDDD2B9E-942B-48B3-A695-B5B9C33810B5}" DisplayName="BannerHeading" Required="FALSE" Name="BannerHeading" />
+          <FieldRef ID="{222DE0CE-1181-4954-BD8A-07500ABFC4B7}" DisplayName="BannerSubHeading" Required="FALSE" Name="BannerSubHeading" />
+          <FieldRef ID="{7E4BB9DF-94CA-4AFA-8897-16DD89640E95}" DisplayName="BannerLinkText" Required="FALSE" Name="BannerLinkText" />
+          <FieldRef ID="{4A49D575-AA4B-405D-940D-3253BDE8CF71}" DisplayName="BannerLinkUrl" Required="FALSE" Name="BannerLinkUrl" />
+          <FieldRef ID="{0FC8DBDC-B44B-49DC-BCB9-305E3964A203}" DisplayName="BannerLinkTarget" Required="FALSE" Name="BannerLinkTarget" />
+          <FieldRef ID="{03E54425-DDA0-4676-9410-83519FD5A400}" DisplayName="BannerLinkHoverText" Required="FALSE" Name="BannerLinkHoverText" />
+          <FieldRef ID="{46A6A43F-6D12-42A7-9F04-F57787C5C1D9}" DisplayName="BannerImage" Required="FALSE" Name="BannerImage" />
+          <FieldRef ID="{EA66E3A5-2420-4396-969B-259443B50801}" DisplayName="BannerImageAltText" Required="FALSE" Name="BannerImageAltText" />
+          <FieldRef ID="{895ACA16-CC05-4021-8016-256F9E017D03}" DisplayName="BannerActive" Required="FALSE" Name="BannerActive" />
+          <FieldRef ID="{B8E595BE-B58D-43A4-90A7-8FC41F2106D4}" DisplayName="BannerItemOrder" Required="FALSE" Name="BannerItemOrder" />
+        </FieldRefs>
+      </ContentType>
+      <ContentType ID="0x0100a32f7ea30ad44e6c80b4cb956c216b4f" Name="ListFieldsContentType">
+        <FieldRefs>
+
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{DDDD2B9E-942B-48B3-A695-B5B9C33810B5}" Name="BannerHeading" />
+          <FieldRef ID="{222DE0CE-1181-4954-BD8A-07500ABFC4B7}" Name="BannerSubHeading" />
+          <FieldRef ID="{7E4BB9DF-94CA-4AFA-8897-16DD89640E95}" Name="BannerLinkText" />
+          <FieldRef ID="{4A49D575-AA4B-405D-940D-3253BDE8CF71}" Name="BannerLinkUrl" />
+          <FieldRef ID="{0FC8DBDC-B44B-49DC-BCB9-305E3964A203}" Name="BannerLinkTarget" />
+          <FieldRef ID="{03E54425-DDA0-4676-9410-83519FD5A400}" Name="BannerLinkHoverText" />
+          <FieldRef ID="{46A6A43F-6D12-42A7-9F04-F57787C5C1D9}" Name="BannerImage" />
+          <FieldRef ID="{EA66E3A5-2420-4396-969B-259443B50801}" Name="BannerImageAltText" />
+          <FieldRef ID="{895ACA16-CC05-4021-8016-256F9E017D03}" Name="BannerActive" />
+          <FieldRef ID="{B8E595BE-B58D-43A4-90A7-8FC41F2106D4}" Name="BannerItemOrder" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{DDDD2B9E-942B-48B3-A695-B5B9C33810B5}" Name="BannerHeading" DisplayName="BannerHeading" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+      <Field ID="{222DE0CE-1181-4954-BD8A-07500ABFC4B7}" Name="BannerSubHeading" DisplayName="BannerSubHeading" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+      <Field ID="{7E4BB9DF-94CA-4AFA-8897-16DD89640E95}" Name="BannerLinkText" DisplayName="BannerLinkText" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+      <Field ID="{4A49D575-AA4B-405D-940D-3253BDE8CF71}" Name="BannerLinkUrl" DisplayName="BannerLinkUrl" Type="URL" Required="FALSE" Group="Akumina Banner Columns"></Field>
+      <Field ID="{0FC8DBDC-B44B-49DC-BCB9-305E3964A203}" Name="BannerLinkTarget" DisplayName="BannerLinkTarget" Type="Choice" Required="FALSE" Group="Akumina Banner Columns">
+        <CHOICES>
+          <CHOICE>Same Window</CHOICE>
+          <CHOICE>New Window</CHOICE>
+        </CHOICES>
+        <Default>Same Window</Default>
+      </Field>
+      <Field ID="{03E54425-DDA0-4676-9410-83519FD5A400}" Name="BannerLinkHoverText" DisplayName="BannerLinkHoverText" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+      <Field ID="{46A6A43F-6D12-42A7-9F04-F57787C5C1D9}" Name="BannerImage" DisplayName="BannerImage" Type="URL" Format="Image" Required="FALSE" Group="Akumina Banner Columns"></Field>
+      <Field ID="{EA66E3A5-2420-4396-969B-259443B50801}" Name="BannerImageAltText" DisplayName="BannerImageAltText" Type="Text" Required="FALSE" Group="Akumina Banner Columns"></Field>
+      <Field ID="{895ACA16-CC05-4021-8016-256F9E017D03}" Name="BannerActive" DisplayName="BannerActive" Type="Boolean" Required="FALSE" Group="Akumina Banner Columns">
+        <Default>1</Default>
+      </Field>
+      <Field ID="{B8E595BE-B58D-43A4-90A7-8FC41F2106D4}" Name="BannerItemOrder" DisplayName="BannerItemOrder" Type="Number" Required="FALSE" Group="Akumina Banner Columns">
+        <Default>0</Default>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="BannerHeading" />
+          <FieldRef Name="BannerSubHeading" />
+          <FieldRef Name="BannerLinkText" />
+          <FieldRef Name="BannerLinkUrl" />
+          <FieldRef Name="BannerLinkTarget" />
+          <FieldRef Name="BannerLinkHoverText" />
+          <FieldRef Name="BannerImage" />
+          <FieldRef Name="BannerImageAltText" />
+          <FieldRef Name="BannerActive" />
+          <FieldRef Name="BannerItemOrder" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

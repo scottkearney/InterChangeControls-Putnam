@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaDiscussionsIDS" OnQuickLaunch="TRUE" TemplateType="10019" Url="Lists/AkuminaDiscussionsIDS" Description="Akumina Discussion Ids List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name ="Title">SiteDiscussions</Field>
+          <Field Name ="DiscussionListName">AkuminaDiscussions</Field>
+          <Field Name ="DocumentLibraryName">AkuminaDocuments</Field>
+          <Field Name ="Listing.DisplayAvatarPicture">false</Field>
+          <Field Name ="Listing.NumberOfPosts">3</Field>
+          <Field Name ="Listing.ListingPostType">LastPost</Field>
+          <Field Name ="Summary.DisplayAvatarPicture">false</Field>
+          <Field Name ="Summary.NumberOfPosts">3</Field>
+          <Field Name ="Summary.ListingPostType">LastPost</Field>
+          <Field Name ="DiscussionThread.DisplayAvatarPicture">false</Field>
+          <Field Name ="DiscussionTitle">IGNITE Discussions</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

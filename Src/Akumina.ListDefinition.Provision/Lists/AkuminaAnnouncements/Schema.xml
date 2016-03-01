@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AkuminaAnnouncements" FolderCreation="FALSE" DisableAttachments="TRUE" Direction="$Resources:Direction;" Url="Lists/AkuminaAnnouncements" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01002ce2da58c06d4ae19711b6f92ccd165d" Name="ListFieldsContentType">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{2f146b53-797e-4dbb-a5eb-6191af3e9e73}" Name="AnnouncementTitle" />
+          <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+          <FieldRef ID="{e85476e1-6d6b-4732-bf8f-408054a9e18b}" Name="StartDate1" />
+          <FieldRef ID="{6a09e75b-8d17-4698-94a8-371eda1af1ac}" Name="Expires" />
+          <FieldRef ID="{54325766-4c45-4fe1-b1b0-ae0dd6418761}" Name="Summary" />
+          <FieldRef ID="{e8fc808e-ebd0-488c-bd41-c414ee0919ac}" Name="Photo" />
+          <FieldRef ID="{c2c59b0a-363a-4b89-97f1-9bdbe3b380e1}" Name="Seo_x002d_Title" />
+          <FieldRef ID="{e6271786-af4b-4833-8abc-fd8717534fb1}" Name="Seo_x002d_Keywords" />
+          <FieldRef ID="{408a225a-7973-475b-900a-81a579209660}" Name="Seo_x002d_Description" />
+          <FieldRef ID="{55c4fb62-fdcb-4d6b-9282-193fbd92b7e7}" Name="FriendlyUrl" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0104">
+        <Folder TargetName="Announcement" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="AnnouncementTitle" ID="{2f146b53-797e-4dbb-a5eb-6191af3e9e73}" DisplayName="AnnouncementTitle" Type="Text" />
+      <Field ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Type="Note" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" NumLines="15" Name="Body" DisplayName="$Resources:core,camlid2;" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Body"></Field>
+      <Field Name="StartDate1" ID="{e85476e1-6d6b-4732-bf8f-408054a9e18b}" DisplayName="Start Date" Type="DateTime" />
+      <Field ID="{6a09e75b-8d17-4698-94a8-371eda1af1ac}" Type="DateTime" Name="Expires" DisplayName="$Resources:core,camlid3;" Format="DateOnly" FromBaseType="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Expires"></Field>
+      <Field Name="Summary" ID="{54325766-4c45-4fe1-b1b0-ae0dd6418761}" DisplayName="Summary" NumLines="6" Type="Note" RichTextMode="FullHtml" RichText="TRUE" />
+      <Field Name="Photo" ID="{e8fc808e-ebd0-488c-bd41-c414ee0919ac}" DisplayName="Photo" Type="URL" Format="Image" />
+      <Field Name="Seo_x002d_Title" ID="{c2c59b0a-363a-4b89-97f1-9bdbe3b380e1}" DisplayName="Seo-Title" Type="Text" />
+      <Field Name="Seo_x002d_Keywords" ID="{e6271786-af4b-4833-8abc-fd8717534fb1}" DisplayName="Seo-Keywords" Type="Text" />
+      <Field Name="Seo_x002d_Description" ID="{408a225a-7973-475b-900a-81a579209660}" DisplayName="Seo-Description" Type="Note" />
+      <Field Name="FriendlyUrl" ID="{55c4fb62-fdcb-4d6b-9282-193fbd92b7e7}" DisplayName="FriendlyUrl" Type="Calculated" Required="FALSE" ColName="sql_variant1" StaticName="FriendlyUrl" Indexed="FALSE" ResultType="Text" Version="1" RowOrdinal="0">
+        <Formula>=[Title]</Formula>
+        <!--<FieldRefs>
+          <FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+        </FieldRefs>-->
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" FreeForm="TRUE" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink>main.xsl</XslLink>
+        <Query>
+          <Where>
+            <Or>
+              <IsNull>
+                <FieldRef Name="Expires" />
+              </IsNull>
+              <Geq>
+                <FieldRef Name="Expires"></FieldRef>
+                <Value Type="DateTime">
+                  <Today></Today>
+                </Value>
+              </Geq>
+            </Or>
+          </Where>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu" Explicit="TRUE"></FieldRef>
+          <FieldRef Name="Body" Explicit="TRUE"></FieldRef>
+          <FieldRef Name="Author" Explicit="TRUE"></FieldRef>
+          <FieldRef Name="Modified" Explicit="TRUE"></FieldRef>
+          <FieldRef Name="Attachments" Explicit="TRUE"></FieldRef>
+        </ViewFields>
+        <RowLimit>5</RowLimit>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,NoAnnouncements)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,NoAnnouncementsHowTo)" />
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,idHomePageNewAnnounce)" />
+          <ParameterBinding Name="MoreAnnouncements" Location="Resource(wss,MoreAnnouncements)" />
+          <ParameterBinding Name="ByText" Location="Resource(wss,2000)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,camlid4;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/announce.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="AnnouncementTitle" />
+          <FieldRef Name="StartDate1" />
+          <FieldRef Name="Expires" />
+          <FieldRef Name="Summary" />
+          <FieldRef Name="Photo" />
+          <FieldRef Name="Seo_x002d_Title" />
+          <FieldRef Name="Seo_x002d_Keywords" />
+          <FieldRef Name="Seo_x002d_Description" />
+          <FieldRef Name="FriendlyUrl" />
+          <FieldRef Name="Modified"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="3" FreeForm="TRUE" Type="HTML" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink>main.xsl</XslLink>
+        <Query>
+          <Where>
+            <Or>
+              <IsNull>
+                <FieldRef Name="Expires" />
+              </IsNull>
+              <Geq>
+                <FieldRef Name="Expires"></FieldRef>
+                <Value Type="DateTime">
+                  <Today></Today>
+                </Value>
+              </Geq>
+            </Or>
+          </Where>
+          <OrderBy>
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu" Explicit="TRUE"></FieldRef>
+          <FieldRef Name="Body" Explicit="TRUE"></FieldRef>
+          <FieldRef Name="Author" Explicit="TRUE"></FieldRef>
+          <FieldRef Name="Modified" Explicit="TRUE"></FieldRef>
+          <FieldRef Name="Attachments" Explicit="TRUE"></FieldRef>
+        </ViewFields>
+        <RowLimit>3</RowLimit>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+    <DefaultDescription>$Resources:onetid10;</DefaultDescription>
+  </MetaData>
+</List>

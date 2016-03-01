@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b89f741e-0769-4465-9da2-78453d9f31ef" solutionId="b89f741e-0769-4465-9da2-78453d9f31ef" resetWebServer="false" sharePointProductVersion="15.0" name="Akumina.WebParts.LibraryListing" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a0ea5479-83d0-4503-aa42-56eb74989e60" />
+  </features>
+</package>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--<Module Name="ModuleFiles" Url="Shared Documents">
+    
+    <File Path="ModuleFiles\Sample.txt" Url="Sample.txt" Type="GhostableInLibrary" />
+  </Module>-->
+  <Module Name="ModuleFiles" Url="Images_AK"   >
+    <File Path="ModuleFiles\Sparkbanner-1.jpg" Url="Sparkbanner-1.jpg" />
+    <File Path="ModuleFiles\Sparkbanner-2.jpg" Url="Sparkbanner-2.jpg" />
+    <File Path="ModuleFiles\Sparkbanner-3.jpg" Url="Sparkbanner-3.jpg" />
+    <File Path="ModuleFiles\AkuminaDocuments.png" Url="AkuminaDocuments.png" />
+    <File Path="ModuleFiles\AkuminaImages.png" Url="AkuminaImages.png" />
+    <File Path="ModuleFiles\Test Upload file28.txt" Url="ModuleFiles/Test Upload file28.txt" />
+    <File Path="ModuleFiles\testfile.txt" Url="ModuleFiles/testfile.txt" />
+    <File Path="ModuleFiles\Testword.docx" Url="ModuleFiles/Testword.docx" />
+  </Module>
+</Elements>

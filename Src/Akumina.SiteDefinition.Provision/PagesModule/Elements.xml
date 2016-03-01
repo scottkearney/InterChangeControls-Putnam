@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="PagesModule" Url="Pages">
+    <File Path="PagesModule\SparkDiscussions.aspx" Url="SparkDiscussions.aspx"  Type="GhostableInLibrary" />
+    <File Path="PagesModule\SparkDiscussionThreads.aspx" Url="SparkDiscussionThreads.aspx"  Type="GhostableInLibrary" />
+    <File Path="PagesModule\SparkDocuments.aspx" Url="SparkDocuments.aspx"  Type="GhostableInLibrary" />
+    <File Path="PagesModule\SparkHome.aspx" Url="SparkHome.aspx"  Type="GhostableInLibrary" />
+    <File Path="PagesModule\SparkNewDiscussion.aspx" Url="SparkNewDiscussion.aspx"  Type="GhostableInLibrary" />
+    <File Path="PagesModule\SparkAnnouncementDetail.aspx" Url="SparkAnnouncementDetail.aspx" Type="GhostableInLibrary" />
+    <File Path="PagesModule\SparkLibraryListing.aspx" Url="SparkLibraryListing.aspx" Type="GhostableInLibrary"  />
+  </Module>
+  <!--<Module Name="PagesModule" Url="_catalogs/masterpage/AkuminaSpark/Pages">
+    <File Path="PagesModule\SparkDiscussions.aspx" Url="SparkDiscussions.aspx"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"/>
+    <File Path="PagesModule\SparkDiscussionThreads.aspx" Url="SparkDiscussionThreads.aspx"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"/>
+    <File Path="PagesModule\SparkDocuments.aspx" Url="SparkDocuments.aspx"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"/>
+    <File Path="PagesModule\SparkHome.aspx" Url="SparkHome.aspx"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"/>
+    <File Path="PagesModule\SparkNewDiscussion.aspx" Url="SparkNewDiscussion.aspx"  Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"/>
+    <File Path="PagesModule\SparkAnnouncementDetail.aspx" Url="SparkAnnouncementDetail.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE"/>
+  </Module>-->
+
+</Elements>

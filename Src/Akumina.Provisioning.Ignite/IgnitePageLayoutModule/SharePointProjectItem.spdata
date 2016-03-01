@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="IgnitePageLayoutModule\" Type="ElementManifest" />
+    <ProjectItemFile Source="IgniteHomePageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="Ignite3ColumnPageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="Ignite1ColumnPageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="Ignite2ColumnLeftPageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="Ignite2ColumnRightPageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="IgniteDept1ColumnPageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="IgniteDept3ColumnPageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="IgniteDept2ColumnLeftPageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="IgniteDept2ColumnRightPageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="IgniteDeptHomePageLayout.aspx" Target="IgnitePageLayoutModule\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

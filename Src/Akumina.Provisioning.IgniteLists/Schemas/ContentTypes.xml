@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lists>
+  <ContentType ID="0x010029626DF56B944801AE5CC641A8A6696A" Name="Akumina Banner Type" Group="Akumina Content Types" Description="Akumina Banner Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <Field ID="{DDDD2B9E-942B-48B3-A695-B5B9C33810B5}"  Type="Text" Group="Akumina Content Types"  DisplayName="BannerHeading" Required="FALSE" Name="BannerHeading" />
+      <Field ID="{222DE0CE-1181-4954-BD8A-07500ABFC4B7}"  Type="Text" Group="Akumina Content Types"  DisplayName="BannerSubHeading" Required="FALSE" Name="BannerSubHeading" />
+      <Field ID="{7E4BB9DF-94CA-4AFA-8897-16DD89640E95}"  Type="Text" Group="Akumina Content Types"  DisplayName="BannerLinkText" Required="FALSE" Name="BannerLinkText" />
+      <Field ID="{4A49D575-AA4B-405D-940D-3253BDE8CF71}"  Type="URL" Group="Akumina Content Types"  DisplayName="BannerLinkUrl" Required="FALSE" Name="BannerLinkUrl" />
+      <Field ID="{0FC8DBDC-B44B-49DC-BCB9-305E3964A203}"  Type="Choice" Group="Akumina Content Types"  DisplayName="BannerLinkTarget" Required="FALSE" Name="BannerLinkTarget" >
+        <CHOICES>
+          <CHOICE>Same Window</CHOICE>
+          <CHOICE>New Window</CHOICE>
+        </CHOICES>
+        <Default>Same Window</Default>
+      </Field>
+      <Field ID="{03E54425-DDA0-4676-9410-83519FD5A400}"  Type="Text" Group="Akumina Content Types"  DisplayName="BannerLinkHoverText" Required="FALSE" Name="BannerLinkHoverText" />
+      <Field ID="{46A6A43F-6D12-42A7-9F04-F57787C5C1D9}"  Type="URL" Group="Akumina Content Types"  DisplayName="BannerImage" Format="Image" Required="FALSE" Name="BannerImage" />
+      <Field ID="{EA66E3A5-2420-4396-969B-259443B50801}"  Type="Text" Group="Akumina Content Types"  DisplayName="BannerImageAltText" Required="FALSE" Name="BannerImageAltText" />
+      <Field ID="{895ACA16-CC05-4021-8016-256F9E017D03}"  Type="Boolean" Group="Akumina Content Types"  DisplayName="BannerActive" Required="FALSE" Name="BannerActive" >
+        <Default>1</Default>
+      </Field>
+      <Field ID="{B8E595BE-B58D-43A4-90A7-8FC41F2106D4}"  Type="Number" Group="Akumina Content Types"  DisplayName="BannerItemOrder" Required="FALSE" Name="BannerItemOrder" >
+          <Default>0</Default>
+    </Field>
+     <Field  ID="{F68FE484-AF22-45E9-85FB-3EDF4EA974A4}"  Format="DateTime" Name="Expires" Group="Akumina Content Types"   DisplayName="Expires" Type="DateTime"/>  
+    </FieldRefs>                                              
+  </ContentType>
+  <ContentType ID="0x01200200C25A08D46BE4487A86080142FBFED933" Name="AkuminaDiscussionBoardContentType" Group="Akumina Content Types" Description="Akumina Discussion Board Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs >
+      <Field ID="{A6828C7D-6754-449A-AB5F-07105080D991}"  Type="Note" DisplayName="AttachmentLinks" Group="Akumina Content Types" Required="FALSE" Name="AttachmentLinks" ShowInEditForm="TRUE" ShowInNewForm="TRUE" />
+      <Field ID="{2D33BCF0-F6B2-453D-97CD-BD3268967983}" Type="Boolean" DisplayName="ConfirmArchive" Group="Akumina Content Types" Required="FALSE" Name="ConfirmArchive" ShowInEditForm="TRUE" ShowInNewForm="TRUE" />      
+    </FieldRefs>
+  </ContentType>
+  <ContentType ID="0x010068C3C2ABCA3E19479693D31CD2B2FF24" Name="ImportantDate" Group="Akumina Content Types" Description="Akumina ImportantDate Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs >
+      <!--<Field Type="Text" Name="Title" Required="FALSE" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Title;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title"></Field>-->
+      <Field Name="Start Date" Format="DateOnly"  DisplayName="Start Date" Type="DateTime"  ShowInEditForm="TRUE" ShowInNewForm="TRUE">
+        <Default>[today]</Default>
+      </Field>
+
+      <Field Name="Subtext"  Type="Text" DisplayName="Subtext"  ShowInEditForm="TRUE" ShowInNewForm="TRUE" />
+
+      <!--Summary Links 	Summary Links-->
+      <Field Name="DetailsLink"  DisplayName="DetailsLink" Type="URL"  ShowInEditForm="TRUE" ShowInNewForm="TRUE"/>
+
+
+      <Field Name="MoreWindow" DisplayName="MoreWindow" Type="Choice"  ShowInEditForm="TRUE" ShowInNewForm="TRUE">
+        <CHOICES>
+          <CHOICE>Same Window</CHOICE>
+          <CHOICE>New Window</CHOICE>
+        </CHOICES>
+        <Default>Same Window</Default>
+      </Field>
+      <Field Name="DoNotDisplayThisItem" Type="Boolean" DisplayName="DoNotDisplayThisItem"  ShowInEditForm="TRUE" ShowInNewForm="TRUE">
+        <Default>0</Default>
+      </Field>
+      <Field Name="Expires" Format="DateTime"  DisplayName="Expires" Type="DateTime"  ShowInEditForm="TRUE" ShowInNewForm="TRUE">
+      </Field>
+    </FieldRefs>
+  </ContentType>
+</lists>

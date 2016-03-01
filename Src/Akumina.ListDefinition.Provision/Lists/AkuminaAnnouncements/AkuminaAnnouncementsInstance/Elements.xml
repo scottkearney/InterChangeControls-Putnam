@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaAnnouncements" OnQuickLaunch="TRUE" TemplateType="10011" Url="Lists/AkuminaAnnouncements" Description="Akumina Announcements List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Sample Title</Field>
+          <Field Name="AnnouncementTitle">Sample Announcement Title</Field>
+          <Field Name="Body">This is a sample Announcement</Field>
+          <Field Name="Summary">This is a sample Announcement Description</Field>
+          <Field Name="Seo_x002d_Title">Seo-Title</Field>
+          <Field Name="Seo_x002d_Keywords">Seo-Keywords</Field>
+          <Field Name="Seo_x002d_Description">Seo-Description</Field>
+        </Row>
+        <!--<Row>
+          <Field Name="Title">Sample Title 1</Field>
+          <Field Name="AnnouncementTitle">Sample Announcement Title 1</Field>
+          <Field Name="Body">This is a sample Announcement</Field>
+          <Field Name="Summary">This is a sample Announcement Description</Field>
+          <Field Name="Seo_x002d_Title">Seo-Title</Field>
+          <Field Name="Seo_x002d_Keywords">Seo-Keywords</Field>
+          <Field Name="Seo_x002d_Description">Seo-Description</Field>
+        </Row>-->
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="SiteLinks" List="113" Url="_catalogs/wp">
+    <File Path="SiteLinks\SiteLinks.webpart" Url="Akumina.WebParts.SiteLinks_SiteLinks.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Akumina" />
+    </File>
+  </Module>
+</Elements>

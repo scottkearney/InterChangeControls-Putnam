@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{245C8160-20A7-470D-8F69-C0E33E0FFF62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Akumina.Provisioning.IgniteDepartment</RootNamespace>
+    <AssemblyName>Akumina.Provisioning.IgniteDepartment</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <AssemblyDeploymentTarget>WebApplication</AssemblyDeploymentTarget>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ignite.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.Office.Server.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Shared\AkuminaInterAction.cs">
+      <Link>AkuminaInterAction.cs</Link>
+    </Compile>
+    <Compile Include="AkuminaIcons.cs" />
+    <Compile Include="Features\IgniteDepartmentSite\IgniteDepartmentSite.EventReceiver.cs">
+      <DependentUpon>IgniteDepartmentSite.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebCreation\WebCreation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeptPageModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af960908-daa6-4863-ae43-90099343b82a}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\IgniteDepartmentSite\IgniteDepartmentSite.feature">
+      <FeatureId>{2e1594ba-d0f1-43db-96a3-4a74ad520e0c}</FeatureId>
+    </None>
+    <None Include="ignite.snk" />
+    <None Include="IgniteSubSiteDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d81de7c5-d32c-42c1-825d-fa22c3e839e4}</SharePointProjectItemId>
+    </None>
+    <None Include="MasterPageModule\ignitemaster.master" />
+    <None Include="MasterPageModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6958dd38-b322-49c0-9c82-3c657ba303fc}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{8fcf1d30-9db6-4d8f-b959-714c347c9eed}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebCreation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{37551d52-7dbe-4d00-9824-b137f05f8b01}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DeptPageModule\DiscussList.aspx" />
+    <Content Include="DeptPageModule\DiscussNew.aspx" />
+    <Content Include="DeptPageModule\DiscussThread.aspx" />
+    <Content Include="DeptPageModule\Documents.aspx" />
+    <Content Include="DeptPageModule\Elements.xml" />
+    <Content Include="DeptPageModule\Home.aspx" />
+    <Content Include="DeptPageModule\NewsDetail.aspx" />
+    <Content Include="DeptPageModule\NewsList.aspx" />
+    <Content Include="DeptPageModule\Search.aspx" />
+    <Content Include="Features\IgniteDepartmentSite\IgniteDepartmentSite.Template.xml">
+      <DependentUpon>IgniteDepartmentSite.feature</DependentUpon>
+    </Content>
+    <Content Include="IgniteSubSiteDefinition\default.aspx" />
+    <Content Include="IgniteSubSiteDefinition\onet.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="IgniteSubSiteDefinition\webtemp_IgniteSubSiteDefinition.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MasterPageModule\Elements.xml" />
+    <Content Include="MasterPageModule\ignitemaster.html" />
+    <Content Include="WebCreation\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\Akumina.WebParts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>xcopy "$(SolutionDir)Shared\Content\*.*" "$(SolutionDir)Akumina.Provisioning.IgniteDepartment\Layouts\Akumina.WebParts" /Y/E/I</PreBuildEvent>
+  </PropertyGroup>
+</Project>

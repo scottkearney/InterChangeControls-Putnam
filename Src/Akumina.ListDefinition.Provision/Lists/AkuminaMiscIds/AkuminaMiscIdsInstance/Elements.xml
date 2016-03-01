@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaMiscIDS" OnQuickLaunch="TRUE" TemplateType="10026" Url="Lists/AkuminaMiscIDS" Description="AkuminaMiscIDS List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">HomePage</Field>
+          <Field Name="WebPartId">Traffic</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

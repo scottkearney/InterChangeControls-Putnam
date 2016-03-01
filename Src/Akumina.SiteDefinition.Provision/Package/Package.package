@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="07d7ce9e-e3ba-4b5c-b577-9030ffad87fe" solutionId="07d7ce9e-e3ba-4b5c-b577-9030ffad87fe" resetWebServer="false" sharePointProductVersion="15.0" name="Akumina.SiteDefinition.Provision" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Akumina.SiteDefinition.Provision.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="bin\Debug\Akumina.SiteDefinition.Provision.dll">
+      <safeControls>
+        <safeControl assemblyName="Akumina.SiteDefinition.Provision" namespaceName="Akumina.SiteDefinition.Provision" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </customAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="96eda2e2-8148-428c-b8d8-23080f9daf0b" />
+    <featureReference itemId="9d846959-9666-4d31-975d-590f42fe70dd" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="f1d0533d-8bf4-4dc7-8a6c-d5dcc2bf9fc4" />
+    <projectItemReference itemId="0aefa712-5fca-4944-b39b-8152a6806e12" />
+  </projectItems>
+</package>

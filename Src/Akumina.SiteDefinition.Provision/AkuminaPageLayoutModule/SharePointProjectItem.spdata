@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="AkuminaPageLayoutModule\" Type="ElementManifest" />
+    <ProjectItemFile Source="AkuminaSparkDMSPageLayout.aspx" Target="AkuminaPageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="AkuminaSparkHomePageLayout.aspx" Target="AkuminaPageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="AkuminaSpark1ColumnLayout.aspx" Target="AkuminaPageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="AkuminaSpark2ColumnLayout.aspx" Target="AkuminaPageLayoutModule\" Type="ElementFile" />
+    <ProjectItemFile Source="AkuminaSpark3ColumnLayout.aspx" Target="AkuminaPageLayoutModule\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

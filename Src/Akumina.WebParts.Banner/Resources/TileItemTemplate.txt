@@ -1,0 +1,17 @@
+<div class="interAction">
+    <div class="ia-banner">
+        <div class="tiles-wrap">
+		{{#Items}}
+				<div class="{{tileClass}}">
+					<div class="ia-banner-item">
+					    <a href="{{BannerLinkUrlOWSURLH}}" class="tile-link" title="{{BannerLinkHoverTextOWSTEXT}}" target="{{BannerLinkTargetOWSCHCS}}" style="background-image:url({{BannerImageOWSURLH}})">
+						    <div class="ia-banner-content">
+							    <h1 class="ia-banner-title">{{BannerHeadingOWSTEXT}}</h1>
+							    <h2 class="ia-banner-subtitle">{{BannerSubHeadingOWSTEXT}}</h2>
+						    </div>
+					    </a>
+					</div>
+				</div>
+		{{/Items}}				
+	</div>
+</div>

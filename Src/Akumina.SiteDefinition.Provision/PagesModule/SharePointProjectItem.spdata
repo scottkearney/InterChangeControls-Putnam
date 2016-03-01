@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="PagesModule\" Type="ElementManifest" />
+    <ProjectItemFile Source="SparkDiscussions.aspx" Target="PagesModule\" Type="ElementFile" />
+    <ProjectItemFile Source="SparkDiscussionThreads.aspx" Target="PagesModule\" Type="ElementFile" />
+    <ProjectItemFile Source="SparkDocuments.aspx" Target="PagesModule\" Type="ElementFile" />
+    <ProjectItemFile Source="SparkHome.aspx" Target="PagesModule\" Type="ElementFile" />
+    <ProjectItemFile Source="SparkNewDiscussion.aspx" Target="PagesModule\" Type="ElementFile" />
+    <ProjectItemFile Source="SparkAnnouncementDetail.aspx" Target="PagesModule\" Type="ElementFile" />
+    <ProjectItemFile Source="SparkLibraryListing.aspx" Target="PagesModule\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

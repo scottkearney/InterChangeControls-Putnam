@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Page (0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39) -->
+  <ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39007407554FD942471BA9F48745A61F0327" Name="Akumina Spark" Group="AkuminaSparkSiteColumns" Description="Akumina Spark is a content type template created by a Akumina Site Definition feature." Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{81b87e3b-db23-4f87-aaae-34e591beb2af}" DisplayName="Akumina Site Column" Required="FALSE" Name="AkuminaSiteColumn" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

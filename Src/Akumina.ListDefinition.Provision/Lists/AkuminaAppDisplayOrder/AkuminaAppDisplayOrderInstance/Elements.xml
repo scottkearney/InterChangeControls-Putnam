@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaAppDisplayOrder" OnQuickLaunch="TRUE" TemplateType="10013" RootWebOnly="TRUE" Url="Lists/AkuminaAppDisplayOrder" Description="Akumina App Display Order List Instance">
+    <!--<Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Sample Title</Field>
+          <Field Name="SortId">Enter Sort ID</Field>
+          <Field Name="UserId">Enter User ID</Field>
+          <Field Name="AppId">Enter App ID</Field>
+          <Field Name="SortOrder">1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sample Title 1</Field>
+          <Field Name="SortId">Enter Sort ID</Field>
+          <Field Name="UserId">Enter User ID</Field>
+          <Field Name="AppId">Enter App ID</Field>
+          <Field Name="SortOrder">2</Field>
+        </Row>
+      </Rows>
+    </Data>-->
+  </ListInstance>
+</Elements>

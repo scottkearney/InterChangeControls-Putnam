@@ -1,0 +1,46 @@
+#suiteBarLeft
+{
+	display: none !important;
+}
+
+ #suiteBar {
+    float: right;
+    width: auto;
+} 
+	
+#s4-ribbonrow {
+    z-index: -1; /* Allows Suite Bar to show on top of Ribbon */
+    position: static;  /* Secret sauce - needed to maintain ribbon functionality */
+}
+
+#welcomeMenuBox{
+height:36px !important;
+}
+
+.ms-welcome-hover
+{
+height:36px !important;
+}
+
+.pageWrapper  .d_3VMrNMDSVIZuJ7pf_0 textarea
+{
+overflow-x: hidden !important;
+}
+
+div.ms-cui-TabRowRight 
+{
+display: none !important;
+}
+
+@media (max-width: 640px) 
+{
+
+	#fullscreenmodebox {
+		display:none;
+	}
+	#RibbonContainer-TabRowRight {
+		float:left;
+	}
+	#RibbonContainer-TabRowRight .ms-promotedActionButton-text { display:none; }
+
+} 

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Akumina.WebParts.Documents.DocumentGrid.DocumentGrid, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Documents - Grid</property>
+        <property name="Description" type="string">Documents - Grid Web Part</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="CatalogIconImageUrl" type="string">_layouts/15/Images/Akumina.WebParts.Documents/ia-document-grid.png</property>
+        <property name="TitleIconImageUrl" type="string">_layouts/15/Images/Akumina.WebParts.Documents/ia-document-grid.png</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

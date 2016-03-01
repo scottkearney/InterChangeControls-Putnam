@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Akumina.WebParts.Banner">
+    <File Path="Akumina.WebParts.Banner\js\vendor\jquery-2.1.3.min.js" Url="Akumina.WebParts.Banner/js/vendor/jquery-2.1.3.min.js" />
+    <File Path="Akumina.WebParts.Banner\js\vendor\mustache.min.js" Url="Akumina.WebParts.Banner/js/vendor/mustache.min.js" />
+    <File Path="Akumina.WebParts.Banner\js\vendor\owl.carousel.min.js" Url="Akumina.WebParts.Banner/js/vendor/owl.carousel.min.js" />
+    <File Path="Akumina.WebParts.Banner\css\ia-interaction-controls.css" Url="Akumina.WebParts.Banner/css/ia-interaction-controls.css" />
+    <File Path="Akumina.WebParts.Banner\css\owl.carousel.css" Url="Akumina.WebParts.Banner/css/owl.carousel.css" />
+    <File Path="Akumina.WebParts.Banner\css\owl.transitions.css" Url="Akumina.WebParts.Banner/css/owl.transitions.css" />
+    <File Path="Akumina.WebParts.Banner\icon\ia-banner.png" Url="Akumina.WebParts.Banner/icon/ia-banner.png" />
+    <File Path="Akumina.WebParts.Banner\css\fonts\font-awesome\FontAwesome.otf" Url="Akumina.WebParts.Banner/css/fonts/font-awesome/FontAwesome.otf" />
+    <File Path="Akumina.WebParts.Banner\css\fonts\font-awesome\fontawesome-webfont.eot" Url="Akumina.WebParts.Banner/css/fonts/font-awesome/fontawesome-webfont.eot" />
+    <File Path="Akumina.WebParts.Banner\css\fonts\font-awesome\fontawesome-webfont.svg" Url="Akumina.WebParts.Banner/css/fonts/font-awesome/fontawesome-webfont.svg" />
+    <File Path="Akumina.WebParts.Banner\css\fonts\font-awesome\fontawesome-webfont.ttf" Url="Akumina.WebParts.Banner/css/fonts/font-awesome/fontawesome-webfont.ttf" />
+    <File Path="Akumina.WebParts.Banner\css\fonts\font-awesome\fontawesome-webfont.woff" Url="Akumina.WebParts.Banner/css/fonts/font-awesome/fontawesome-webfont.woff" />
+    <File Path="Akumina.WebParts.Banner\css\ia-interaction-controls.css.map" Url="Akumina.WebParts.Banner/css/ia-interaction-controls.css.map" />
+    <File Path="Akumina.WebParts.Banner\css\putnam-tiles.css" Url="Akumina.WebParts.Banner/css/putnam-tiles.css" />
+  </Module>
+</Elements>

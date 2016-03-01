@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="DiscussionSummary" List="113" Url="_catalogs/wp">
+    <File Path="DiscussionSummary\DiscussionSummary.webpart" Url="Akumina.WebParts.DiscussionBoard_DiscussionSummary.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Akumina" />
+    </File>
+  </Module>
+</Elements>

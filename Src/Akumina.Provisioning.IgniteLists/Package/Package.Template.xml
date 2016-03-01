@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="174ac114-d9ae-4db7-b6c2-38d4b0d85265" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="Akumina.Provisioning.IgniteLists.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Akumina.Provisioning.IgniteLists" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+    </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Akumina.Provisioning.IgniteLists_Provisioning\Feature.xml" />
+  </FeatureManifests>
+</Solution>

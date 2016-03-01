@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaBanner" OnQuickLaunch="TRUE" TemplateType="10014" Url="Lists/AkuminaBanner" Description="Akumina Banner List Instance">
+
+    <Data>
+      <Rows>
+
+        <Row>
+          <Field Name ="Title">First Banner Item</Field>
+          <!--<Field Name ="BannerActive">Homw Banner</Field>-->
+          <Field Name ="BannerItemOrder">1</Field>
+          <!--<Field Name ="BannerLinkUrl">Homw Banner</Field>-->
+          <!--<Field Name ="BannerImage"><![CDATA[<IMG SRC="/Lists/AkuminaImages/Sparkbanner-1.jpg"></IMG>]]></Field>-->
+          <Field Name ="BannerHeading">Marketing Banner</Field>
+          <Field Name ="BannerSubHeading"></Field>
+          <Field Name ="BannerLinkText">Banner Link</Field>
+          <!--<Field Name ="BannerLinkTarget">5</Field>-->
+          <Field Name ="BannerLinkHoverText">Marketing Banner</Field>
+          <Field Name ="BannerImageAltText">First Banner Item</Field>
+        </Row>
+
+        <Row>
+          <Field Name ="Title">Second Banner Item</Field>
+          <!--<Field Name ="BannerActive">Homw Banner</Field>-->
+          <Field Name ="BannerItemOrder">2</Field>
+          <!--<Field Name ="BannerLinkUrl">Homw Banner</Field>-->
+          <!--<Field Name ="BannerImage"><![CDATA[<IMG SRC="/Lists/AkuminaImages/Sparkbanner-2.jpg"></IMG>]]></Field>-->
+          <Field Name ="BannerHeading">Communication Banner</Field>
+          <Field Name ="BannerSubHeading"></Field>
+          <Field Name ="BannerLinkText">Banner Link</Field>
+          <!--<Field Name ="BannerLinkTarget">5</Field>-->
+          <Field Name ="BannerLinkHoverText">Communication Banner</Field>
+          <Field Name ="BannerImageAltText">Second Banner Item</Field>
+        </Row>
+
+      </Rows>
+    </Data>
+
+  </ListInstance>
+</Elements>

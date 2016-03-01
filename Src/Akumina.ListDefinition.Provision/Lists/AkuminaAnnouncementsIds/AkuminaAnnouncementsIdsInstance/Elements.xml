@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaAnnouncementsIDS" OnQuickLaunch="TRUE" TemplateType="10012" Url="Lists/AkuminaAnnouncementsIDS" Description="Akumina AnnouncementsIDS List Instance">
+
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">HomeAnnouncements</Field>
+          <Field Name="ListName">AkuminaAnnouncements</Field>
+          <!--<Field Name="InstructionSet"></Field>-->
+          <Field Name="RootResourcePath"></Field>
+          <Field Name="MaxAnnouncements">5</Field>
+        </Row>
+      </Rows>
+    </Data>    
+    
+  </ListInstance>
+</Elements>

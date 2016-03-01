@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ModuleFiles\" Type="ElementManifest" />
+    <ProjectItemFile Source="Sample.txt" Target="ModuleFiles\" Type="ElementFile" />
+    <ProjectItemFile Source="AkuminaDocuments.png" Target="ModuleFiles\" Type="ElementFile" />
+    <ProjectItemFile Source="AkuminaImages.png" Target="ModuleFiles\" Type="ElementFile" />
+    <ProjectItemFile Source="Sparkbanner-1.jpg" Target="ModuleFiles\" Type="ElementFile" />
+    <ProjectItemFile Source="Sparkbanner-2.jpg" Target="ModuleFiles\" Type="ElementFile" />
+    <ProjectItemFile Source="Sparkbanner-3.jpg" Target="ModuleFiles\" Type="ElementFile" />
+    <ProjectItemFile Source="Test Upload file28.txt" Target="ModuleFiles\" Type="ElementFile" />
+    <ProjectItemFile Source="testfile.txt" Target="ModuleFiles\" Type="ElementFile" />
+    <ProjectItemFile Source="Testword.docx" Target="ModuleFiles\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

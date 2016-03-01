@@ -1,0 +1,14 @@
+﻿<div class="ia-link-list" style="color:{{Color}}">
+	<div class="ia-link-list-headline ia-link-list-headline-icon"> 
+        <span class="fa {{Icon}} ia-link-list-icon" style="color:{{Color}}"></span>
+        <h1 class="ia-link-list-title" style="color:{{Color}}" >{{Title}}</h1> 
+	</div>
+		
+    <ul class="ia-link-list-items ia-link-list-arrows"></ul>  
+    {{#MoreLink}}
+    <div class="ia-link-list-more clearfix">
+        <a href=" {{morelink}}" target="{{MoreTarget}}">
+        {{MoreText}}</a>  <span class="ia-link-list-more-arrow fa fa-caret-right"></span>
+    </div>                               
+	{{/MoreLink}}
+</div>

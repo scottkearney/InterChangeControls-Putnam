@@ -1,0 +1,14 @@
+﻿<WSPS>
+<WSP>Akumina.ListDefinition.Provision.wsp</WSP>
+<WSP>Akumina.SiteDefinition.Provision.wsp</WSP>
+<WSP>Akumina.WebParts.Banner.wsp</WSP>
+<WSP>Akumina.WebParts.ContentBlock.wsp</WSP>
+<WSP>Akumina.WebParts.DiscussionBoard.wsp</WSP>
+<WSP>Akumina.WebParts.Documents.wsp</WSP>
+<WSP>Akumina.WebParts.DocumentSummaryList.wsp</WSP>
+<WSP>Akumina.WebParts.Miscellaneous.wsp</WSP>
+<WSP>Akumina.WebParts.SiteLinks.wsp</WSP>
+<WSP>Akumina.WebParts.SiteSummaryList.wsp</WSP>
+<WSP>Akumina.WebParts.Announcement.wsp</WSP>
+<WSP>Akumina.WebParts.LibraryListing.wsp</WSP>
+</WSPS>

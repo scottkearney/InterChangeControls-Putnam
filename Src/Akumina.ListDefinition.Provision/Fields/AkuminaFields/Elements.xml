@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Field
+         Group="Managed Metadata Fields"
+         DisplayName="Category"
+         ID="{DD02CB92-A716-4209-99D2-4C5EF8AE8816}"
+         SourceID="http://schemas.microsoft.com/sharepoint/v3"
+         StaticName="AkuminaCategory"
+         Name="AkuminaCategory"
+         ShowField="Term1033"
+         EnforceUniqueValues="FALSE"
+         Required="TRUE"
+         ShowInEditForm="TRUE"
+         ShowInNewForm="TRUE"
+         Type="TaxonomyFieldType" >
+    <Customization>
+      <ArrayOfProperty>
+        <Property>
+          <Name>TextField</Name>
+          <Value xmlns:q6="http://www.w3.org/2001/XMLSchema"
+                 p4:type="q6:string"
+                 xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{93619FA0-1F46-416C-9DB6-ED09A2FBFA81}</Value>
+        </Property>
+      </ArrayOfProperty>
+    </Customization>
+  </Field>
+
+  <Field Type="Note"
+         DisplayName="CategoryHidden"
+         StaticName="CategoryHidden"
+         Name="CategoryHidden"
+         ID="{3AD04470-29E2-4BF5-AC3D-C9E6D05D7E5D}"
+         SourceID="{2694E81F-90AF-4885-B4E4-05C18F735497}"
+         ShowInViewForms="FALSE"
+         Required="TRUE"
+         Hidden="TRUE"
+         CanToggleHidden="TRUE"
+         RowOrdinal="0" />
+
+</Elements>

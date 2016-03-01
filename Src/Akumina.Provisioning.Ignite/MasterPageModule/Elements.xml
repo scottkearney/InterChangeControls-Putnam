@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPageModule" Url="_catalogs/masterpage">
+    <File Path="MasterPageModule\ignitemaster.html" Url="Ignite/ignitemaster.html"  ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE" />
+    <File Path="MasterPageModule\ignitemaster.master" Url="Ignite/ignitemaster.master"  ReplaceContent="TRUE" IgnoreIfAlreadyExists="TRUE">
+      <Property Name="ContentType"
+                Value="ASP NET Master Page" />
+      <Property Name="Title"
+                Value="Ignite master page" />
+      <Property Name="MasterPageDescription"
+                Value="Ignite master page." />
+      <Property Name="UIVersion" Value="15" />
+    </File>
+  </Module>
+</Elements>

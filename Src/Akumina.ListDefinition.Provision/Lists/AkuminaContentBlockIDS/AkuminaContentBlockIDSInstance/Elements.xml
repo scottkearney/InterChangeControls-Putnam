@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaContentBlockIDS" OnQuickLaunch="TRUE" TemplateType="10030" Url="Lists/AkuminaContentBlockIDS" Description="Akumina Content Block Ids List Instance"></ListInstance>
+</Elements>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaSiteRecommendation" OnQuickLaunch="TRUE" TemplateType="10029" Url="Lists/AkuminaSiteRecommendation" Description="Akumina Site Recommendation List Instance"></ListInstance>
+</Elements>

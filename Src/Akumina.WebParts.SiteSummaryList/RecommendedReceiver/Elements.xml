@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers >
+      <Receiver>
+        <Name>RecommendedReceiverSiteDeleted</Name>
+        <Type>SiteDeleted</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>Akumina.WebParts.SiteSummaryList.RecommendedReceiver.RecommendedReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>RecommendedReceiverWebDeleted</Name>
+        <Type>WebDeleted</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>Akumina.WebParts.SiteSummaryList.RecommendedReceiver.RecommendedReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>RecommendedReceiverWebMoved</Name>
+        <Type>WebMoved</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>Akumina.WebParts.SiteSummaryList.RecommendedReceiver.RecommendedReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>RecommendedReceiverWebProvisioned</Name>
+        <Type>WebProvisioned</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>Akumina.WebParts.SiteSummaryList.RecommendedReceiver.RecommendedReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

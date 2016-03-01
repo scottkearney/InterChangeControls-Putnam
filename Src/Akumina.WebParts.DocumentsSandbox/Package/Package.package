@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4fe5e468-3f96-433a-9e98-101332fcb17c" solutionId="4fe5e468-3f96-433a-9e98-101332fcb17c" resetWebServer="false" sharePointProductVersion="15.0" name="Akumina.WebParts.DocumentsSandbox" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="2cbbec3a-7f40-4818-8b9c-73e525daaad0" />
+  </features>
+</package>

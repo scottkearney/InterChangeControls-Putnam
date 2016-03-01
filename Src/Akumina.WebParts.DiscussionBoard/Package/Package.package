@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b945b22a-3b0d-4f72-8798-e109874a0881" solutionId="b945b22a-3b0d-4f72-8798-e109874a0881" resetWebServer="false" sharePointProductVersion="15.0" name="Akumina.WebParts.DiscussionBoard" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="CKEditor.NET.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="GAC\CKEditor.NET.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="206fa62f-8714-4c31-9b05-c15e7728609a" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="2a3addc2-e438-43f6-8d0c-76f6558b8f97" />
+    <projectItemReference itemId="c2c676b8-dc77-46fd-8263-7cfb0c553cee" />
+  </projectItems>
+</package>

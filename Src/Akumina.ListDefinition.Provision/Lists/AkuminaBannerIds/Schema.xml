@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AkuminaBannerIDS" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AkuminaBannerIDS" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100bad5d46a476b47dbb238379227013db0" Name="ListFieldsContentType">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{8ed97cd7-5c80-4a24-8016-55cfca61f715}" Name="SlideNavigation" />
+          <FieldRef ID="{b3851db2-52b3-4529-834e-6538479c783a}" Name="MaximumSlideCount" />
+          <FieldRef ID="{840d8e83-4b9a-4f33-8001-ad905ab7731f}" Name="Autoplay" />
+          <FieldRef ID="{b20fd8cd-8d12-4e66-877f-a9e2d7932b67}" Name="Animation_x002e_SlideTransition" />
+          <FieldRef ID="{1fe137dc-c05a-41f3-9aca-9b50af98566a}" Name="Animation_x002e_SlideDuration" />
+          <FieldRef ID="{69b47b59-d1eb-40fa-a0b9-26524d4454f1}" Name="TextSettings_x002e_ColorTheme" />
+          <FieldRef ID="{ee501a6a-bc00-4d1e-ab09-46d951a2e71c}" Name="TextSettings_x002e_Alignment" />
+          <FieldRef ID="{44d242d6-a576-435c-821c-7f6735eab476}" Name="TextSettings_x002e_SubtitleMaxCharacters" />
+          <FieldRef ID="{7B4D7E57-7695-4BD6-A449-BD5C2182B1B2}" Name="TextSettings_x002e_ButtonMaxCharacters" />
+          <FieldRef ID="{a9797992-348c-42a7-bf7f-b23e8f4632dc}" Name="TextSettings_x002e_MaxCharacters" />
+          <FieldRef ID="{15999296-d866-4464-b980-b26e3a363ba7}" Name="TextSettings_x002e_Location" />
+          <FieldRef ID="{5374d647-9155-4311-81aa-67fb8e1c4499}" Name="ResultSourceId" />
+          <FieldRef ID="{973c3a25-b065-4de3-b2da-0f56e2436f9f}" Name="RootResourcePath" />
+          <FieldRef ID="{26c0f14b-3503-4042-b37e-408f76c7cc75}" Name="Infin" />
+          <FieldRef ID="{ae912e2d-475c-49c9-9237-023cd7b36bba}" Name="QueryType" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="SlideNavigation" ID="{8ed97cd7-5c80-4a24-8016-55cfca61f715}" DisplayName="SlideNavigation" Type="Boolean">
+        <Default>1</Default>
+      </Field>
+      <Field Name="MaximumSlideCount" ID="{b3851db2-52b3-4529-834e-6538479c783a}" DisplayName="MaximumSlideCount" Type="Number">
+        <Default>3</Default>
+      </Field>
+      <Field Name="Autoplay" ID="{840d8e83-4b9a-4f33-8001-ad905ab7731f}" DisplayName="Autoplay" Type="Boolean">
+        <Default>1</Default>
+      </Field>
+      <Field Name="Animation_x002e_SlideTransition" ID="{b20fd8cd-8d12-4e66-877f-a9e2d7932b67}" DisplayName="Animation.SlideTransition" Type="Choice">
+        <CHOICES>
+          <CHOICE>Horizontal</CHOICE>
+          <CHOICE>Fade</CHOICE>
+        </CHOICES>
+        <Default>Horizontal</Default>
+      </Field>
+      <Field Name="Animation_x002e_SlideDuration" ID="{1fe137dc-c05a-41f3-9aca-9b50af98566a}" DisplayName="Animation.SlideDuration" Type="Number">
+        <Default>3000</Default>
+      </Field>
+      <Field Name="TextSettings_x002e_ColorTheme" ID="{69b47b59-d1eb-40fa-a0b9-26524d4454f1}" DisplayName="TextSettings.ColorTheme" Type="Choice">
+        <CHOICES>
+          <CHOICE>White</CHOICE>
+          <CHOICE>Black</CHOICE>
+          <CHOICE>Grey</CHOICE>
+        </CHOICES>
+        <Default>White</Default>
+      </Field>
+      <Field Name="TextSettings_x002e_Alignment" ID="{ee501a6a-bc00-4d1e-ab09-46d951a2e71c}" DisplayName="TextSettings.Alignment" Type="Choice">
+        <CHOICES>
+          <CHOICE>left</CHOICE>
+          <CHOICE>right</CHOICE>
+          <CHOICE>center</CHOICE>
+        </CHOICES>
+        <Default>left</Default>
+      </Field>
+      <Field Name="TextSettings_x002e_SubtitleMaxCharacters" ID="{44d242d6-a576-435c-821c-7f6735eab476}" DisplayName="TextSettings.SubtitleMaxCharacters" Type="Number">
+        <Default>80</Default>
+      </Field>
+      <Field Name="TextSettings_x002e_ButtonMaxCharacters" ID="{7B4D7E57-7695-4BD6-A449-BD5C2182B1B2}" DisplayName="TextSettings.ButtonMaxCharacters" Type="Number">
+        <Default>60</Default>
+      </Field>
+      <Field Name="TextSettings_x002e_MaxCharacters" ID="{a9797992-348c-42a7-bf7f-b23e8f4632dc}" DisplayName="TextSettings.MaxCharacters" Type="Number">
+        <Default>80</Default>
+      </Field>
+      <Field Name="TextSettings_x002e_Location" ID="{15999296-d866-4464-b980-b26e3a363ba7}" DisplayName="TextSettings.Location" Type="Choice">
+        <CHOICES>
+          <CHOICE>top-left</CHOICE>
+          <CHOICE>top-center</CHOICE>
+          <CHOICE>top-right</CHOICE>
+          <CHOICE>middle-left</CHOICE>
+          <CHOICE>middle-center</CHOICE>
+          <CHOICE>middle-right</CHOICE>
+          <CHOICE>bottom-left</CHOICE>
+          <CHOICE>bottom-center</CHOICE>
+          <CHOICE>bottom-right</CHOICE>
+        </CHOICES>
+        <Default>top-left</Default>
+      </Field>
+      <Field Name="ResultSourceId" ID="{5374d647-9155-4311-81aa-67fb8e1c4499}" DisplayName="ResultSourceId" Type="Text" />
+      <Field Name="RootResourcePath" ID="{973c3a25-b065-4de3-b2da-0f56e2436f9f}" DisplayName="RootResourcePath" Type="Text" />
+      <Field Name="Infin" ID="{26c0f14b-3503-4042-b37e-408f76c7cc75}" DisplayName="InfiniteLoop" Type="Boolean" />
+      <Field Name="QueryType" ID="{ae912e2d-475c-49c9-9237-023cd7b36bba}" DisplayName="QueryType" Type="Choice">
+        <CHOICES>
+          <CHOICE>ListQuery</CHOICE>
+          <CHOICE>SearchQuery</CHOICE>
+        </CHOICES>
+        <Default>ListQuery</Default>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="SlideNavigation" />
+          <FieldRef Name="MaximumSlideCount" />
+          <FieldRef Name="Autoplay" />
+          <FieldRef Name="Animation_x002e_SlideTransition" />
+          <FieldRef Name="Animation_x002e_SlideDuration" />
+          <FieldRef Name="TextSettings_x002e_ColorTheme" />
+          <FieldRef Name="TextSettings_x002e_Alignment" />
+          <FieldRef Name="TextSettings_x002e_SubtitleMaxCharacters" />
+          <FieldRef Name="TextSettings_x002e_ButtonMaxCharacters" />
+          <FieldRef Name="TextSettings_x002e_MaxCharacters" />
+          <FieldRef Name="TextSettings_x002e_Location" />
+          <FieldRef Name="ResultSourceId" />
+          <FieldRef Name="RootResourcePath" />
+          <FieldRef Name="Infin" />
+          <FieldRef Name="QueryType" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

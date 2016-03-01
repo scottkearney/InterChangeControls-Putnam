@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaBannerIDS" OnQuickLaunch="TRUE" TemplateType="10015" Url="Lists/AkuminaBannerIDS" Description="Akumina BannerIds List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Home Banner</Field>
+          <Field Name="MaximumSlideCount">4</Field>
+          <Field Name="Animation_x002e_SlideDuration">3000</Field>
+          <Field Name="TextSettings_x002e_SubtitleMaxCharacters">80</Field>
+          <Field Name="TextSettings_x002e_MaxCharacters">80</Field>
+          <Field Name="TextSettings_x002e_ButtonMaxCharacters">60</Field>
+          <Field Name="TextSettings_x002e_Location">Add more links</Field>
+          <Field Name="ResultSourceId">AkuminaBanner</Field>
+          <Field Name="RootResourcePath"></Field>
+        </Row>
+        <!--<Row>
+          <Field Name="Title">Akumina Banner</Field>
+          <Field Name="MaximumSlideCount">4</Field>
+          <Field Name="Animation_x002e_SlideDuration">3000</Field>
+          <Field Name="TextSettings_x002e_SubtitleMaxCharacters">80</Field>
+          <Field Name="TextSettings_x002e_MaxCharacters">80</Field>
+          <Field Name="TextSettings_x002e_Location">Add more links</Field>
+          <Field Name="ResultSourceId">524f0877-24c7-41c9-96cc-dee47037449e</Field>
+          <Field Name="RootResourcePath">/_layouts/15/Akumina.WebParts</Field>
+        </Row>-->
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="DSLUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="DocumentSummaryList\" Type="ElementManifest" />
+    <ProjectItemFile Source="DocumentSummaryList.webpart" Target="DocumentSummaryList\" Type="ElementFile" />
+    <ProjectItemFile Source="DSLUserControl.ascx" Target="CONTROLTEMPLATES\Akumina.WebParts.DocumentSummaryList\DocumentSummaryList\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Akumina.WebParts.DocumentSummaryList.DocumentSummaryList" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

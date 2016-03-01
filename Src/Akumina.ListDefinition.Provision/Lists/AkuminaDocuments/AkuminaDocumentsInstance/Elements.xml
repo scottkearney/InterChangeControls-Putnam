@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaDocuments"
+                OnQuickLaunch="TRUE"
+                TemplateType="10020"
+                Url="AkuminaDocuments"
+                Description="Akumina Documents List Instance">
+  </ListInstance>
+</Elements>

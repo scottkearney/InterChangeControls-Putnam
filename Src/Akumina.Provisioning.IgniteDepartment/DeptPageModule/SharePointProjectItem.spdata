@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="DeptPageModule\" Type="ElementManifest" />
+    <ProjectItemFile Source="DiscussList.aspx" Target="DeptPageModule\" Type="ElementFile" />
+    <ProjectItemFile Source="DiscussNew.aspx" Target="DeptPageModule\" Type="ElementFile" />
+    <ProjectItemFile Source="DiscussThread.aspx" Target="DeptPageModule\" Type="ElementFile" />
+    <ProjectItemFile Source="Documents.aspx" Target="DeptPageModule\" Type="ElementFile" />
+    <ProjectItemFile Source="Home.aspx" Target="DeptPageModule\" Type="ElementFile" />
+    <ProjectItemFile Source="NewsDetail.aspx" Target="DeptPageModule\" Type="ElementFile" />
+    <ProjectItemFile Source="NewsList.aspx" Target="DeptPageModule\" Type="ElementFile" />
+    <ProjectItemFile Source="Search.aspx" Target="DeptPageModule\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

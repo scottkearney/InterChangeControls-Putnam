@@ -1,0 +1,1527 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lists>
+
+  <list name="ImportantDates_AK" Required="true" contentType="ImportantDate" noCrawl="true">
+    <!--<Field Type="Text" Name="Title" Required="FALSE" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Title;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title"></Field>-->
+    <Field Name="Start Date" Format="DateOnly"  DisplayName="Start Date" Type="DateTime">
+      <Default>[today]</Default>
+    </Field>
+
+    <Field Name="Subtext"  Type="Text" DisplayName="Subtext" />
+
+    <!--Summary Links 	Summary Links-->
+    <Field Name="DetailsLink"  DisplayName="DetailsLink" Type="URL" />
+
+
+    <Field Name="MoreWindow" DisplayName="MoreWindow" Type="Choice">
+      <CHOICES>
+        <CHOICE>Same Window</CHOICE>
+        <CHOICE>New Window</CHOICE>
+      </CHOICES>
+      <Default>Same Window</Default>
+    </Field>
+    <Field Name="DoNotDisplayThisItem" Type="Boolean" DisplayName="DoNotDisplayThisItem">
+      <Default>0</Default>
+    </Field>
+    <Field Name="Expires" Format="DateTime"   DisplayName="Expires" Type="DateTime">
+    </Field>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Welcome</Field>
+          <Field Name="Subtext">Welcome to Ignite</Field>
+          <Field Name="DetailsLink">{Token_SiteUrl}</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <!--<list name="DiscussionIDS_AK" Enforce="true">
+    <Field Name="DiscussionTitle1"  DisplayName="DiscussionTitle" Type="Text" />
+    <Field Name="DiscussionListName" DisplayName="DiscussionListName" Type="Text" />
+    <Field Name="DocumentLibraryName" DisplayName="DocumentLibraryName" Type="Text" />
+    <Field Name="Listing_x002e_DisplayAvatarPicture" DisplayName="Listing.DisplayAvatarPicture" Type="Boolean">
+      <Default>1</Default>
+    </Field>
+    <Field Name="Listing_x002e_NumberOfPosts"  DisplayName="Listing.NumberOfPosts" Type="Text" />
+    <Field Name="Listing_x002e_ListingPostType"  DisplayName="Listing.ListingPostType" Type="Choice">
+      <CHOICES>
+        <CHOICE>OriginalPost</CHOICE>
+        <CHOICE>LastPost</CHOICE>
+      </CHOICES>
+      <Default>OriginalPost</Default>
+    </Field>
+    <Field Name="Summary_x002e_DisplayAvatarPicture"  DisplayName="Summary.DisplayAvatarPicture" Type="Boolean">
+      <Default>1</Default>
+    </Field>
+    <Field Name="Summary_x002e_NumberOfPosts"  DisplayName="Summary.NumberOfPosts" Type="Text" />
+    <Field Name="Summary_x002e_ListingPostType"  DisplayName="Summary.ListingPostType" Type="Choice">
+      <CHOICES>
+        <CHOICE>OriginalPost</CHOICE>
+        <CHOICE>LastPost</CHOICE>
+      </CHOICES>
+      <Default>OriginalPost</Default>
+    </Field>
+    <Field Name="DiscussionThread_x002e_DisplayAvatarPicture" DisplayName="DiscussionThread.DisplayAvatarPicture" Type="Boolean">
+      <Default>1</Default>
+    </Field>    
+    <Field Name="ScriptPath"  DisplayName="ScriptPath" Type="Text" />
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Discussion Board</Field>
+          <Field Name="DiscussionTitle">Discussion Board</Field>
+          <Field Name="DiscussionListName">Discussions_AK</Field>
+          <Field Name="DocumentLibraryName">Documents</Field>
+          <Field Name="Listing_x002e_NumberOfPosts">3</Field>
+          <Field Name="Summary_x002e_NumberOfPosts">3</Field>
+          <Field Name="Listing_x002e_ListingPostType">LastPost</Field>
+          <Field Name="Summary_x002e_ListingPostType">LastPost</Field>
+        </Row>
+        
+      </Rows>
+    </Data>
+  </list>
+  <list name="DocumentsIDS_AK" Enforce="true">
+
+    <Field Name="ListName"  DisplayName="ListName" Type="Text" />
+    <Field Name="Tab_x002e_NumberOfPopularFiles"  DisplayName="Tab.NumberOfPopularFiles" Type="Number" Decimals="0" />
+    <Field Name="Tab_x002e_NumberOfRecentFiles"  DisplayName="Tab.NumberOfRecentFiles" Type="Number" Decimals="0" />
+    <Field Name="Grid_x002e_HeaderName"  DisplayName="Grid.HeaderName" Type="Text" />
+    <Field Name="RootResourcePath"  DisplayName="RootResourcePath" Type="Text" />
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Document Title1</Field>
+          <Field Name="ListName">Documents</Field>
+          <Field Name="Tab_x002e_NumberOfPopularFiles">5</Field>
+          <Field Name="Tab_x002e_NumberOfRecentFiles">5</Field>
+          <Field Name="Grid_x002e_HeaderName">Name,Modified,Modified By</Field>
+
+        </Row>
+        <Row>
+          <Field Name="Title">Document Title2</Field>
+          <Field Name="ListName">Documents</Field>
+          <Field Name="Tab_x002e_NumberOfPopularFiles">5</Field>
+          <Field Name="Tab_x002e_NumberOfRecentFiles">5</Field>
+          <Field Name="Grid_x002e_HeaderName">Name,Modified,Modified By</Field>
+
+        </Row>
+      </Rows>
+    </Data>
+  </list>-->
+  <list name="Documents" templateID="101" noCrawl="true" filesUpload="testfile.txt;Testword.docx">
+    <!--<Field Type="Text" Name="Title" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Title;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title"></Field>-->
+    <Field  Type="Text" Name="TemplateUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Template_Link;" XName="TemplateUrl" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" PITarget="mso-infoPathSolution" PIAttribute="href" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TemplateUrl"></Field>
+    <Field  Type="Text" Name="xd_ProgID" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Html_File_Link;" XName="ProgID" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_ProgID"></Field>
+    <Field  Type="Boolean" Group="_Hidden" Name="xd_Signature" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_Signature" DisplayName="$Resources:core,Xml_signed;" XName="{FBF29B2D-CAE5-49aa-8E0A-29955B540122}" Filterable="TRUE" Sortable="TRUE" Sealed="TRUE" Hidden="TRUE" FromBaseType="TRUE" ReadOnly="TRUE"></Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Name="Combine" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Merge;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Combine">
+      <FieldRefs>
+        <FieldRef Name="FSObjType" Key="Primary" />
+        <FieldRef Name="EncodedAbsUrl" />
+        <FieldRef Name="TemplateUrl" />
+      </FieldRefs>
+    </Field>
+    <Field  ReadOnly="TRUE" Type="Computed" Name="RepairDocument" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Relink;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RepairDocument">
+      <FieldRefs>
+        <FieldRef Name="FSObjType" Key="Primary" />
+        <FieldRef Name="ID" />
+      </FieldRefs>
+    </Field>
+  </list>
+  <list name="DeptNewsIDS_AK">
+    <!--<Field  Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />-->
+    <Field Name="ListName"  DisplayName="ListName" Type="Text" />
+    <!--<Field Name="InstructionSet"  DisplayName="InstructionSet" Type="Text" />-->
+    <Field Name="ScriptsPath"  DisplayName="ScriptsPath" Type="Text" />
+    <Field Name="ItemsToDisplay"  DisplayName="ItemsToDisplay" Type="Number" Decimals="0" />
+    <Data>
+      <Rows>
+        <Rows>
+          <Row>
+            <Field Name="Title">SummaryView</Field>
+            <Field Name="ListName">DeptNews_AK</Field>
+            <Field Name="ScriptsPath"></Field>
+            <Field Name="ItemsToDisplay">5</Field>
+          </Row>
+          <Row>
+            <Field Name="Title">FullListView</Field>
+            <Field Name="ListName">DeptNews_AK</Field>
+            <Field Name="ScriptsPath"></Field>
+            <Field Name="ItemsToDisplay"></Field>
+          </Row>
+        </Rows>
+      </Rows>
+    </Data>
+  </list>
+  <list name="Quicklinks_AK" noCrawl="true">
+    <Field Name="NodeType" DisplayName="NodeType" Type="Choice">
+      <CHOICES>
+        <CHOICE>Root</CHOICE>
+        <CHOICE>Category</CHOICE>
+        <CHOICE>Item</CHOICE>
+      </CHOICES>
+      <Default>Root</Default>
+    </Field>
+    <Field Name="Link"  DisplayName="Link" Type="URL" />
+    <Field Name="DisplayOrder"  DisplayName="DisplayOrder" Type="Number"  Decimals="0"/>
+    <Field Name="ParentItem" ID="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}"   DisplayName="ParentItem" Type="Lookup" ShowField="Title" List="Self"/>
+    <Field FieldRef="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}" Name="ParentItem_ID" DisplayName="ParentItem:ID" Type="Lookup" Required="FALSE" ShowField="ID" List="Self"></Field>
+    <Field FieldRef="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}" Name="ParentItem_Title" DisplayName="ParentItem:Title" Type="Lookup" Required="FALSE" ShowField="Title" List="Self"></Field>
+    <Field Name="Active" DisplayName="Active" Type="Boolean">
+      <Default>1</Default>
+    </Field>
+    <Field Name="Open_x0020_With"  DisplayName="Open With" Type="Choice" >
+      <CHOICES>
+        <CHOICE>Same Window</CHOICE>
+        <CHOICE>New Window</CHOICE>
+      </CHOICES>
+      <Default>Same Window</Default>
+    </Field>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">IGNITE</Field>
+          <Field Name="NodeType">Root</Field>
+          <!--<Field Name="Link">5</Field>-->
+          <Field Name="DisplayOrder">0</Field>
+          <Field Name="ParentItem"></Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">I Need Info on</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">1</Field>
+          <Field Name="ParentItem">1;#IGNITE</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">IGNITE</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">FORMS</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">2</Field>
+          <Field Name="ParentItem">2;#I Need Info on</Field>
+          <Field Name="ParentItem_ID">2</Field>
+          <Field Name="ParentItem_Title">I Need Info on</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">POLICIES</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">3</Field>
+          <Field Name="ParentItem">2;#I Need Info on</Field>
+          <Field Name="ParentItem_ID">2</Field>
+          <Field Name="ParentItem_Title">I Need Info on</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">BENEFITS</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">4</Field>
+          <Field Name="ParentItem">2;#I Need Info on</Field>
+          <Field Name="ParentItem_ID">2</Field>
+          <Field Name="ParentItem_Title">I Need Info on</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Vacation Request</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">5</Field>
+          <Field Name="ParentItem">3;#FORMS</Field>
+          <Field Name="ParentItem_ID">3</Field>
+          <Field Name="ParentItem_Title">FORMS</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Address  Change</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">6</Field>
+          <Field Name="ParentItem">3;#FORMS</Field>
+          <Field Name="ParentItem_ID">3</Field>
+          <Field Name="ParentItem_Title">FORMS</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">401K Forms</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">7</Field>
+          <Field Name="ParentItem">5;#BENEFITS</Field>
+          <Field Name="ParentItem_ID">5</Field>
+          <Field Name="ParentItem_Title">BENEFITS</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">FSA Info</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">8</Field>
+          <Field Name="ParentItem">5;#BENEFITS</Field>
+          <Field Name="ParentItem_ID">5</Field>
+          <Field Name="ParentItem_Title">BENEFITS</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Maternity Leave</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">9</Field>
+          <Field Name="ParentItem">4;#POLICIES</Field>
+          <Field Name="ParentItem_ID">4</Field>
+          <Field Name="ParentItem_Title">POLICIES</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Workplace Info</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">10</Field>
+          <Field Name="ParentItem">4;#POLICIES</Field>
+          <Field Name="ParentItem_ID">4</Field>
+          <Field Name="ParentItem_Title">POLICIES</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+
+        <Row>
+          <Field Name="Title">Services</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">11</Field>
+          <Field Name="ParentItem">1;#IGNITE</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">IGNITE</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Learning and Development</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">12</Field>
+          <Field Name="ParentItem">12;#Services</Field>
+          <Field Name="ParentItem_ID">12</Field>
+          <Field Name="ParentItem_Title">Services</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Benefits and Compesation</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">13</Field>
+          <Field Name="ParentItem">12;#Services</Field>
+          <Field Name="ParentItem_ID">12</Field>
+          <Field Name="ParentItem_Title">Services</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">On-boarding_Off-boarding</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">14</Field>
+          <Field Name="ParentItem">12;#Services</Field>
+          <Field Name="ParentItem_ID">12</Field>
+          <Field Name="ParentItem_Title">Services</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+
+        <Row>
+          <Field Name="Title">Policies and Procedures</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">15</Field>
+          <Field Name="ParentItem">1;#IGNITE</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">IGNITE</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Job Opportunities</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">16</Field>
+          <Field Name="ParentItem">1;#IGNITE</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">IGNITE</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="DeptMenu_AK" noCrawl="true">
+    <Field Name="NodeType" DisplayName="NodeType" Type="Choice">
+      <CHOICES>
+        <CHOICE>Root</CHOICE>
+        <CHOICE>Category</CHOICE>
+        <CHOICE>Item</CHOICE>
+      </CHOICES>
+      <Default>Root</Default>
+    </Field>
+    <Field Name="Link"  DisplayName="Link" Type="URL" />
+    <Field Name="DisplayOrder"  DisplayName="DisplayOrder" Type="Number"  Decimals="0"/>
+    <Field Name="ParentItem" ID="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}"   DisplayName="ParentItem" Type="Lookup" ShowField="Title" List="Self"/>
+    <Field FieldRef="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}" Name="ParentItem_ID" DisplayName="ParentItem:ID" Type="Lookup" Required="FALSE" ShowField="ID" List="Self"></Field>
+    <Field FieldRef="{7FA6EEBA-2C2F-45D9-B0AE-ACF75345A583}" Name="ParentItem_Title" DisplayName="ParentItem:Title" Type="Lookup" Required="FALSE" ShowField="Title" List="Self"></Field>
+    <Field Name="Active" DisplayName="Active" Type="Boolean">
+      <Default>1</Default>
+    </Field>
+    <Field Name="Open_x0020_With"  DisplayName="Open With" Type="Choice" >
+      <CHOICES>
+        <CHOICE>Same Window</CHOICE>
+        <CHOICE>New Window</CHOICE>
+      </CHOICES>
+      <Default>Same Window</Default>
+    </Field>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">DeptNav</Field>
+          <Field Name="NodeType">Root</Field>
+          <!--<Field Name="Link">5</Field>-->
+          <Field Name="DisplayOrder">0</Field>
+          <Field Name="ParentItem"></Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Home</Field>
+          <Field Name="NodeType">Item</Field>
+          <Field Name="Link">{0}/pages/home.aspx</Field>
+          <Field Name="DisplayOrder">1</Field>
+          <Field Name="ParentItem">1;#DeptNav</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">DeptNav</Field>
+
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Category</Field>
+          <Field Name="NodeType">Category</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">2</Field>
+          <Field Name="ParentItem">1;#DeptNav</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">DeptNav</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Placeholder1</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">3</Field>
+          <Field Name="ParentItem">3;#Category</Field>
+          <Field Name="ParentItem_ID">3</Field>
+          <Field Name="ParentItem_Title">Category</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Placeholder2</Field>
+          <Field Name="NodeType">Item</Field>
+          <!--<Field Name="Link">/</Field>-->
+          <Field Name="DisplayOrder">4</Field>
+          <Field Name="ParentItem">3;#Category</Field>
+          <Field Name="ParentItem_ID">3</Field>
+          <Field Name="ParentItem_Title">Category</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Document Library</Field>
+          <Field Name="NodeType">Item</Field>
+          <Field Name="Link">{0}/pages/documents.aspx</Field>
+          <Field Name="DisplayOrder">5</Field>
+          <Field Name="ParentItem">1;#DeptNav</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">DeptNav</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Discussion Board</Field>
+          <Field Name="NodeType">Item</Field>
+          <Field Name="Link">{0}/pages/DiscussList.aspx</Field>
+          <Field Name="DisplayOrder">6</Field>
+          <Field Name="ParentItem">1;#DeptNav</Field>
+          <Field Name="ParentItem_ID">1</Field>
+          <Field Name="ParentItem_Title">DeptNav</Field>
+          <Field Name="Active">true</Field>
+          <Field Name="Open_x0020_With">Same Window</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>
+  <list name="DeptNews_AK" templateID="104" noCrawl="true">
+    <Field Name="StartDate1"  DisplayName="Start Date" Type="DateTime" />
+    <Field Name="AnnouncementTitle"  DisplayName="AnnouncementTitle" Type="Text" />
+    <Field Name="Summary"  DisplayName="Summary" NumLines="6" Type="Note" RichTextMode="FullHtml" RichText="TRUE" />    
+    <Field Name="Seo_x002d_Title"  DisplayName="Seo-Title" Type="Text" />
+    <Field Name="Seo_x002d_Keywords"  DisplayName="Seo-Keywords" Type="Text" />
+    <Field Name="Seo_x002d_Description"  DisplayName="Seo-Description" Type="Note" />
+    <Field Name="FriendlyUrl"  DisplayName="FriendlyUrl" Type="Calculated" Required="FALSE" ColName="sql_variant1" StaticName="FriendlyUrl" Indexed="FALSE" ResultType="Text" Version="1" RowOrdinal="0">
+      <Formula>=[Title]</Formula>
+      <!--<FieldRefs>
+          <FieldRef Name="Title" />
+        </FieldRefs>-->
+    </Field>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Sample Dept News Item 1</Field>
+          <Field Name="AnnouncementTitle">Sample Company News Item 1</Field>
+          <Field Name="Body">
+            Sample Dept News Item 1 body text.<![CDATA[<br></br>]]>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+            <![CDATA[<br></br>]]>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+            <![CDATA[<br></br>]]>
+            Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+          </Field>
+          <Field Name="Summary">Sample Dept News Item 1 summary text.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</Field>
+          <Field Name="Seo_x002d_Title">Seo-Title</Field>
+          <Field Name="Seo_x002d_Keywords">Seo-Keywords</Field>
+          <Field Name="Seo_x002d_Description">Seo-Description</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sample Dept News Item 2</Field>
+          <Field Name="AnnouncementTitle">Sample Company News Item 2</Field>
+          <Field Name="Body">
+            Sample Company Dept Item 1 body text.
+            <![CDATA[<br></br>]]>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+            <![CDATA[<br></br>]]>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+            <![CDATA[<br></br>]]>
+            Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+          </Field>
+          <Field Name="Summary">Sample Dept News Item 2 summary text.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</Field>
+          <Field Name="Seo_x002d_Title">Seo-Title</Field>
+          <Field Name="Seo_x002d_Keywords">Seo-Keywords</Field>
+          <Field Name="Seo_x002d_Description">Seo-Description</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>  
+  <list name="Welcome_AK" noCrawl="true">
+    <!--<Field Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />-->
+    <Field Name="Html"  DisplayName="Html" Type="Note" NumLines="6" RichTextMode="FullHtml" RichText="TRUE" />
+    <Field Name="IsAlert"  DisplayName="IsAlert" Type="Boolean">
+      <Default>0</Default>
+    </Field>
+    <Field Name="Expires" Format="DateTime"  DisplayName="Expires" Type="DateTime"/>
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Welcome!</Field>
+          <Field Name="Html">
+            <![CDATA[
+                <h1>
+                <strong>
+                2015
+                <span id="ms-rterangecursor-start" rtenodeid="1"></span>
+                <span id="ms-rterangecursor-end"></span>
+                OPEN ENROLLMENT
+                </strong>
+                </h1>
+                <p>
+                This year's 
+                <strong>Open Enrollment will take place from October 12 to November 7, 2015</strong>
+                . 
+                </p>
+                <p>Open Enrollment provides us with an excellent opportunity to re-familiarize ourselves with the many great benefits Ignite provides.  It is also your once-a-year opportunity to enroll in or make changes to your core benefit plans for Medical and Dental coverage, as well as participate in the Healthcare Flexible Spending Account and/or Dependent Care Flexible Spending Account for the upcoming year.</p>
+                <p>
+                <a target="_blank" href="http://google.com">More Information </a>
+                </p>
+            ]]>
+          </Field>
+        </Row>
+      </Rows>
+    </Data>
+  </list>  
+  <list name="Discussions_AK" templateID="108"  noCrawl="true" contentType="AkuminaDiscussionBoardContentType" >    
+      <Field Name="AttachmentLinks" DisplayName="AttachmentLinks" Type="Note" />
+      <Field Name="ConfirmArchive"  DisplayName="ConfirmArchive" Type="Boolean">
+        <Default>0</Default>
+      </Field>
+      <Field  Type="Text" Name="Title" DisplayName="$Resources:core,Subject;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title">
+      </Field>
+      <Field  Type="Note" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" NumLines="15" Name="Body" DisplayName="$Resources:core,camlid2;" Sortable="FALSE" AllowDeletion="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Body">
+      </Field>
+      <Field  FieldRef="Editor" ReadOnly="TRUE" Type="User" List="UserInfo" Name="MyEditor" DisplayName="$Resources:core,Modified_By;" StaticName="MyEditor" FromBaseType="TRUE" Required="FALSE" Group="" ShowField="NameWithPicture" AuthoringInfo="$Resources:core,picture_and_name;" SourceID="http://schemas.microsoft.com/sharepoint/v3" />
+      <Field  Name="TrimmedBody" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Note" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Hidden="TRUE" DisplayName="$Resources:TrimmedBody;" DisplayNameSrcField="Body" Sortable="FALSE" Filterable="FALSE" Sealed="TRUE" StaticName="TrimmedBody" />
+      <Field  Name="DiscussionLastUpdated" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="DateTime" DisplayName="$Resources:core,Last_Updated;" StaticName="DiscussionLastUpdated" ReadOnly="TRUE" StorageTZ="TRUE" Format="DateTime" Indexed="TRUE" FriendlyDisplayFormat="Relative">
+        <Default>[today]</Default>
+      </Field>
+      <Field  Name="MessageId" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Text" DisplayName="$Resources:core,Message_ID;" Hidden="TRUE" Sealed="TRUE" StaticName="MessageId" />
+      <Field  Name="ThreadTopic" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Text" DisplayName="$Resources:core,Thread_Topic;" Hidden="TRUE" Sealed="TRUE" StaticName="ThreadTopic" />
+      <Field  Name="ThreadIndex" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="ThreadIndex" ColName="tp_ThreadIndex" RowOrdinal="0" DisplayName="$Resources:core,Thread_Index;" Sortable="TRUE" Hidden="TRUE" Sealed="TRUE" StaticName="ThreadIndex" />
+      <Field  Name="EmailReferences" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Note" DisplayName="$Resources:core,References;" Hidden="TRUE" Sealed="TRUE" StaticName="EmailReferences" />
+      <Field  Name="RelevantMessages" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Note" Hidden="TRUE" DisplayName="$Resources:core,Email_Messages;" Sealed="TRUE" StaticName="RelevantMessages" />
+      <Field  Name="ParentFolderId" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Type="Integer" Hidden="TRUE" DisplayName="$Resources:core,Parent_Folder_Id;" Sealed="TRUE" StaticName="ParentFolderId">
+      </Field>
+      <Field Name="ShortestThreadIndex" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Note" Hidden="TRUE" DisplayName="$Resources:core,Shortest_Thread_Index;" Sealed="TRUE" StaticName="ShortestThreadIndex" />
+      <Field Name="ShortestThreadIndexId" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Type="Text" Hidden="TRUE" DisplayName="$Resources:core,Shortest_Thread_Index_Id;" Sealed="TRUE" StaticName="ShortestThreadIndexId">
+      </Field>
+      <Field  Name="ShortestThreadIndexIdLookup" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Hidden="TRUE" Type="Lookup" ReadOnly="TRUE" DisplayName="$Resources:core,Shortest_Thread_Index_Id_Lookup;" List="Self" ShowField="ShortestThreadIndexId" FieldRef="ParentFolderId" Sealed="TRUE" StaticName="ShortestThreadIndexIdLookup">
+      </Field>
+      <Field  Name="DiscussionTitleLookup" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Hidden="TRUE" Type="Lookup" ReadOnly="TRUE" DisplayName="$Resources:core,Discussion_Title;" List="Self" ShowField="Title" FieldRef="ParentFolderId" Sealed="TRUE" StaticName="DiscussionTitleLookup">
+      </Field>
+      <Field Name="DiscussionTitle" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" ReadOnly="TRUE" DisplayName="$Resources:core,Discussion_Subject;" Sortable="FALSE" Filterable="FALSE" StaticName="DiscussionTitle">
+        <FieldRefs>
+          <FieldRef  Name="DiscussionTitleLookup" />
+          <FieldRef  Name="Title" />
+          <FieldRef  Name="FSObjType" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Switch>
+            <Expr>
+              <LookupColumn Name="FSObjType" />
+            </Expr>
+            <Case Value="1">
+              <Column Name="Title" HTMLEncode="TRUE" />
+            </Case>
+            <Default>
+              <LookupColumn Name="DiscussionTitleLookup" HTMLEncode="TRUE" />
+            </Default>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field Name="ParentItemEditor" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Type="User" List="UserInfo" DisplayName="$Resources:core,ParentItemEditor;" ReadOnly="TRUE" Sealed="TRUE" StaticName="ParentItemEditor" />
+      <Field Name="ParentItemID" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Type="Integer" DisplayName="$Resources:core,ParentItemID;" ReadOnly="TRUE" Sealed="TRUE" StaticName="ParentItemID" />
+      <Field Name="LastReplyBy" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="User" List="UserInfo" Sortable="FALSE" DisplayName="$Resources:core,Discussion_LastReplyByFieldName;" ReadOnly="TRUE" Hidden="FALSE" Sealed="TRUE" StaticName="LastReplyBy" />
+      <Field Name="IsQuestion" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Boolean" DisplayName="$Resources:core,Discussion_IsQuestionFieldName;" Description="$Resources:core,Discussion_IsQuestionFieldDescription;" Hidden="FALSE" Sealed="TRUE" StaticName="IsQuestion" />
+      <Field Name="BestAnswerId" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Integer" DisplayName="$Resources:core,Discussion_BestResponseIdFieldName;" ReadOnly="TRUE" Hidden="FALSE" Sealed="TRUE" StaticName="BestAnswerId" />
+      <Field Name="IsAnswered" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Boolean" Indexed="TRUE" DisplayName="$Resources:core,Discussion_IsAnsweredFieldName;" Hidden="TRUE" Sealed="TRUE" StaticName="IsAnswered" />
+      <Field Name="LinkTitleNoMenu" DisplaceOnUpgrade="TRUE" Group="$Resources:Base_Columns;" ReadOnly="TRUE" Type="Computed" Hidden="TRUE" DisplayName="$Resources:core,Subject;" Dir="" DisplayNameSrcField="Title" AuthoringInfo="$Resources:core,Linked_Item;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitleNoMenu">
+        <FieldRefs>
+          <FieldRef  Name="Title" />
+          <FieldRef  Name="LinkFilenameNoMenu" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <Field Name="LinkFilenameNoMenu" />
+            </Then>
+            <Else>
+              <HTML><![CDATA[<a onfocus="OnLink(this)" href="]]></HTML>
+              <URL />
+              <HTML><![CDATA[" onclick="GoToLink(this);return false;" target="_self">]]></HTML>
+              <Column HTMLEncode="TRUE" Name="Title" Default="$Resources:core,NoTitle;">
+              </Column>
+              <IfEqual>
+                <Expr1>
+                  <GetVar Name="ShowAccessibleIcon" />
+                </Expr1>
+                <Expr2>1</Expr2>
+                <Then>
+                  <HTML><![CDATA[<img src="/_layouts/15/images/blank.gif?rev=23" class="ms-hidden" border="0" width="1" height="1" alt="$Resources:core,OpenMenuKeyAccessible;"/>]]></HTML>
+                </Then>
+              </IfEqual>
+              <HTML><![CDATA[</a>]]></HTML>
+              <IfNew>
+                <HTML><![CDATA[<img src="/_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/new.gif" alt="]]></HTML>
+                <HTML>$Resources:core,new_gif_alttext;</HTML>
+                <HTML><![CDATA[" class="ms-newgif" />]]></HTML>
+              </IfNew>
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{3ac9353f-613f-42bd-98e1-530e9fd1cbf6}" Name="LinkDiscussionTitleNoMenu" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="$Resources:Base_Columns;" Type="Computed" DisplayName="$Resources:core,Subject;" DisplayNameSrcField="Title" ReadOnly="TRUE" AuthoringInfo="$Resources:core,Linked_Item;" StaticName="LinkDiscussionTitleNoMenu">
+        <FieldRefs>
+          <FieldRef  Name="Title" />
+          <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" />
+          <FieldRef ID="{30bb605f-5bae-48fe-b4e3-1f81d9772af9}" Name="FSObjType" />
+          <FieldRef ID="{998b5cff-4a35-47a7-92f3-3914aa6aa4a2}" Name="Created_x0020_Date" />
+          <FieldRef ID="{94f89715-e097-4e8b-ba79-ea02aa8b7adb}" Name="FileRef" />
+          <FieldRef ID="{39360f11-34cf-4356-9945-25c44e68dade}" Name="File_x0020_Type" />
+          <FieldRef ID="{03e45e84-1992-4d42-9116-26f756012634}" Name="ContentTypeId" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <Switch>
+                <Expr>
+                  <GetVar Name="RecursiveView" />
+                </Expr>
+                <Case Value="1">
+                  <Column Name="Title" HTMLEncode="TRUE" Default="$Resources:core,NoTitle" />
+                </Case>
+                <Default>
+                  <SetVar Name="DiscussionFilterLink">
+                    <SetVar Name="RootFolder">
+                      <HTML>/</HTML>
+                      <LookupColumn Name="FileRef" />
+                    </SetVar>
+                    <SetVar Name="FolderCTID">
+                      <FieldSwitch>
+                        <Expr>
+                          <ListProperty Select="EnableContentTypes" />
+                        </Expr>
+                        <Case Value="1">
+                          <Column Name="ContentTypeId" />
+                        </Case>
+                      </FieldSwitch>
+                    </SetVar>
+                    <FilterLink Default="" Paged="FALSE" />
+                  </SetVar>
+                  <HTML><![CDATA[<a onfocus="OnLink(this)"  href="]]></HTML>
+                  <GetVar Name="DiscussionFilterLink" HTMLEncode="TRUE" />
+                  <HTML><![CDATA[" onclick='javascript:GoToDiscussion("]]></HTML>
+                  <ScriptQuote NotAddingQuote="TRUE">
+                    <GetVar Name="DiscussionFilterLink" />
+                  </ScriptQuote>
+                  <HTML><![CDATA[");javascript:return false;'>]]></HTML>
+                  <Column Name="Title" HTMLEncode="TRUE" Default="$Resources:core,NoTitle" />
+                  <IfEqual>
+                    <Expr1>
+                      <GetVar Name="ShowAccessibleIcon" />
+                    </Expr1>
+                    <Expr2>1</Expr2>
+                    <Then>
+                      <HTML><![CDATA[<img src="/_layouts/15/images/blank.gif?rev=23" class="ms-hidden" border="0" width="1" height="1" alt="$Resources:core,OpenMenuKeyAccessible;"/>]]></HTML>
+                    </Then>
+                  </IfEqual>
+                  <HTML><![CDATA[</a>]]></HTML>
+                </Default>
+              </Switch>
+              <IfNew>
+                <HTML><![CDATA[<img src="/_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/new.gif" alt="]]></HTML>
+                <HTML>$Resources:core,new_gif_alttext;</HTML>
+                <HTML><![CDATA[" class="ms-newgif" />]]></HTML>
+              </IfNew>
+            </Then>
+            <Else>
+              <Field Name="LinkTitleNoMenu" />
+            </Else>
+          </IfEqual>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{46045bc4-283a-4826-b3dd-7a78d790b266}" Name="LinkDiscussionTitle" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="$Resources:Base_Columns;" Type="Computed" DisplayName="$Resources:core,Subject;" ReadOnly="TRUE" DisplayNameSrcField="Title" ClassInfo="Menu" AuthoringInfo="$Resources:core,Linked_Item_With_Menu;" ListItemMenuAllowed="Required" LinkToItemAllowed="Prohibited" StaticName="LinkDiscussionTitle">
+        <FieldRefs>
+          <FieldRef ID="{3ac9353f-613f-42bd-98e1-530e9fd1cbf6}" Name="LinkDiscussionTitleNoMenu" />
+          <FieldRef ID="{3c6303be-e21f-4366-80d7-d6d0a3b22c7a}" Name="_EditMenuTableStart2" />
+          <FieldRef ID="{2ea78cef-1bf9-4019-960a-02c41636cb47}" Name="_EditMenuTableEnd" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HTML><![CDATA[<div class="ms-vb itx" onmouseover="OnItem(this)" CTXName="ctx]]></HTML>
+          <Field Name="_EditMenuTableStart2" />
+          <HTML><![CDATA[">]]></HTML>
+          <Field Name="LinkDiscussionTitleNoMenu" />
+          <HTML><![CDATA[</div>]]></HTML>
+          <HTML><![CDATA[<div class="s4-ctx" onmouseover="OnChildItem(this.parentNode); return false;">]]></HTML>
+          <HTML><![CDATA[<span>&nbsp;</span>]]></HTML>
+          <HTML><![CDATA[<a onfocus="OnChildItem(this.parentNode.parentNode); return false;" onclick="PopMenuFromChevron(event); return false;" href="javascript:;" title="$Resources:core,open_menu;"></a>]]></HTML>
+          <HTML><![CDATA[<span>&nbsp;</span>]]></HTML>
+          <HTML><![CDATA[</div>]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{b4e31c47-f962-4f9f-9132-eb555a1a026c}" Name="LinkDiscussionTitle2" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="$Resources:Base_Columns;" Type="Computed" DisplayName="$Resources:core,Subject;" ReadOnly="TRUE" DisplayNameSrcField="Title" ClassInfo="Menu" AuthoringInfo="$Resources:core,Linked_Item_With_Menu; (old)" StaticName="LinkDiscussionTitle2">
+        <FieldRefs>
+          <FieldRef ID="{3ac9353f-613f-42bd-98e1-530e9fd1cbf6}" Name="LinkDiscussionTitleNoMenu" />
+          <FieldRef ID="{3c6303be-e21f-4366-80d7-d6d0a3b22c7a}" Name="_EditMenuTableStart" />
+          <FieldRef ID="{2ea78cef-1bf9-4019-960a-02c41636cb47}" Name="_EditMenuTableEnd" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Field Name="_EditMenuTableStart" />
+          <SetVar Name="ShowAccessibleIcon" Value="1" />
+          <Field Name="LinkDiscussionTitleNoMenu" />
+          <SetVar Name="ShowAccessibleIcon" Value="0" />
+          <Field Name="_EditMenuTableEnd" />
+        </DisplayPattern>
+      </Field>
+      <Field ID="{87cda0e2-fc57-4eec-a696-b0de2f61f361}" Name="ReplyNoGif" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" ReadOnly="TRUE" Type="Computed" Sortable="FALSE" Filterable="FALSE" DisplayName="$Resources:core,ReplyLinkText;" StaticName="ReplyNoGif">
+        <FieldRefs>
+          <FieldRef ID="{56605df6-8fa1-47e4-a04c-5b384d59609f}" Name="FileDirRef" />
+          <FieldRef ID="{94f89715-e097-4e8b-ba79-ea02aa8b7adb}" Name="FileRef" />
+          <FieldRef ID="{1d22ea11-1e32-424e-89ab-9fedbadb6ce1}" Name="ID" />
+          <FieldRef ID="{30bb605f-5bae-48fe-b4e3-1f81d9772af9}" Name="FSObjType" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfHasRights>
+            <RightsChoices>
+              <RightsGroup PermAddListItems="required" />
+            </RightsChoices>
+            <Then>
+              <HTML><![CDATA[<a id="ReplyLink]]></HTML>
+              <Field Name="ID" />
+              <HTML><![CDATA[" href="]]></HTML>
+              <URL Cmd="New" />
+              <HTML><![CDATA[&ContentTypeId=0x0107&DiscussionParentID=]]></HTML>
+              <Field Name="ID" StripWS="TRUE" URLEncode="TRUE" />
+              <HTML><![CDATA[" onclick="EditLink2(this,]]></HTML>
+              <Counter Type="View" />
+              <HTML><![CDATA[");return false;" target="_self">]]></HTML>
+              <HTML><![CDATA[<img id="replyButton" border="0" align="middle" alt="$Resources:core,ReplyLinkText"]]></HTML>
+              <HTML><![CDATA[ src="/_layouts/images/reply.gif" />&#160;]]></HTML>
+              <HTML><![CDATA[<nobr><b>$Resources:core,ReplyLinkText</b></nobr></a>]]></HTML>
+            </Then>
+            <Else>
+              <HTML><![CDATA[&#160;]]></HTML>
+            </Else>
+          </IfHasRights>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{c55a4674-640b-4bae-8738-ce0439e6f6d4}" SourceID="http://schemas.microsoft.com/sharepoint/v3" Name="ThreadingControls" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,Threading_Controls;" StaticName="ThreadingControls">
+        <FieldRefs>
+          <FieldRef ID="{cef73bf1-edf6-4dd9-9098-a07d83984700}" Name="ThreadIndex" />
+          <FieldRef Name="Title" />
+          <FieldRef ID="{a9ec25bf-5a22-4658-bd19-484e52efbe1a}" Name="ParentFolderId" />
+          <FieldRef ID="{30bb605f-5bae-48fe-b4e3-1f81d9772af9}" Name="FSObjType" />
+          <FieldRef ID="{1d22ea11-1e32-424e-89ab-9fedbadb6ce1}" Name="ID" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HTML><![CDATA[<input type="Hidden" name="ThreadIndex" value="]]></HTML>
+          <Column Name="ThreadIndex" HTMLEncode="TRUE" />
+          <HTML><![CDATA["><input type="Hidden" name="ParentFolderId" value="]]></HTML>
+          <IfEqual>
+            <Expr1>
+              <LookupColumn Name="FSObjType" />
+            </Expr1>
+            <Expr2>1</Expr2>
+            <Then>
+              <Column Name="ID" />
+            </Then>
+            <Else>
+              <Column Name="ParentFolderId" />
+            </Else>
+          </IfEqual>
+          <HTML><![CDATA[">]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{68227570-72dd-4816-b6b6-4b81ff99a393}" SourceID="http://schemas.microsoft.com/sharepoint/v3" Name="IndentLevel" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,Indentation_Level;" StaticName="IndentLevel">
+        <FieldRefs>
+          <FieldRef ID="{cef73bf1-edf6-4dd9-9098-a07d83984700}" Name="ThreadIndex" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Length Div="10" Sub="4">
+            <Column Name="ThreadIndex" />
+          </Length>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{26c4f53e-733a-4202-814b-377492b6c841}" SourceID="http://schemas.microsoft.com/sharepoint/v3" Name="Indentation" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,Indentation;" StaticName="Indentation">
+        <FieldRefs>
+          <FieldRef ID="{cef73bf1-edf6-4dd9-9098-a07d83984700}" Name="ThreadIndex" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HTML><![CDATA[<img src="/_layouts/images/blank.gif" width="]]></HTML>
+          <Length Sub="46">
+            <Column Name="ThreadIndex" />
+          </Length>
+          <HTML><![CDATA[px" height="1px" alt="" />]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{f90bce56-87dc-4d73-bfcb-03fcaf670500}" SourceID="http://schemas.microsoft.com/sharepoint/v3" Name="StatusBar" DisplaceOnUpgrade="TRUE" Group="_Hidden" ReadOnly="TRUE" Type="Computed" Hidden="TRUE" DisplayName="$Resources:core,Posting_Information;" StaticName="StatusBar">
+        <FieldRefs>
+          <FieldRef ID="{8c06beca-0777-48f7-91c7-6da68bc07b69}" Name="Created" Format="Original" />
+          <FieldRef ID="{1df5e554-ec7e-46a6-901d-d85a3881cb18}" Name="Author" />
+          <FieldRef ID="{28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f}" Name="Modified" Format="Original" />
+          <FieldRef ID="{d31655d1-1d5b-4511-95a1-7a09e9b75bf2}" Name="Editor" />
+          <FieldRef ID="{68227570-72dd-4816-b6b6-4b81ff99a393}" Name="Indentation" />
+          <FieldRef ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" />
+          <FieldRef ID="{87cda0e2-fc57-4eec-a696-b0de2f61f361}" Name="ReplyNoGif" />
+          <FieldRef ID="{68227570-72dd-4816-b6b6-4b81ff99a393}" Name="IndentLevel" />
+          <FieldRef ID="{2ef29342-2f5f-4052-90d3-8192e0705e51}" Name="MessageId" />
+          <FieldRef ID="{f0218b98-d0d6-4fc1-b15b-aabeb89f32a9}" Name="DiscussionTitleLookup" />
+          <FieldRef ID="{4ce600fb-a927-4911-bfc1-11076b76b522}" Name="EmailSender" />
+          <FieldRef ID="{67df98f4-9dec-48ff-a553-29bece9c5bf4}" Name="Attachments" />
+          <FieldRef ID="{bd2216c1-a2f3-48c0-b21c-dc297d0cc658}" Name="IsRootPost" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Switch>
+            <Expr>
+              <GetVar Name="IndentThisView" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML><![CDATA[<table class="ms-disc-nopad" border="0" cellpadding="0" cellspacing="0" width="100%"><tr>]]></HTML>
+              <HTML><![CDATA[<td width="1px">]]></HTML>
+              <Field Name="Indentation" />
+              <HTML><![CDATA[</td><td width="100%">]]></HTML>
+            </Case>
+            <Default />
+          </Switch>
+          <HTML><![CDATA[<table class="ms-disc-bar" border="0" cellpadding="0" cellspacing="0" width="100%" margin-left="]]></HTML>
+          <Field Name="IndentLevel" />
+          <HTML><![CDATA[0px">]]></HTML>
+          <HTML><![CDATA[<tr>]]></HTML>
+          <HTML><![CDATA[<td width="100%" nowrap="TRUE">]]></HTML>
+          <HTML><![CDATA[<div><a name="]]></HTML>
+          <Column Name="GUID" />
+          <HTML><![CDATA["></a>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="DisplayNameInStatusBar" />
+            </Expr>
+            <Case Value="TRUE">
+              <IfEqual>
+                <Expr1>
+                  <Column Name="Created" Format="ISO8601" />
+                </Expr1>
+                <Expr2>
+                  <Column Name="Modified" Format="ISO8601" />
+                </Expr2>
+                <Then>
+                  <Switch>
+                    <Expr>
+                      <Column Name="EmailSender" />
+                    </Expr>
+                    <Case Value="">
+                      <Switch>
+                        <Expr>
+                          <Field Name="IsRootPost" />
+                        </Expr>
+                        <Case Value="TRUE">
+                          <HTML>$ResourcesNoEncode:core,Discussion_Started_By;</HTML>
+                        </Case>
+                        <Default>
+                          <HTML>$ResourcesNoEncode:core,Discussion_Posted_By;</HTML>
+                        </Default>
+                      </Switch>
+                    </Case>
+                    <Default>
+                      <HTML>$ResourcesNoEncode:core,Discussion_Emailed_By;</HTML>
+                    </Default>
+                  </Switch>
+                </Then>
+                <Else>
+                  <HTML>$ResourcesNoEncode:core,Discussion_Edited_By;</HTML>
+                </Else>
+              </IfEqual>
+            </Case>
+            <Default>
+              <IfEqual>
+                <Expr1>
+                  <Column Name="Created" Format="ISO8601" />
+                </Expr1>
+                <Expr2>
+                  <Column Name="Modified" Format="ISO8601" />
+                </Expr2>
+                <Then>
+                  <Switch>
+                    <Expr>
+                      <Column Name="EmailSender" />
+                    </Expr>
+                    <Case Value="">
+                      <Switch>
+                        <Expr>
+                          <Field Name="IsRootPost" />
+                        </Expr>
+                        <Case Value="TRUE">
+                          <HTML>$ResourcesNoEncode:core,Discussion_Started;</HTML>
+                        </Case>
+                        <Default>
+                          <HTML>$ResourcesNoEncode:core,Discussion_Posted;</HTML>
+                        </Default>
+                      </Switch>
+                    </Case>
+                    <Default>
+                      <HTML>$ResourcesNoEncode:core,Discussion_Emailed;</HTML>
+                    </Default>
+                  </Switch>
+                </Then>
+                <Else>
+                  <HTML>$ResourcesNoEncode:core,Discussion_Edited;</HTML>
+                </Else>
+              </IfEqual>
+            </Default>
+          </Switch>
+          <HTML><![CDATA[</div></td>]]></HTML>
+          <Switch>
+            <Expr>
+              <Column Name="Attachments" />
+            </Expr>
+            <Case Value="1">
+              <HTML><![CDATA[<td width="1" nowrap="TRUE"><div><nobr>]]></HTML>
+              <Field Name="Attachments" />
+              <HTML><![CDATA[</nobr></div></td>]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[<td style="border-style:none" nowrap="TRUE"><div>]]></HTML>
+          <HTML><![CDATA[<a id="DisplayLink]]></HTML>
+          <Field Name="ID" />
+          <HTML><![CDATA[" href="]]></HTML>
+          <URL />
+          <HTML><![CDATA[" onclick="EditLink2(this,]]></HTML>
+          <Counter Type="View" />
+          <HTML><![CDATA[");return false;" target="_self">]]></HTML>
+          <HTML><![CDATA[<nobr>$Resources:core,ViewItemLink</nobr></a>]]></HTML>
+          <HTML><![CDATA[</div></td>]]></HTML>
+          <IfHasRights>
+            <RightsChoices>
+              <RightsGroup PermAddListItems="required" />
+            </RightsChoices>
+            <Then>
+              <HTML><![CDATA[<td class="ms-separator"><img src='/_layouts/images/blank.gif' alt='' /></td>]]></HTML>
+              <HTML><![CDATA[<td style="border-style:none" nowrap="TRUE"><div>]]></HTML>
+              <Field Name="ReplyNoGif" />
+              <HTML><![CDATA[</div></td>]]></HTML>
+            </Then>
+          </IfHasRights>
+          <HTML><![CDATA[</tr></table>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="IndentThisView" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML><![CDATA[</td></tr></table>]]></HTML>
+            </Case>
+            <Default />
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{c7e9537e-bde4-4923-a100-adbd9e0a0a0d}" SourceID="http://schemas.microsoft.com/sharepoint/v3" Name="BodyAndMore" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" DisplayName="$Resources:core,Post;" ReadOnly="TRUE" Filterable="FALSE" Sortable="FALSE" AuthoringInfo="$Resources:core,WithMoreLessLinks;" StaticName="BodyAndMore">
+        <FieldRefs>
+          <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+          <FieldRef ID="{28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f}" Name="Modified" />
+          <FieldRef ID="{fbba993f-afee-4e00-b9be-36bc660dcdd1}" Name="MessageBody" />
+          <FieldRef ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" />
+          <FieldRef ID="{c5abfdc7-3435-4183-9207-3d1146895cf8}" Name="DiscussionTitle" />
+          <FieldRef ID="{cef73bf1-edf6-4dd9-9098-a07d83984700}" Name="ThreadIndex" />
+          <FieldRef ID="{9c4be348-663a-4172-a38a-9714b2634c17}" Name="FullBody" />
+          <FieldRef ID="{076193bd-865b-4de7-9633-1f12069a6fff}" Name="LessLink" />
+          <FieldRef ID="{61b97279-cbc0-4aa9-a362-f1ff249c1706}" Name="LimitedBody" />
+          <FieldRef ID="{af82aa75-3039-4573-84a8-73ffdfd22733}" Name="BodyWasExpanded" />
+          <FieldRef ID="{bd2216c1-a2f3-48c0-b21c-dc297d0cc658}" Name="IsRootPost" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Switch>
+            <Expr>
+              <GetVar Name="HaveRenderedCAML_Expand" />
+            </Expr>
+            <Case Value="TRUE">
+            </Case>
+            <Default>
+              <HTML><![CDATA[<input type="hidden" name="CAML_Expand" value="]]></HTML>
+              <GetVar Name="CAML_Expand" HTMLEncode="TRUE" />
+              <HTML><![CDATA["/>]]></HTML>
+              <SetVar Scope="Request" Name="HaveRenderedCAML_Expand" Value="TRUE" />
+            </Default>
+          </Switch>
+          <Switch>
+            <Expr>
+              <GetVar Name="HaveRenderedCAML_ShowOriginalEmailBody" />
+            </Expr>
+            <Case Value="TRUE">
+            </Case>
+            <Default>
+              <HTML><![CDATA[<input type="hidden" name="CAML_ShowOriginalEmailBody" value="]]></HTML>
+              <GetVar Name="CAML_ShowOriginalEmailBody" HTMLEncode="TRUE" />
+              <HTML><![CDATA["/>]]></HTML>
+              <SetVar Scope="Request" Name="HaveRenderedCAML_ShowOriginalEmailBody" Value="TRUE" />
+            </Default>
+          </Switch>
+          <Switch>
+            <Expr>
+              <Field Name="IsRootPost" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML><![CDATA[<div style="padding-bottom: 4px;"><b>]]></HTML>
+              <Field Name="DiscussionTitle" />
+              <HTML><![CDATA[</b></div>]]></HTML>
+            </Case>
+          </Switch>
+          <Switch>
+            <Expr>
+              <Column Name="Body" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[$Resources:core,NoText;]]></HTML>
+            </Case>
+            <Default>
+              <Switch>
+                <Expr>
+                  <Field Name="BodyWasExpanded" />
+                </Expr>
+                <Case Value="TRUE">
+                  <Field Name="FullBody" />
+                  <IfSubString>
+                    <Expr1>TrimmedBody</Expr1>
+                    <Expr2>
+                      <Field Name="CorrectBodyToShow" />
+                    </Expr2>
+                    <Then>
+                      <HTML><![CDATA[<div><table border="0" cellspacing="0" cellpadding="0" class="ms-disc" dir="]]></HTML>
+                      <ListProperty Select="Direction" HTMLEncode="TRUE" />
+                      <HTML><![CDATA["><tr valign="top"><td>]]></HTML>
+                      <Field Name="LessLink" />
+                      <HTML><![CDATA[ </td><td> | </td><td> ]]></HTML>
+                      <Field Name="ToggleQuotedText" />
+                      <HTML><![CDATA[</td></tr></table></div>]]></HTML>
+                    </Then>
+                    <Else>
+                      <Field Name="LessLink" />
+                    </Else>
+                  </IfSubString>
+                </Case>
+                <Default>
+                  <Switch>
+                    <Expr>
+                      <Field Name="QuotedTextWasExpanded" />
+                    </Expr>
+                    <Case Value="TRUE">
+                      <Field Name="FullBody" />
+                      <Field Name="ToggleQuotedText" />
+                    </Case>
+                    <Default>
+                      <Field Name="LimitedBody" />
+                    </Default>
+                  </Switch>
+                </Default>
+              </Switch>
+            </Default>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{fbba993f-afee-4e00-b9be-36bc660dcdd1}" Name="MessageBody" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,camlid2;" DisplayNameSrcField="Body" Sealed="TRUE" AuthoringInfo="$Resources:core,Trimmed_Or_Expanded_As_Appropriate;" StaticName="MessageBody">
+        <FieldRefs>
+          <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+          <FieldRef ID="{6d0f8993-5050-41f3-be6c-18902d282357}" Name="TrimmedBody" />
+          <FieldRef ID="{b0204f69-2253-43d2-99ad-c0df00031b66}" Name="CorrectBodyToShow" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Switch>
+            <Expr>
+              <Field Name="CorrectBodyToShow" />
+            </Expr>
+            <Case Value="TrimmedBody">
+              <Column Name="TrimmedBody" />
+            </Case>
+            <Default>
+              <Column Name="Body" />
+            </Default>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{af82aa75-3039-4573-84a8-73ffdfd22733}" Name="BodyWasExpanded" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,Body_Was_Expanded;" Sealed="TRUE" StaticName="BodyWasExpanded">
+        <FieldRefs>
+          <FieldRef ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfSubString>
+            <Expr1>
+              <Column Name="GUID" />
+            </Expr1>
+            <Expr2>
+              <GetVar Name="CAML_Expand" HTMLEncode="TRUE" />
+            </Expr2>
+            <Then>
+              <HTML>TRUE</HTML>
+            </Then>
+            <Else>
+              <HTML>FALSE</HTML>
+            </Else>
+          </IfSubString>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{e393d344-2e8c-425b-a8c3-89ac3144c9a2}" Name="QuotedTextWasExpanded" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,Quoted_Text_Was_Expanded;" Sealed="TRUE" StaticName="QuotedTextWasExpanded">
+        <FieldRefs>
+          <FieldRef ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" />
+        </FieldRefs>
+        <DisplayPattern>
+          <IfSubString>
+            <Expr1>
+              <Column Name="GUID" />
+            </Expr1>
+            <Expr2>
+              <GetVar Name="CAML_ShowOriginalEmailBody" HTMLEncode="TRUE" />
+            </Expr2>
+            <Then>
+              <HTML>TRUE</HTML>
+            </Then>
+            <Else>
+              <HTML>FALSE</HTML>
+            </Else>
+          </IfSubString>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{b0204f69-2253-43d2-99ad-c0df00031b66}" Name="CorrectBodyToShow" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,Correct_Body_To_Show;" Sealed="TRUE" StaticName="CorrectBodyToShow">
+        <FieldRefs>
+          <FieldRef ID="{6d0f8993-5050-41f3-be6c-18902d282357}" Name="TrimmedBody" />
+          <FieldRef ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" />
+          <FieldRef ID="{e393d344-2e8c-425b-a8c3-89ac3144c9a2}" Name="QuotedTextWasExpanded" />
+          <FieldRef ID="{bd2216c1-a2f3-48c0-b21c-dc297d0cc658}" Name="IsRootPost" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Switch>
+            <Expr>
+              <Field Name="QuotedTextWasExpanded" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML>UnTrimmedBody</HTML>
+            </Case>
+            <Default>
+              <IfEqual>
+                <Expr1>
+                  <Column Name="Created" Format="ISO8601" />
+                </Expr1>
+                <Expr2>
+                  <Column Name="Modified" Format="ISO8601" />
+                </Expr2>
+                <Then>
+                  <Switch>
+                    <Expr>
+                      <Field Name="IsRootPost" />
+                    </Expr>
+                    <Case Value="TRUE">
+                      <HTML>Body</HTML>
+                    </Case>
+                    <Default>
+                      <Switch>
+                        <Expr>
+                          <Column Name="TrimmedBody" />
+                        </Expr>
+                        <Case Value="">
+                          <HTML>Body</HTML>
+                        </Case>
+                        <Default>
+                          <HTML>TrimmedBody</HTML>
+                        </Default>
+                      </Switch>
+                    </Default>
+                  </Switch>
+                </Then>
+                <Else>
+                  <HTML>Body</HTML>
+                </Else>
+              </IfEqual>
+            </Default>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{9c4be348-663a-4172-a38a-9714b2634c17}" Name="FullBody" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Full_Body;" Sealed="TRUE" StaticName="FullBody">
+        <FieldRefs>
+          <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+          <FieldRef ID="{fbba993f-afee-4e00-b9be-36bc660dcdd1}" Name="MessageBody" />
+          <FieldRef ID="{e451420d-4e62-43e3-af83-010d36e353a2}" Name="ToggleQuotedText" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Switch>
+            <Expr>
+              <FieldProperty Name="Body" Select="RichText" />
+            </Expr>
+            <Case Value="TRUE">
+              <Switch>
+                <Expr>
+                  <GetVar Name="HideLinksInBody" />
+                </Expr>
+                <Case Value="TRUE">
+                  <Field Name="MessageBody" />
+                </Case>
+                <Default>
+                  <Switch>
+                    <Expr>
+                      <FieldProperty Name="Body" Select="RichTextMode" />
+                    </Expr>
+                    <Case Value="FullHtml">
+                      <Field Name="MessageBody" />
+                    </Case>
+                    <Default>
+                      <Field Name="MessageBody" AutoHyperLinkNoEncoding="TRUE" />
+                    </Default>
+                  </Switch>
+                </Default>
+              </Switch>
+            </Case>
+            <Default>
+              <Switch>
+                <Expr>
+                  <GetVar Name="HideLinksInBody" />
+                </Expr>
+                <Case Value="TRUE">
+                  <Field Name="MessageBody" AutoNewLine="TRUE" HTMLEncode="TRUE" />
+                </Case>
+                <Default>
+                  <Field Name="MessageBody" AutoHyperLink="TRUE" AutoNewLine="TRUE" />
+                </Default>
+              </Switch>
+            </Default>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{61b97279-cbc0-4aa9-a362-f1ff249c1706}" Name="LimitedBody" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" Hidden="TRUE" ReadOnly="TRUE" DisplayName="$Resources:core,Limited_Body;" Sealed="TRUE" StaticName="LimitedBody">
+        <FieldRefs>
+          <FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+          <FieldRef ID="{fbba993f-afee-4e00-b9be-36bc660dcdd1}" Name="MessageBody" />
+          <FieldRef ID="{fb6c2494-1b14-49b0-a7ca-0506d6e85a62}" Name="MoreLink" />
+          <FieldRef ID="{e451420d-4e62-43e3-af83-010d36e353a2}" Name="ToggleQuotedText" />
+        </FieldRefs>
+        <DisplayPattern>
+          <SetVar Scope="Request" Name="BodyWasTruncatedByLimitTag" Value="FALSE" />
+          <Switch>
+            <Expr>
+              <FieldProperty Name="Body" Select="RichText" />
+            </Expr>
+            <Case Value="TRUE">
+              <Field Name="MessageBody" />
+            </Case>
+            <Default>
+              <Switch>
+                <Expr>
+                  <GetVar Name="HideLinksInBody" />
+                </Expr>
+                <Case Value="TRUE">
+                  <Limit Len="1500" AutoNewLine="TRUE" HTMLEncode="TRUE">
+                    <Text>
+                      <Field Name="MessageBody" />
+                    </Text>
+                    <More>
+                      <SetVar Scope="Request" Name="BodyWasTruncatedByLimitTag" Value="TRUE" />
+                    </More>
+                  </Limit>
+                </Case>
+                <Default>
+                  <Limit Len="1500" AutoHyperLink="TRUE" AutoNewLine="TRUE">
+                    <Text>
+                      <Field Name="MessageBody" />
+                    </Text>
+                    <More>
+                      <SetVar Scope="Request" Name="BodyWasTruncatedByLimitTag" Value="TRUE" />
+                    </More>
+                  </Limit>
+                </Default>
+              </Switch>
+            </Default>
+          </Switch>
+          <Switch>
+            <Expr>
+              <GetVar Name="BodyWasTruncatedByLimitTag" />
+            </Expr>
+            <Case Value="TRUE">
+              <Field Name="MoreLink" />
+            </Case>
+            <Case Value="FALSE">
+              <Field Name="ToggleQuotedText" />
+            </Case>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{fb6c2494-1b14-49b0-a7ca-0506d6e85a62}" Name="MoreLink" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,More_Link;" Sealed="TRUE" StaticName="MoreLink">
+        <FieldRefs>
+          <FieldRef ID="{1d22ea11-1e32-424e-89ab-9fedbadb6ce1}" Name="ID" />
+          <FieldRef ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HTML><![CDATA[<div><br /><a id="MoreLink]]></HTML>
+          <Field Name="ID" />
+          <HTML><![CDATA[" href="javascript:" onclick="javascript:return ExpandBody(']]></HTML>
+          <Column Name="GUID" />
+          <HTML><![CDATA[',']]></HTML>
+          <Column Name="GUID" />
+          <HTML><![CDATA[',this);"><img id="moreIcon" border="0" align="absmiddle" alt="$Resources:core,MoreText;" src="/_layouts/images/dlmax.gif" />$Resources:core,MoreText;</a></div>]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{076193bd-865b-4de7-9633-1f12069a6fff}" Name="LessLink" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Less_Link;" Sealed="TRUE" StaticName="LessLink">
+        <FieldRefs>
+          <FieldRef ID="{1d22ea11-1e32-424e-89ab-9fedbadb6ce1}" Name="ID" />
+          <FieldRef ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HTML><![CDATA[<div><br /><a id="LessLink]]></HTML>
+          <Field Name="ID" />
+          <HTML><![CDATA[" href="javascript:" onclick="javascript:return CollapseBody(']]></HTML>
+          <Column Name="GUID" />
+          <HTML><![CDATA[',']]></HTML>
+          <Column Name="GUID" />
+          <HTML><![CDATA[',this);"><img id="lessIcon" border="0" align="absmiddle" alt="$Resources:core,LessText;" src="/_layouts/images/dlmin.gif" />$Resources:core,LessText;</a></div>]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{e451420d-4e62-43e3-af83-010d36e353a2}" Name="ToggleQuotedText" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Toggle_Quoted_Text;" Sealed="TRUE" StaticName="ToggleQuotedText">
+        <FieldRefs>
+          <FieldRef ID="{1d22ea11-1e32-424e-89ab-9fedbadb6ce1}" Name="ID" />
+          <FieldRef ID="{ae069f25-3ac2-4256-b9c3-15dbc15da0e0}" Name="GUID" />
+          <FieldRef ID="{b0204f69-2253-43d2-99ad-c0df00031b66}" Name="CorrectBodyToShow" />
+        </FieldRefs>
+        <DisplayPattern>
+          <Switch>
+            <Expr>
+              <Field Name="CorrectBodyToShow" />
+            </Expr>
+            <Case Value="TrimmedBody">
+              <HTML><![CDATA[<div><br /><a id="ToggleQuotedText]]></HTML>
+              <Field Name="ID" />
+              <HTML><![CDATA[" href="javascript:" onclick="javascript:return ]]></HTML>
+              <HTML><![CDATA[ShowQuotedText(']]></HTML>
+              <Column Name="GUID" />
+              <HTML><![CDATA[',']]></HTML>
+              <Column Name="GUID" />
+              <HTML><![CDATA[',this);"><img id="showQuotedIcon" border="0" align="absmiddle" alt="More" src="/_layouts/images/dlmax.gif" />$Resources:core,ShowQuotedMessages;</a></div>]]></HTML>
+            </Case>
+            <Case Value="UnTrimmedBody">
+              <HTML><![CDATA[<div><br /><a id="ToggleQuotedText]]></HTML>
+              <Field Name="ID" />
+              <HTML><![CDATA[" href="javascript:" onclick="javascript:return ]]></HTML>
+              <HTML><![CDATA[HideQuotedText(']]></HTML>
+              <Column Name="GUID" />
+              <HTML><![CDATA[',']]></HTML>
+              <Column Name="GUID" />
+              <HTML><![CDATA[',this);"><img id="hideQuotedIcon" border="0" align="absmiddle" alt="More" src="/_layouts/images/dlmin.gif" />$Resources:core,HideQuotedMessages;</a></div>]]></HTML>
+            </Case>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{58ca6516-51cd-41fb-a908-dd2a4aeea8bc}" Name="Threading" Group="_Hidden" SourceID="http://schemas.microsoft.com/sharepoint/v3" Type="Computed" DisplayName="$Resources:core,Threading;" ReadOnly="TRUE" Sortable="TRUE" Filterable="FALSE" AuthoringInfo="$Resources:core,AuthoringInfo_threaded;" StaticName="Threading">
+        <FieldRefs>
+          <FieldRef ID="{cef73bf1-edf6-4dd9-9098-a07d83984700}" Name="ThreadIndex" />
+          <FieldRef ID="{68227570-72dd-4816-b6b6-4b81ff99a393}" Name="Indentation" />
+          <FieldRef ID="{c7e9537e-bde4-4923-a100-adbd9e0a0a0d}" Name="BodyAndMore" />
+          <FieldRef ID="{f90bce56-87dc-4d73-bfcb-03fcaf670500}" Name="StatusBar" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HTML><![CDATA[<table class="ms-disc-nopad" border="0" cellpadding="0" cellspacing="0" width="100%">]]></HTML>
+          <HTML><![CDATA[<tr><td width="1px" rowspan="2">]]></HTML>
+          <Field Name="Indentation" />
+          <HTML><![CDATA[</td><td class="ms-disc-bordered-noleft">]]></HTML>
+          <Field Name="BodyAndMore" />
+          <HTML><![CDATA[</td></tr><tr><td height="1px" valign="bottom"><img src="/_layouts/images/blank.gif" alt="" width="450px" height="1px" />]]></HTML>
+          <HTML><![CDATA[</td></tr></table>]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{adfe65ee-74bb-4771-bec5-d691d9a6a14e}" Name="PersonImage" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" DisplayName="$Resources:core,Posted_By;" Hidden="TRUE" ReadOnly="TRUE" AuthoringInfo="$Resources:core,picture_only;" StaticName="PersonImage">
+        <FieldRefs>
+          <FieldRef ID="{078B9DBA-EB8C-4ec5-BFDD-8D220A3FCC5D}" Name="MyEditor" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HTML><![CDATA[<table cellpadding="0" cellspacing="0"><tr><td width="1px">]]></HTML>
+          <Field Name="MyEditor" />
+          <HTML><![CDATA[</td><td height="1px" width="80px" valign="bottom"><img src="/_layouts/images/blank.gif" width="80px" height="1px" alt="" /></td></tr></table>]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{b4ab471e-0262-462a-8b3f-c1dfc9e2d5fd}" Name="PersonViewMinimal" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Filterable="TRUE" Sortable="TRUE" Type="Computed" DisplayName="$Resources:core,Posted_By;" ReadOnly="TRUE" DisplayNameSrcField="Editor" AuthoringInfo="$Resources:core,picture_and_name;" StaticName="PersonViewMinimal">
+        <FieldRefs>
+          <FieldRef ID="{d31655d1-1d5b-4511-95a1-7a09e9b75bf2}" Name="Editor" />
+          <FieldRef ID="{adfe65ee-74bb-4771-bec5-d691d9a6a14e}" Name="PersonImage" />
+        </FieldRefs>
+        <DisplayPattern>
+          <HTML><![CDATA[<table cellpadding="0" cellspacing="0"><tr><td style="padding-left: 5px;">]]></HTML>
+          <Field Name="PersonImage" />
+          <HTML><![CDATA[</td></tr><tr><td style="padding-left: 5px;" nowrap="nowrap">]]></HTML>
+          <Field Name="Editor" />
+          <HTML><![CDATA[</td></tr></table>]]></HTML>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{bd2216c1-a2f3-48c0-b21c-dc297d0cc658}" Name="IsRootPost" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Group="_Hidden" Type="Computed" ReadOnly="TRUE" Hidden="TRUE" DisplayName="$Resources:core,Is_Root_Post;" Sealed="TRUE" StaticName="IsRootPost">
+        <FieldRefs>
+          <FieldRef ID="{30bb605f-5bae-48fe-b4e3-1f81d9772af9}" Name="FSObjType" />
+          <FieldRef ID="{1d22ea11-1e32-424e-89ab-9fedbadb6ce1}" Name="ID" />
+          <FieldRef ID="{2bec4782-695f-406d-9e50-f1d39a2b8eb6}" Name="ShortestThreadIndexId" />
+          <FieldRef ID="{8ffccefe-998b-4896-a6df-32d566f69141}" Name="ShortestThreadIndexIdLookup" />
+          <FieldRef ID="{68227570-72dd-4816-b6b6-4b81ff99a393}" Name="IndentLevel" />
+        </FieldRefs>
+        <DisplayPattern>
+          <SetVar Scope="Request" Name="V_ShortestThreadIndexId">
+            <Switch>
+              <Expr>
+                <LookupColumn Name="FSObjType" />
+              </Expr>
+              <Case Value="1">
+                <Switch>
+                  <Expr>
+                    <Column Name="ShortestThreadIndexId" />
+                  </Expr>
+                  <Case Value="0">
+                    <Field Name="ID" />
+                  </Case>
+                  <Default>
+                    <Column Name="ShortestThreadIndexId" />
+                  </Default>
+                </Switch>
+              </Case>
+              <Default>
+                <LookupColumn Name="ShortestThreadIndexIdLookup" />
+              </Default>
+            </Switch>
+          </SetVar>
+          <Switch>
+            <Expr>
+              <GetVar Name="V_ShortestThreadIndexId" />
+            </Expr>
+            <Case Value="">
+              <Switch>
+                <Expr>
+                  <Field Name="IndentLevel" />
+                </Expr>
+                <Case Value="0">
+                  <HTML>TRUE</HTML>
+                </Case>
+                <Default>
+                  <HTML>FALSE</HTML>
+                </Default>
+              </Switch>
+            </Case>
+            <Default>
+              <IfEqual>
+                <Expr1>
+                  <Field Name="ID" />
+                </Expr1>
+                <Expr2>
+                  <GetVar Name="V_ShortestThreadIndexId" />
+                </Expr2>
+                <Then>
+                  <HTML>TRUE</HTML>
+                </Then>
+                <Else>
+                  <HTML>FALSE</HTML>
+                </Else>
+              </IfEqual>
+            </Default>
+          </Switch>
+        </DisplayPattern>
+      </Field>
+      <Field ID="{b824e17e-a1b3-426e-aecf-f0184d900485}" Name="ItemChildCount" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ItemChildCount" Group="_Hidden" ReadOnly="TRUE" Filterable="FALSE" Sortable="FALSE" Hidden="FALSE" Type="Lookup" DisplayName="$Resources:core,Reply_Count;" List="Docs" FieldRef="ID" ShowField="ItemChildCount" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER">
+      </Field>
+      <Field ID="{5A034FF8-D7A4-4d69-AB26-5F5A043B572D}" Name="IsFeatured" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplaceOnUpgrade="TRUE" Type="Boolean" DisplayName="$Resources:core,IsFeatured;" Indexed="TRUE" ReadOnly="TRUE" Sealed="TRUE" StaticName="IsFeatured">
+        <Default>FALSE</Default>
+      </Field>
+      <Field ID="{4ce600fb-a927-4911-bfc1-11076b76b522}" Name="EmailSender" DisplaceOnUpgrade="TRUE" Type="Note" RichText="TRUE" RichTextMode="Compatible" DisplayName="$Resources:core,E-Mail_Sender;" Sealed="TRUE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInListSettings="FALSE" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EmailSender" />
+      <Field ID="{1df5e554-ec7e-46a6-901d-d85a3881cb18}" ColName="tp_Author" RowOrdinal="0" ReadOnly="TRUE" Type="User" List="UserInfo" Name="Author" DisplayName="$Resources:core,Created_By;" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Author" FromBaseType="TRUE" Indexed="TRUE" Version="1" ShowField="NameWithPictureAndDetails" />
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name ="Title">Marketing Discussion</Field>
+          <Field Name ="Body">This is a marketing content</Field>
+          <Field Name ="ConfirmArchive">False</Field>          
+        </Row>
+
+        <Row>
+          <Field Name ="Title">Start a new discussion</Field>
+          <Field Name ="Links">This is a new discussion content</Field>
+          <Field Name ="ConfirmArchive">False</Field>          
+        </Row>
+
+      </Rows>
+    </Data>
+  </list>-->
+ 
+</lists>

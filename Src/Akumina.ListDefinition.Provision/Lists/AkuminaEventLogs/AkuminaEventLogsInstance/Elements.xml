@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="AkuminaEventLogs" OnQuickLaunch="TRUE" TemplateType="10022" RootWebOnly="TRUE" Url="Lists/AkuminaEventLogs" Description="My List Instance">
+    
+    
+    
+  </ListInstance>
+</Elements>

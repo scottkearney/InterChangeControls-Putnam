@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="PagesModule" Url="Pages">
+    <File Path="PagesModule\Home.aspx" Url="Home.aspx" Type="GhostableInLibrary" >
+      <Property Name="ContentTypeId" Value="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900279CCF2A3CF9874899B17B2B4188D800"/>
+      <Property Name="Title" Value="Home"/>
+      <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/IgniteHomePageLayout.aspx, HomeLayout"/>
+      <Property Name="ContentType" Value="Page" />
+      <Property Name="PublishingPageContent" Value="Page Deployment" />
+    </File>
+    <File Path="PagesModule\Documents.aspx" Url="Documents.aspx" Type="GhostableInLibrary" >
+      <Property Name="ContentTypeId" Value="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900279CCF2A3CF9874899B17B2B4188D800"/>
+      <Property Name="Title" Value="Documents"/>
+      <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/Ignite3ColumnPageLayout.aspx, Ignite 3 Column Page Layout"/>
+      <Property Name="ContentType" Value="Page" />
+      <Property Name="PublishingPageContent" Value="Page Deployment" />
+    </File>
+    <File Path="PagesModule\NewsList.aspx" Url="NewsList.aspx" Type="GhostableInLibrary" >
+      <Property Name="ContentTypeId" Value="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900279CCF2A3CF9874899B17B2B4188D800"/>
+      <Property Name="Title" Value="NewsList"/>
+      <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/Ignite1ColumnPageLayout.aspx, Ignite 1 Column Page Layout"/>
+      <Property Name="ContentType" Value="Page" />
+      <Property Name="PublishingPageContent" Value="Page Deployment" />
+    </File>
+    <File Path="PagesModule\NewsDetail.aspx" Url="NewsDetail.aspx" Type="GhostableInLibrary" >
+      <Property Name="ContentTypeId" Value="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900279CCF2A3CF9874899B17B2B4188D800"/>
+      <Property Name="Title" Value="NewsDetail"/>
+      <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/Ignite2ColumnLeftPageLayout.aspx, Ignite 2 Column Left Layout"/>
+      <Property Name="ContentType" Value="Page" />
+      <Property Name="PublishingPageContent" Value="Page Deployment" />
+    </File>
+    <File Path="PagesModule\Search.aspx" Url="Search.aspx" Type="GhostableInLibrary" >
+      <Property Name="ContentTypeId" Value="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900279CCF2A3CF9874899B17B2B4188D800"/>
+      <Property Name="Title" Value="Search"/>
+      <Property Name="PublishingPageLayout" Value="~SiteCollection/_catalogs/masterpage/Ignite2ColumnRightPageLayout.aspx, Ignite 2 Column Right Layout"/>
+      <Property Name="ContentType" Value="Page" />
+      <Property Name="PublishingPageContent" Value="Page Deployment" />
+    </File>
+  </Module>
+</Elements>

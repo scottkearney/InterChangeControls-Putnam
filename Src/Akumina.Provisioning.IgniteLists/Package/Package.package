@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="174ac114-d9ae-4db7-b6c2-38d4b0d85265" solutionId="174ac114-d9ae-4db7-b6c2-38d4b0d85265" resetWebServer="false" sharePointProductVersion="15.0" name="Akumina.Provisioning.IgniteLists" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="0a3c0f06-b9e4-478f-965d-5dc88e0b6eaa" />
+  </features>
+</package>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:ows="Microsoft SharePoint">
+  <Template Name="Akumina Site Definition" ID="10001">
+    <Configuration ID="0" Title="Akumina Site Definition" Hidden="FALSE" ImageUrl="/_layouts/images/CPVW.gif" Description="Akumina Site Definition" DisplayCategory="Akumina Spark Site" >
+    </Configuration>
+  </Template>
+</Templates>

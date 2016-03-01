@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="IgnitePageLayoutModule" Url="_catalogs/masterpage">
+    <File Path="IgnitePageLayoutModule\IgniteHomePageLayout.aspx" Url="IgniteHomePageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="HomeLayout" />
+      <Property Name="MasterPageDescription" Value="Ignite Home PageLayout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="IgniteHomePageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="IgnitePageLayout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\Ignite3ColumnPageLayout.aspx" Url="Ignite3ColumnPageLayout.aspx"  Type="GhostableInLibrary"  >
+      <Property Name="Title" Value="Ignite 3 Column Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite 3 Column Layout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="Ignite3ColumnPageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite 3 Column Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\Ignite1ColumnPageLayout.aspx" Url="Ignite1ColumnPageLayout.aspx"  Type="GhostableInLibrary"  >
+      <Property Name="Title" Value="Ignite 1 Column Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite 1 Column Layout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="Ignite1ColumnPageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite 1 Column Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\Ignite2ColumnLeftPageLayout.aspx" Url="Ignite2ColumnLeftPageLayout.aspx"  Type="GhostableInLibrary"  >
+      <Property Name="Title" Value="Ignite 2 Column Left Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite 2 Column Left Layouts" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="Ignite2ColumnLeftPageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite 2 Column Left Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\Ignite2ColumnRightPageLayout.aspx" Url="Ignite2ColumnRightPageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Ignite 2 Column Right Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite 2 Column Right Layout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="Ignite2ColumnRightPageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite 2 Column Right Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\IgniteDept1ColumnPageLayout.aspx" Url="IgniteDept1ColumnPageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Ignite Department 1 Column Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite Department 1 Column Layout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="IgniteDept1ColumnPageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite Department 1 Column Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\IgniteDept3ColumnPageLayout.aspx" Url="IgniteDept3ColumnPageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Ignite Department 3 Column Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite Department 3 Column Layout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="IgniteDept3ColumnPageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite Department 3 Column Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\IgniteDeptHomePageLayout.aspx" Url="IgniteDeptHomePageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Ignite Department Home Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite Department Home Layout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="IgniteDeptHomePageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite Department Home Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\IgniteDept2ColumnLeftPageLayout.aspx" Url="IgniteDept2ColumnLeftPageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Ignite Department 2 Column Left Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite Department 2 Column Left Layout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="IgniteDept2ColumnLeftPageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite Department 2 Column Left Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+    <File Path="IgnitePageLayoutModule\IgniteDept2ColumnRightPageLayout.aspx" Url="IgniteDept2ColumnRightPageLayout.aspx" Type="GhostableInLibrary">
+      <Property Name="Title" Value="Ignite Department 2 Column Right Layout" />
+      <Property Name="MasterPageDescription" Value="Ignite Department 2 Column Right Layout" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlankWebPartPage.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#$Resources:cmscore,contenttype_welcomepage_name;;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390064DEA0F50FC8C147B0B6EA0636C4A7D4;#" />
+      <Property Name="PublishingAssociatedContentType" Value=";#AkuminaIgnite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39002C646921DEB14195B1E318F903889C55;#" />
+      <Property Name="FileLeafRef" Value="IgniteDept2ColumnRightPageLayout.aspx" />
+      <Property Name="Akumina Page Layout " Value="Ignite Department 2 Column Right Layout" />
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="PublishingHidden" Value="FALSE" />
+      <Property Name="HtmlDesignAssociated" Value="FALSE" />
+      <Property Name="_ModerationStatus" Value="3" />
+      <Property Name="FileDirRef" Value="_catalogs/masterpage" />
+      <Property Name="FSObjType" Value="0" />
+    </File>
+  </Module>
+</Elements>

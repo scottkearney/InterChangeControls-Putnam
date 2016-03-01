@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       ID="{DDDD2B9E-942B-48B3-A695-B5B9C33810B5}"
+       Name="BannerHeading"
+       DisplayName="BannerHeading"
+       Type="Text"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{222DE0CE-1181-4954-BD8A-07500ABFC4B7}"
+       Name="BannerSubHeading"
+       DisplayName="BannerSubHeading"
+       Type="Text"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{7E4BB9DF-94CA-4AFA-8897-16DD89640E95}"
+       Name="BannerLinkText"
+       DisplayName="BannerLinkText"
+       Type="Text"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{4A49D575-AA4B-405D-940D-3253BDE8CF71}"
+       Name="BannerLinkUrl"
+       DisplayName="BannerLinkUrl"
+       Type="URL"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{0FC8DBDC-B44B-49DC-BCB9-305E3964A203}"
+       Name="BannerLinkTarget"
+       DisplayName="BannerLinkTarget"
+       Type="Choice"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{03E54425-DDA0-4676-9410-83519FD5A400}"
+       Name="BannerLinkHoverText"
+       DisplayName="BannerLinkHoverText"
+       Type="Text"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{46A6A43F-6D12-42A7-9F04-F57787C5C1D9}"
+       Name="BannerImage"
+       DisplayName="BannerImage"
+       Type="URL"
+       Format="Image"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{EA66E3A5-2420-4396-969B-259443B50801}"
+       Name="BannerImageAltText"
+       DisplayName="BannerImageAltText"
+       Type="Text"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{895ACA16-CC05-4021-8016-256F9E017D03}"
+       Name="BannerActive"
+       DisplayName="BannerActive"
+       Type="Boolean"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+  <Field
+       ID="{B8E595BE-B58D-43A4-90A7-8FC41F2106D4}"
+       Name="BannerItemOrder"
+       DisplayName="BannerItemOrder"
+       Type="Number"
+       Required="FALSE"
+       Group="Akumina Banner Columns">
+  </Field>
+</Elements>

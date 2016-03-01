@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Akumina.WebParts.DiscussionBoard.DiscussionBoardListing.DiscussionBoardListing, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Discussion Board - Discussion Listing</property>
+        <property name="Description" type="string">Discussion Board - Discussion Listing Web Part</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="CatalogIconImageUrl" type="string">_layouts/15/Images/Akumina.WebParts.DiscussionBoard/ia-discussion-listing.png</property>
+        <property name="TitleIconImageUrl" type="string">_layouts/15/Images/Akumina.WebParts.DiscussionBoard/ia-discussion-listing.png</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

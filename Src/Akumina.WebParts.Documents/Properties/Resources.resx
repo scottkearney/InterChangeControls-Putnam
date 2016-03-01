@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="breadCrumpText" xml:space="preserve">
+    <value>All documents, files, and folders in</value>
+  </data>
+  <data name="btnCheckIn" xml:space="preserve">
+    <value>Check In</value>
+  </data>
+  <data name="btnCheckInMore" xml:space="preserve">
+    <value>Check In</value>
+  </data>
+  <data name="btnCheckOut" xml:space="preserve">
+    <value>Check Out</value>
+  </data>
+  <data name="btnCheckOutAll" xml:space="preserve">
+    <value>Check Out</value>
+  </data>
+  <data name="btnCompliance" xml:space="preserve">
+    <value>Compliance Details</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnDiscardCheckOut" xml:space="preserve">
+    <value>Discard checkout</value>
+  </data>
+  <data name="btnDiscardChkOutAll" xml:space="preserve">
+    <value>Discard checkout</value>
+  </data>
+  <data name="btnDownload" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="btnEditProperties" xml:space="preserve">
+    <value>Edit properties</value>
+  </data>
+  <data name="btnFollow" xml:space="preserve">
+    <value>Follow this File</value>
+  </data>
+  <data name="btnMore" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="btnOpen" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="btnShare" xml:space="preserve">
+    <value>Share this File..</value>
+  </data>
+  <data name="btnShareWith" xml:space="preserve">
+    <value>File is shared With..</value>
+  </data>
+  <data name="btnViewProperties" xml:space="preserve">
+    <value>View properties</value>
+  </data>
+  <data name="btnWorkflow" xml:space="preserve">
+    <value>Workflows</value>
+  </data>
+  <data name="CSS_Links" xml:space="preserve">
+    <value>/css/ia-interaction-controls.css|/css/ia-document-grid.css</value>
+    <comment>Pipe delimited list of style sheets to load. Relative to web parts resource path property.</comment>
+  </data>
+  <data name="Gird_EmptyDataText" xml:space="preserve">
+    <value>Your Search returned no results!</value>
+  </data>
+  <data name="Grid_Columns" xml:space="preserve">
+    <value>|TypeUrl|LinkFilename|Modified|Editor|ID|File_x0020_Type|Path|Status|EditorClone|ModifiedTime|EditPermission</value>
+    <comment>Pipe delimited list of column names for grid.</comment>
+  </data>
+  <data name="Grid_Header_ColumnNames" xml:space="preserve">
+    <value>Name|Modified|Modified By</value>
+  </data>
+  <data name="JquerylibraryPath" xml:space="preserve">
+    <value>/js/vendor/jquery-2.1.3.min.js</value>
+  </data>
+  <data name="JS_Links" xml:space="preserve">
+    <value>/js/vendor/modernizr.js|/js/controls/ia-document-grid.js|/js/controls/ia-context-menu.js|/js/vendor/quicksearch.js|/js/controls/ia-document-list.js|/js/vendor/jquery.dropdown.js|/js/vendor/jquery.magnific-popup.js|/js/components/modal.js|/js/vendor/jstree.js|/js/controls/ia-drag-drop.js|/js/components/accordion.js|/js/vendor/picker.js|/js/vendor/picker.date.js|/js/vendor/tablesaw.stackonly.js|/js/components/tabs.js</value>
+    <comment>Pipe delimited list of .js files to load. Relative to web parts resource path property.</comment>
+  </data>
+  <data name="MetaField" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Refiner_Fields" xml:space="preserve">
+    <value>Editor|File_x0020_Type|Category</value>
+  </data>
+  <data name="SearchDropDwonOptions" xml:space="preserve">
+    <value>This Folder|Include SubFolders</value>
+    <comment>Pipe delimited strings for drop-down.</comment>
+  </data>
+  <data name="Tab_AllFiles_Text" xml:space="preserve">
+    <value>All Files</value>
+  </data>
+  <data name="Tab_MyFiles_Text" xml:space="preserve">
+    <value>My Files</value>
+  </data>
+  <data name="Tab_RecentFiles_Text" xml:space="preserve">
+    <value>Recent</value>
+  </data>
+  <data name="_cloneColumns" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="btnCreate" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="btnDoc" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="btnExcelDoc" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="btnONoteDoc" xml:space="preserve">
+    <value>OneNote</value>
+  </data>
+  <data name="btnPPTDoc" xml:space="preserve">
+    <value>PowerPoint</value>
+  </data>
+  <data name="btnWordDoc" xml:space="preserve">
+    <value>Word</value>
+  </data>
+  <data name="btnUpload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="btncopyLink" xml:space="preserve">
+    <value>Copy Link</value>
+  </data>
+  <data name="colName_Grid_Header" xml:space="preserve">
+    <value>Grid.HeaderName</value>
+  </data>
+  <data name="colName_ListName" xml:space="preserve">
+    <value>ListName</value>
+  </data>
+  <data name="colName_Popular" xml:space="preserve">
+    <value>Tab.NumberOfPopularFiles</value>
+  </data>
+  <data name="colName_Recent" xml:space="preserve">
+    <value>Tab.NumberOfRecentFiles</value>
+  </data>
+  <data name="colName_RootResourcePath" xml:space="preserve">
+    <value>RootResourcePath</value>
+  </data>
+  <data name="preview_Follow" xml:space="preserve">
+    <value>Follow</value>
+  </data>
+  <data name="preview_Share" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="refiner_lstweek" xml:space="preserve">
+    <value>Last 7 days</value>
+  </data>
+  <data name="refiner_month" xml:space="preserve">
+    <value>Last 30 days</value>
+  </data>
+  <data name="refiner_today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="refiner_year" xml:space="preserve">
+    <value>This Year</value>
+  </data>
+  <data name="SearchDropDown_SubFolders" xml:space="preserve">
+    <value>Include Subfolders</value>
+  </data>
+  <data name="SearchDropDown_ThisFolder" xml:space="preserve">
+    <value>This Folder</value>
+  </data>
+  <data name="Tab_PopularFiles_Text" xml:space="preserve">
+    <value>Popular</value>
+  </data>
+</root>

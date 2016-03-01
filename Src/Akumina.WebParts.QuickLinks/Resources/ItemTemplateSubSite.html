@@ -1,0 +1,48 @@
+<div class="interAction">
+    <nav class="ia-dept-nav">
+        <div class="ia-dept-nav-trigger"><span class="fa fa-bars ia-dept-nav-icon"></span>{{{Title}}}</div>
+    </nav><!-- end mainNav-->
+</div>
+<div class="interAction flyOut">
+    <div class="ia-dept-nav-wrapper">
+        <div class="ia-dept-nav-menu">
+            <span class="fa fa-times ia-dept-nav-close"></span>
+            <ul>
+                {{#Items}}
+                {{^HasLinks}}
+                {{#HasCategories}}
+                <li>
+                    <span>{{{Title}}}</span>                    
+                        {{#Items}}                    
+                            <ul>                                
+                                {{#Items}}
+                                <li><a href="{{Link}}" target="{{Target}}">{{{Title}}}</a></li>
+                                {{/Items}}
+                            </ul>                    
+                        {{/Items}}
+                    
+                </li>
+                {{/HasCategories}}
+                {{^HasCategories}}
+                <li><a href="{{Link}}" target="{{Target}}">{{{Title}}}</a></li>
+                {{/HasCategories}}
+                {{/HasLinks}}
+
+                {{#HasLinks}}
+                {{^HasCategories}}
+                <li>
+                    <span>{{{Title}}}</span>                    
+                            <ul>
+                                {{#Items}}
+                                <li><a href="{{Link}}" target="{{Target}}">{{{Title}}}</a></li>
+                                {{/Items}}
+                            </ul>                    
+                </li>
+                {{/HasCategories}}
+                {{/HasLinks}}
+
+                {{/Items}}
+            </ul>           
+        </div>
+      </div>
+ </div>

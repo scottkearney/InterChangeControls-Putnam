@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{81b87e3b-db23-4f87-aaae-34e591beb2af}"
+       Name="AkuminaSiteColumn"
+       DisplayName="Akumina Site Column"
+       Type="Text"
+       Required="FALSE"
+       Group="AkuminaSparkSiteColumns">
+  </Field>
+</Elements>

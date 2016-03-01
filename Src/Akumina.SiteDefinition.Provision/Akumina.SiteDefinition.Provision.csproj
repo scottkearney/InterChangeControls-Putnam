@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1CC1D1D-AD64-497F-A5B0-136BCA3C400F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Akumina.SiteDefinition.Provision</RootNamespace>
+    <AssemblyName>Akumina.SiteDefinition.Provision</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AddSnippets.cs" />
+    <Compile Include="Features\AkuminaPagesSelection\AkuminaPagesSelection.EventReceiver.cs">
+      <DependentUpon>AkuminaPagesSelection.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SiteDefinition Feature\SiteDefinition Feature.EventReceiver.cs">
+      <DependentUpon>SiteDefinition Feature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageModule\AkuminaSparkMasterCB.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AkuminaContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a337c952-c01a-4861-a63e-d1a6970f176e}</SharePointProjectItemId>
+    </None>
+    <None Include="AkuminaPageLayoutModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53936434-2d1a-4c41-b413-62ac5d51e94d}</SharePointProjectItemId>
+    </None>
+    <None Include="AkuminaSiteColumn\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9022ac28-046f-4eb1-97f8-30231f9256a5}</SharePointProjectItemId>
+    </None>
+    <None Include="AkuminaSiteDefinition\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1d0533d-8bf4-4dc7-8a6c-d5dcc2bf9fc4}</SharePointProjectItemId>
+    </None>
+    <None Include="DelegateControlElement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55b22da2-2302-45f3-89f1-482b38262007}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\AkuminaPagesSelection\AkuminaPagesSelection.feature">
+      <FeatureId>{9d846959-9666-4d31-975d-590f42fe70dd}</FeatureId>
+    </None>
+    <None Include="Features\SiteDefinition Feature\SiteDefinition Feature.feature">
+      <FeatureId>{96eda2e2-8148-428c-b8d8-23080f9daf0b}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\Akumina.WebParts\css\fonts\font-awesome\fontawesome-webfont.eot" />
+    <None Include="Layouts\Akumina.WebParts\css\fonts\font-awesome\fontawesome-webfont.ttf" />
+    <None Include="Layouts\Akumina.WebParts\css\fonts\font-awesome\fontawesome-webfont.woff" />
+    <None Include="Layouts\Akumina.WebParts\css\fonts\font-awesome\FontAwesome.otf" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0aefa712-5fca-4944-b39b-8152a6806e12}</SharePointProjectItemId>
+    </None>
+    <None Include="MasterPageModule\akuminaspark.master" />
+    <None Include="MasterPageModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a8012857-ee50-4877-a74a-b226cab08412}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{07d7ce9e-e3ba-4b5c-b577-9030ffad87fe}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PagesModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{375f6a8f-0be1-4d43-9335-6ab94ffe6a66}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="AkuminaContentType\Elements.xml" />
+    <Content Include="AkuminaPageLayoutModule\AkuminaSpark3ColumnLayout.aspx" />
+    <Content Include="AkuminaPageLayoutModule\AkuminaSpark2ColumnLayout.aspx" />
+    <Content Include="AkuminaPageLayoutModule\AkuminaSpark1ColumnLayout.aspx" />
+    <Content Include="AkuminaPageLayoutModule\AkuminaSparkDMSPageLayout.aspx" />
+    <Content Include="AkuminaPageLayoutModule\AkuminaSparkHomePageLayout.aspx" />
+    <Content Include="AkuminaPageLayoutModule\Elements.xml" />
+    <Content Include="AkuminaSiteColumn\Elements.xml" />
+    <Content Include="AkuminaSiteDefinition\default.aspx" />
+    <Content Include="AkuminaSiteDefinition\onet.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="AkuminaSiteDefinition\webtemp_AkuminaSiteDefinition.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DelegateControlElement\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\AkuminaPagesSelection\AkuminaPagesSelection.Template.xml">
+      <DependentUpon>AkuminaPagesSelection.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SiteDefinition Feature\SiteDefinition Feature.Template.xml">
+      <DependentUpon>SiteDefinition Feature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Akumina.WebParts\css\fonts\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="Layouts\Akumina.WebParts\css\ia-document-grid.css" />
+    <Content Include="Layouts\Akumina.WebParts\css\ia-interaction-controls.css" />
+    <Content Include="Layouts\Akumina.WebParts\css\master.css" />
+    <Content Include="Layouts\Akumina.WebParts\css\owl.carousel.css" />
+    <Content Include="Layouts\Akumina.WebParts\css\owl.transitions.css" />
+    <Content Include="Layouts\Akumina.WebParts\css\spark.css" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-banner.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-content-block.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-discussion-board.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-discussion-create-new.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-discussion-listing.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-discussion-summary.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-discussion-thread.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-document-grid.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-document-summary.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-document-tabs.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-document-tree.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-link-selector.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-people-picker.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-quicklinks.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-refiner.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-site-summary.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-traffic.png" />
+    <Content Include="Layouts\Akumina.WebParts\icons\ia-weather.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\32px.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\anonymous-user.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\caret-down.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\caret-up.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\chosen-sprite-2x.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\chosen-sprite.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\ia-loader.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icon-gear.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icon-info.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icon-menu.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icon-user.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons-s5339b01d1a.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\caret-down.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\caret-up.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\checkoutoverlay.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\checked-out.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\checkoutoverlay.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICACCDB.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icaccdb.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICACCDE.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICASAX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icasax.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICASCX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICASMX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICASP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICASPX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICBMP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICC16.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICCAT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICCHANGE.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICCHM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICCONFIG.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICCSS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDB.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDIB.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDISC.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOC.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOC.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOCM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOCM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOCSET.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOCX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOCX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOT.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOTM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOTM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOTX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDOTX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDVD.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICDWP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icdwt.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICEML.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\iceml.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICEST.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICFWP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICGEN.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICGIF.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHDP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHLP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ichlp.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHTA.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHTM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHTMDOC.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHTMFP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHTMPPT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHTMPUB.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHTMXLS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICHTT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICINF.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icinfopathgeneric.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icinfopathgeneric.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICINI.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICJFIF.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICJPE.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICJPEG.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICJPG.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICJS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICJSE.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICLOG.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICM16.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMANAGE.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMASTER.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMHT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMHTML.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMHTPUB.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPD.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPD.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPP.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPT.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPW.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMPX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMSG.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMSG.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMSI.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICMSP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICNOTEBK.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICNPIE.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICO16.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICOCX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODC.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODCC.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODCD.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODCT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODP.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODS.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICODT.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICONP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICONP.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICONT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICONT.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPDF.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPINNED.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPNG.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPOT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPOT.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPOTM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPOTM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPOTX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPOTX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPA.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPAM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPS.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPSM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPSM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPSX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPSX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPT.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPTM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPTM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPTP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPTX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPPTX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPTM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPTT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICPUB.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icpub.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICTHMX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICTIF.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICTIFF.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICTXT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVBE.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVBS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVDW.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVDX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVDX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVIDSET.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icvisiogeneric.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icvisiogeneric.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSD.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSDM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSDX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSL.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSSM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSSX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVST.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSTM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSTX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSU.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSW.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVSX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVTX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICVTX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWMA.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWMD.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWMP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWMS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWMV.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWMX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWMZ.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICWSF.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXDDOC.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLA.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLAM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLS.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLSB.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLSB.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLSM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLSM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLSP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLSX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLSX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLT.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLTM.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLTM.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLTX.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXLTX.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXML.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXPS.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\icxps.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXSD.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXSL.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXSLT.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXSN.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICXSN.PNG" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\document-icons\ICZIP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icdocx.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icgif.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icjpg.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icnotebk.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icpdf.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icpng.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icpptx.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icpub.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\ictxt.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icvsx.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\icxlsx.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\icons\ICZIP.GIF" />
+    <Content Include="Layouts\Akumina.WebParts\images\logo-ignite.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\logo-spark.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\siteBg-chicago.jpg" />
+    <Content Include="Layouts\Akumina.WebParts\images\page-loader.gif" />
+    <Content Include="Layouts\Akumina.WebParts\images\sprite-toggle.png" />
+    <Content Include="Layouts\Akumina.WebParts\images\throbber.gif" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\accordion.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\datepicker.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\ia-accordion.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\ia-autocomplete.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\ia-datepicker.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\ia-modal.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\ia-search-picker.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\ia-tabs.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\ia-toggle.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\ia-transformer-tabs.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\min\ia-accordion-min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\min\ia-autocomplete-min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\min\ia-modal-min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\min\ia-toggle-min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\min\ia-transformer-tabs-min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\modal.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\components\tabs.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-banner.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-common-discussion.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-common.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-context-menu-sandbox.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-context-menu.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-discussion-thread.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-document-filters.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-document-folder-tree.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-document-grid-sandbox.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-document-grid.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-document-list-sandbox.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-document-list.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-drag-drop-sandbox.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-drag-drop.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-jstree-discussion.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-search-combo.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-sitelinks.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\controls\ia-tabs-sandbox.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\ia-polyfills.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\idle.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\spark\announcements-carousel.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\spark\document-filters.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\spark\equal-heights.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\spark\main-nav.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\spark\match-heights.min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\spark\subsite-nav.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\chosen.jquery.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\chosen.jquery.min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\idle.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jquery-2.1.1.min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jquery-2.1.3.min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jquery-equalHeights.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jquery-ui.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jquery-ui.min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jquery.dropdown.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jquery.magnific-popup.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jquery.sticky.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\jstree.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\min\sticky-min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\min\tablesaw.stackonly-min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\modernizr.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\mustache.min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\owl.carousel.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\owl.carousel.min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\picker.date.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\picker.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\placeholders.jquery.min.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\quicksearch.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\tablesaw.stackonly.js" />
+    <Content Include="Layouts\Akumina.WebParts\js\vendor\tablesorter.js" />
+    <Content Include="MasterPageModule\akuminaspark.html" />
+    <Content Include="MasterPageModule\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagesModule\SparkLibraryListing.aspx" />
+    <Content Include="PagesModule\Elements.xml" />
+    <Content Include="PagesModule\SparkAnnouncementDetail.aspx" />
+    <Content Include="PagesModule\SparkDiscussions.aspx" />
+    <Content Include="PagesModule\SparkDiscussionThreads.aspx" />
+    <Content Include="PagesModule\SparkDocuments.aspx" />
+    <Content Include="PagesModule\SparkHome.aspx" />
+    <Content Include="PagesModule\SparkNewDiscussion.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>xcopy "$(SolutionDir)Shared\Content\*.*" "$(SolutionDir)Akumina.SiteDefinition.Provision\Layouts\Akumina.WebParts" /Y/E/I</PreBuildEvent>
+  </PropertyGroup>
+</Project>

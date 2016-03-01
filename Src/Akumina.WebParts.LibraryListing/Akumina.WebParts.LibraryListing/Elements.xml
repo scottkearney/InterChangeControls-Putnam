@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Akumina.WebParts.LibraryListing">
+    <File Path="Akumina.WebParts.LibraryListing\js\vendor\LibraryListings.js" Url="Akumina.WebParts.LibraryListing/js/vendor/LibraryListings.js" ReplaceContent="TRUE" />
+    <File Path="Akumina.WebParts.LibraryListing\js\vendor\modernizr.js" Url="Akumina.WebParts.LibraryListing/js/vendor/modernizr.js" ReplaceContent="TRUE"/>
+    <File Path="Akumina.WebParts.LibraryListing\css\ia-interaction-controls.css" Url="Akumina.WebParts.LibraryListing/css/ia-interaction-controls.css" ReplaceContent="TRUE"/>
+    <File Path="Akumina.WebParts.LibraryListing\js\controls\ia-library-search.js" Url="Akumina.WebParts.LibraryListing/js/controls/ia-library-search.js" ReplaceContent="TRUE"/>
+    <File Path="Akumina.WebParts.LibraryListing\js\vendor\jquery-2.1.3.min.js" Url="Akumina.WebParts.LibraryListing/js/vendor/jquery-2.1.3.min.js" ReplaceContent="TRUE"/>
+  </Module>
+</Elements>

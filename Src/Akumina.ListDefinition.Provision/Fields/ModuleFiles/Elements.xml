@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ModuleFiles" Url="AkuminaDocuments">
+    <File Path="ModuleFiles\Sample.txt" Url="Sample.txt" Type="GhostableInLibrary" />
+  </Module>
+  <Module Name="ModuleFiles" Url="AkuminaImages">
+    <File Path="ModuleFiles\Sparkbanner-1.jpg" Url="Sparkbanner-1.jpg" Type="GhostableInLibrary"/>
+    <File Path="ModuleFiles\Sparkbanner-2.jpg" Url="Sparkbanner-2.jpg" Type="GhostableInLibrary"/>
+    <File Path="ModuleFiles\Sparkbanner-3.jpg" Url="Sparkbanner-3.jpg" Type="GhostableInLibrary"/>
+    <File Path="ModuleFiles\AkuminaDocuments.png" Url="AkuminaDocuments.png" Type="GhostableInLibrary"/>
+    <File Path="ModuleFiles\AkuminaImages.png" Url="AkuminaImages.png" Type="GhostableInLibrary"/>
+  </Module>
+</Elements>

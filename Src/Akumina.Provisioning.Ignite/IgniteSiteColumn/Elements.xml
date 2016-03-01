@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0f98b1d7-c3d4-4b25-a60b-a7d915a9601a}"
+       Name="IgniteSiteColumn"
+       DisplayName="Ignite Site Column"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>
